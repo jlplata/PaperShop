@@ -1,0 +1,248 @@
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\bin\Debug\PaperShop.exe.config
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\bin\Debug\PaperShop.exe
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\bin\Debug\PaperShop.pdb
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\obj\Debug\PaperShop.csprojAssemblyReference.cache
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\obj\Debug\PaperShop.FrmPrincipal.resources
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\obj\Debug\PaperShop.Properties.Resources.resources
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\obj\Debug\PaperShop.csproj.GenerateResource.cache
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\obj\Debug\PaperShop.csproj.CoreCompileInputs.cache
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\obj\Debug\PaperShop.exe
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\obj\Debug\PaperShop.pdb
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\bin\Debug\Bunifu_UI_v1.5.3.xml
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\obj\Debug\PaperShop.csproj.CopyComplete
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\obj\Debug\PaperShop.frmConfiguracion.resources
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\obj\Debug\PaperShop.FrmBienvenida.resources
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\obj\Debug\PaperShop.FrmPersonas.resources
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\obj\Debug\PaperShop.exe.config
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.xml
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.xml
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
+C:\Users\Jose Luis Plata\source\repos\PaperShop\PaperShop\obj\Debug\SP19.FrmLogin.resources
+C:\Users\Jesus Salvador\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\PaperShop.exe.config
+C:\Users\Jesus Salvador\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\PaperShop.exe
+C:\Users\Jesus Salvador\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\PaperShop.pdb
+C:\Users\Jesus Salvador\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+C:\Users\Jesus Salvador\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+C:\Users\Jesus Salvador\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+C:\Users\Jesus Salvador\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
+C:\Users\Jesus Salvador\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
+C:\Users\Jesus Salvador\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.xml
+C:\Users\Jesus Salvador\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+C:\Users\Jesus Salvador\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.xml
+C:\Users\Jesus Salvador\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu_UI_v1.5.3.xml
+C:\Users\Jesus Salvador\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.csprojAssemblyReference.cache
+C:\Users\Jesus Salvador\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.exe.config
+C:\Users\Jesus Salvador\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmBienvenida.resources
+C:\Users\Jesus Salvador\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.frmConfiguracion.resources
+C:\Users\Jesus Salvador\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\SP19.FrmLogin.resources
+C:\Users\Jesus Salvador\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmPersonas.resources
+C:\Users\Jesus Salvador\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmPrincipal.resources
+C:\Users\Jesus Salvador\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.Properties.Resources.resources
+C:\Users\Jesus Salvador\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.csproj.GenerateResource.cache
+C:\Users\Jesus Salvador\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.csproj.CoreCompileInputs.cache
+C:\Users\Jesus Salvador\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.csproj.CopyComplete
+C:\Users\Jesus Salvador\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.exe
+C:\Users\Jesus Salvador\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.pdb
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\PaperShop.exe.config
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\PaperShop.exe
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\PaperShop.pdb
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.xml
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.xml
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Bunifu_UI_v1.5.3.xml
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.csprojAssemblyReference.cache
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.exe.config
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmBienvenida.resources
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmPersonas.resources
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.Properties.Resources.resources
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.csproj.GenerateResource.cache
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.csproj.CoreCompileInputs.cache
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.csproj.CopyComplete
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.exe
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.pdb
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmLogin.resources
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.Mensaje.resources
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.MensajeOk.resources
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\bin\Debug\Guna.UI.dll
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmCarga.resources
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.frmUsuarios.resources
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmPrin.resources
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmAdministracion.resources
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.frmClientes.resources
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.frmDepartamentos.resources
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.frmPuestos.resources
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.frmCajas.resources
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.frmSucursales.resources
+C:\Users\Jose Luis Plata\Desktop\PaperShop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.frmTrabajadores.resources
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\bin\Debug\PaperShop.exe.config
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\bin\Debug\PaperShop.exe
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\bin\Debug\PaperShop.pdb
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.xml
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.xml
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\bin\Debug\Bunifu_UI_v1.5.3.xml
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.csprojAssemblyReference.cache
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.exe.config
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmAdministracion.resources
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmBienvenida.resources
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmLogin.resources
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmPersonas.resources
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmPrin.resources
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.Mensaje.resources
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.MensajeOk.resources
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.Properties.Resources.resources
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.csproj.GenerateResource.cache
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.csproj.CoreCompileInputs.cache
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.csproj.CopyComplete
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.exe
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.pdb
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmNotificaciones.resources
+C:\Users\Jose Luis Plata\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmCarga.resources
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\PaperShop.exe.config
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\PaperShop.exe
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\PaperShop.pdb
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.xml
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.xml
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\Bunifu_UI_v1.5.3.xml
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.csprojAssemblyReference.cache
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.exe.config
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.frmPersonas.resources
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmAdministracion.resources
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmBienvenida.resources
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmCarga.resources
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmLogin.resources
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmNotificaciones.resources
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmPrin.resources
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.Mensaje.resources
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.MensajeOk.resources
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.Properties.Resources.resources
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.csproj.GenerateResource.cache
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.csproj.CopyComplete
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.exe
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.pdb
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\FlashControlV71.dll
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\bin\Debug\stdole.dll
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.frmUsuarios.resources
+C:\Users\JoseL\Desktop\PaperShop - copia\PaperShop\obj\Debug\PaperShop.frmVisualizador.resources
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\PaperShop.exe.config
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\PaperShop.exe
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\PaperShop.pdb
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\FlashControlV71.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\Guna.UI.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\stdole.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.xml
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\Bunifu.UI.WinForms.BunifuTextbox.xml
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\bin\Debug\Bunifu_UI_v1.5.3.xml
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\obj\Debug\PaperShop.csprojAssemblyReference.cache
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\obj\Debug\PaperShop.exe.config
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\obj\Debug\PaperShop.frmPersonas.resources
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\obj\Debug\PaperShop.frmUsuarios.resources
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmAdministracion.resources
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmBienvenida.resources
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmCarga.resources
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmLogin.resources
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmNotificaciones.resources
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\obj\Debug\PaperShop.FrmPrin.resources
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\obj\Debug\PaperShop.frmVisualizador.resources
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\obj\Debug\PaperShop.Mensaje.resources
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\obj\Debug\PaperShop.MensajeOk.resources
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\obj\Debug\PaperShop.Properties.Resources.resources
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\obj\Debug\PaperShop.csproj.GenerateResource.cache
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\obj\Debug\PaperShop.csproj.CopyComplete
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\obj\Debug\PaperShop.exe
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\obj\Debug\PaperShop.pdb
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\obj\Debug\PaperShop.PreubaTxt.resources
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\obj\Debug\PaperShop.frmClientes.resources
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\obj\Debug\PaperShop.frmDepartamentos.resources
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\obj\Debug\PaperShop.frmPuestos.resources
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\obj\Debug\PaperShop.frmTrabajadores.resources
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\obj\Debug\PaperShop.frmCajas.resources
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop - copia\PaperShop\obj\Debug\PaperShop.frmSucursales.resources

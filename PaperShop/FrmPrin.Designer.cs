@@ -280,6 +280,7 @@
             this.gunaAdvenceButton3.TabIndex = 2;
             this.gunaAdvenceButton3.Text = "Almacen";
             this.gunaAdvenceButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaAdvenceButton3.Click += new System.EventHandler(this.gunaAdvenceButton3_Click);
             // 
             // gunaAdvenceButton1
             // 

@@ -191,7 +191,6 @@
             // gunaCirclePictureBox2
             // 
             this.gunaCirclePictureBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaCirclePictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox2.Image")));
             this.gunaCirclePictureBox2.Location = new System.Drawing.Point(4, 4);
             this.gunaCirclePictureBox2.Name = "gunaCirclePictureBox2";
             this.gunaCirclePictureBox2.Size = new System.Drawing.Size(11, 12);
@@ -280,7 +279,6 @@
             // gunaCirclePictureBox9
             // 
             this.gunaCirclePictureBox9.BaseColor = System.Drawing.Color.White;
-            this.gunaCirclePictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox9.Image")));
             this.gunaCirclePictureBox9.Location = new System.Drawing.Point(4, 4);
             this.gunaCirclePictureBox9.Name = "gunaCirclePictureBox9";
             this.gunaCirclePictureBox9.Size = new System.Drawing.Size(11, 12);
@@ -369,7 +367,6 @@
             // gunaCirclePictureBox13
             // 
             this.gunaCirclePictureBox13.BaseColor = System.Drawing.Color.White;
-            this.gunaCirclePictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox13.Image")));
             this.gunaCirclePictureBox13.Location = new System.Drawing.Point(4, 4);
             this.gunaCirclePictureBox13.Name = "gunaCirclePictureBox13";
             this.gunaCirclePictureBox13.Size = new System.Drawing.Size(11, 12);
@@ -458,7 +455,6 @@
             // gunaCirclePictureBox5
             // 
             this.gunaCirclePictureBox5.BaseColor = System.Drawing.Color.White;
-            this.gunaCirclePictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox5.Image")));
             this.gunaCirclePictureBox5.Location = new System.Drawing.Point(4, 4);
             this.gunaCirclePictureBox5.Name = "gunaCirclePictureBox5";
             this.gunaCirclePictureBox5.Size = new System.Drawing.Size(11, 12);
@@ -547,7 +543,6 @@
             // gunaCirclePictureBox7
             // 
             this.gunaCirclePictureBox7.BaseColor = System.Drawing.Color.White;
-            this.gunaCirclePictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox7.Image")));
             this.gunaCirclePictureBox7.Location = new System.Drawing.Point(4, 4);
             this.gunaCirclePictureBox7.Name = "gunaCirclePictureBox7";
             this.gunaCirclePictureBox7.Size = new System.Drawing.Size(11, 12);
@@ -636,7 +631,6 @@
             // gunaCirclePictureBox3
             // 
             this.gunaCirclePictureBox3.BaseColor = System.Drawing.Color.White;
-            this.gunaCirclePictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox3.Image")));
             this.gunaCirclePictureBox3.Location = new System.Drawing.Point(4, 4);
             this.gunaCirclePictureBox3.Name = "gunaCirclePictureBox3";
             this.gunaCirclePictureBox3.Size = new System.Drawing.Size(11, 12);
@@ -725,7 +719,6 @@
             // gunaCirclePictureBox15
             // 
             this.gunaCirclePictureBox15.BaseColor = System.Drawing.Color.White;
-            this.gunaCirclePictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox15.Image")));
             this.gunaCirclePictureBox15.Location = new System.Drawing.Point(4, 4);
             this.gunaCirclePictureBox15.Name = "gunaCirclePictureBox15";
             this.gunaCirclePictureBox15.Size = new System.Drawing.Size(11, 12);
@@ -814,7 +807,6 @@
             // gunaCirclePictureBox11
             // 
             this.gunaCirclePictureBox11.BaseColor = System.Drawing.Color.White;
-            this.gunaCirclePictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox11.Image")));
             this.gunaCirclePictureBox11.Location = new System.Drawing.Point(4, 4);
             this.gunaCirclePictureBox11.Name = "gunaCirclePictureBox11";
             this.gunaCirclePictureBox11.Size = new System.Drawing.Size(11, 12);

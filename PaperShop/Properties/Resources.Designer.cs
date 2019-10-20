@@ -223,6 +223,16 @@ namespace PaperShop.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pro {
+            get {
+                object obj = ResourceManager.GetObject("pro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap restar__2_ {
             get {
                 object obj = ResourceManager.GetObject("restar (2)", resourceCulture);

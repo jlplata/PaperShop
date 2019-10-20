@@ -145,11 +145,41 @@
       <DependentUpon>ReporUsuario.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Almacen\frmCategoriasProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almacen\frmCategoriasProductos.designer.cs">
+      <DependentUpon>frmCategoriasProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen\frmProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almacen\frmProductos.designer.cs">
+      <DependentUpon>frmProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen\frmProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almacen\frmProveedores.designer.cs">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen\frmSalidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almacen\frmSalidas.designer.cs">
+      <DependentUpon>frmSalidas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAdministracion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmAdministracion.Designer.cs">
       <DependentUpon>FrmAdministracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAlmacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlmacen.Designer.cs">
+      <DependentUpon>FrmAlmacen.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmBienvenida.cs">
       <SubType>Form</SubType>
@@ -202,12 +232,6 @@
     <Compile Include="Panelinicio.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="PreubaTxt.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PreubaTxt.Designer.cs">
-      <DependentUpon>PreubaTxt.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -244,8 +268,23 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReporUsuario.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Almacen\frmCategoriasProductos.resx">
+      <DependentUpon>frmCategoriasProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Almacen\frmProductos.resx">
+      <DependentUpon>frmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Almacen\frmProveedores.resx">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Almacen\frmSalidas.resx">
+      <DependentUpon>frmSalidas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAdministracion.resx">
       <DependentUpon>FrmAdministracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAlmacen.resx">
+      <DependentUpon>FrmAlmacen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBienvenida.resx">
       <DependentUpon>FrmBienvenida.cs</DependentUpon>
@@ -270,9 +309,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MensajeOk.resx">
       <DependentUpon>MensajeOk.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PreubaTxt.resx">
-      <DependentUpon>PreubaTxt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -362,6 +398,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imapro\pro.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

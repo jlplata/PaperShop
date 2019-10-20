@@ -186,6 +186,14 @@ namespace PaperShop
 
         }
 
+        private void gunaAdvenceButton3_Click(object sender, EventArgs e)
+        {
+            FrmAlmacen adm = new FrmAlmacen();
+            adm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            AbrirFormEnPanel(adm);
+            cerrar();
+        }
+
         private void gunaPanel1_Paint(object sender, PaintEventArgs e)
         {
             cerrar();

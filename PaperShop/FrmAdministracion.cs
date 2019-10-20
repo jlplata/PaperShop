@@ -21,7 +21,10 @@ namespace PaperShop
 
             typeof(Panel).InvokeMember("DoubleBuffered", BindingFlags.SetProperty
            | BindingFlags.Instance | BindingFlags.NonPublic, null,
-           PanelAdios, new object[] { true });
+           PanelAdios, new object[] { true }); 
+            typeof(Panel).InvokeMember("DoubleBuffered", BindingFlags.SetProperty
+            | BindingFlags.Instance | BindingFlags.NonPublic, null,
+            panelContenedorForm, new object[] { true });
         }
 
 

@@ -512,9 +512,9 @@
             // 
             this.imgpro.BackColor = System.Drawing.Color.Transparent;
             this.imgpro.Image = global::PaperShop.Properties.Resources.pro;
-            this.imgpro.Location = new System.Drawing.Point(122, 44);
+            this.imgpro.Location = new System.Drawing.Point(122, 33);
             this.imgpro.Name = "imgpro";
-            this.imgpro.Size = new System.Drawing.Size(70, 70);
+            this.imgpro.Size = new System.Drawing.Size(70, 81);
             this.imgpro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgpro.TabIndex = 39;
             this.imgpro.TabStop = false;

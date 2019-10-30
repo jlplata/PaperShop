@@ -41,7 +41,7 @@ namespace PaperShop
         public void InfoUsuario() 
         {
             string pach = Application.StartupPath.Substring(0, (Application.StartupPath.Length - 10));
-            if (ima == null)
+            if (ima == "0")
             {
                 ImgUsuario.Image = Resources.user;
             }

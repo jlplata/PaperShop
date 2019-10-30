@@ -706,34 +706,9 @@ namespace PaperShop
             try
             {
 
-                //Validamos por el correo que no se repita la persona
-                qry = "SELECT cve_producto from productos where cve_producto = '" + txtcve_producto.Text + "' and id_usuario != " + dgvproductos.CurrentRow.Cells[0].Value.ToString() + "";
-                //Asignamos la consulta al comando
-                sqlCMD.CommandText = qry;
-                //Asignamos la conexion al comando
-                sqlCMD.Connection = sqlCNX;
-                //Variable para leer datos del ripo sql
-                SqlDataReader sqlDR = null;
-                //Abrimos la conexion
-                sqlCNX.Open();
-                //Asignamos ejecutado el comando al sqlDR
-                sqlDR = sqlCMD.ExecuteReader();
-                //Comparamos si el sqlDR tiene datos
-                if (sqlDR.HasRows == true)
-                {
-                    MessageBox.Show("Ya hay un producto con esa clave!", "SI");
-                    txtcve_producto.Clear();
-                    txtcve_producto.Focus();
-                    //Cerramos la conexion
-                    sqlCNX.Close();
-                }
-                else
-                {
                 
-                    //Volvemos a cerrar la conexion
-                    sqlCNX.Close();
                     //Insertamos o guardamos la persona en la BD
-                    qry = "UPDATE productos set cve_producto='" + txtcve_producto.Text + "', cantidad='" + txtcantidad.Text + "', descripcion='" + txtdescripcion.Text + "', nombre='" + txtnombre.Text + "', id_categoria_producto= '"+lblid_categoria.Text+"', precio_compra='"+txtprecio_compra.Text+"', precio_venta='"+txtprecio_venta.Text+"', id_proveedor='"+lblid_proveedor.Text+"', fecha_registro='" + lblfecharegistro.Text + "', hora_registro='" + lblhoraregistro.Text + "', activo='" + txtActivo.Text + "', id_usuario='" + txtIdUsuario.Text + "', imagen= '" + dir + "' where id_producto = " + Convert.ToInt16(dgvproductos.CurrentRow.Cells["id_producto"].Value.ToString()) + "";
+                    qry = "UPDATE productos set cve_producto='" + txtcve_producto.Text + "', cantidad='" + txtcantidad.Text + "', descripcion='" + txtdescripcion.Text + "', nombre='" + txtnombre.Text + "', id_categoria_producto= '" + lblid_categoria.Text + "', precio_compra='" + txtprecio_compra.Text + "', precio_venta='" + txtprecio_venta.Text + "', id_proveedor='" + lblid_proveedor.Text + "', fecha_registro='" + lblfecharegistro.Text + "', hora_registro='" + lblhoraregistro.Text + "', activo='" + txtActivo.Text + "', id_usuario='" + txtIdUsuario.Text + "', imagen= '" + dir + "' where id_producto = " + Convert.ToInt16(dgvproductos.CurrentRow.Cells["id_producto"].Value.ToString()) + "";
                     //Asignamos la consulta al comando
                     sqlCMD.CommandText = qry;
                     //Asignamos la conexion al comando
@@ -744,13 +719,13 @@ namespace PaperShop
                     sqlCMD.ExecuteReader();
                     //Cerramos la conexion
                     sqlCNX.Close();
-                    
+
                     MessageBox.Show("Producto modificado", "SI");
-                
+
                     this.Cargar();
-                    this.GridProductos(activo);
+                    this.GridProductos(1);
                     this.Cancelar();
-                }
+                
             }
             catch (SqlException ex)
             {
@@ -773,7 +748,7 @@ namespace PaperShop
             txtpathfile.Text = dgvproductos.CurrentRow.Cells["imagen"].Value.ToString();
             string pach = Application.StartupPath.Substring(0, (Application.StartupPath.Length - 10));
             imgpro.Load(pach + txtpathfile.Text);
-            btnagregar.Enabled = false;
+            btnagregar.Text = "Cambiar";
             this.Actualizar();
         }
 

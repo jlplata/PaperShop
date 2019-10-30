@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\PaperShop",
+    "\\PaperShop\\Administracion"
   ],
+  "SelectedNode": "\\PaperShop\\Administracion\\frmClientes.cs",
   "PreviewInSolutionExplorer": false
 }

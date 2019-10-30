@@ -87,7 +87,7 @@
             this.cmbpersonas.Location = new System.Drawing.Point(89, 133);
             this.cmbpersonas.Name = "cmbpersonas";
             this.cmbpersonas.Size = new System.Drawing.Size(231, 29);
-            this.cmbpersonas.TabIndex = 64;
+            this.cmbpersonas.TabIndex = 0;
             this.cmbpersonas.SelectedIndexChanged += new System.EventHandler(this.Cmbpersonas_SelectedIndexChanged);
             // 
             // txtIdUsuario
@@ -104,7 +104,7 @@
             this.txtIdUsuario.PasswordChar = '\0';
             this.txtIdUsuario.ReadOnly = true;
             this.txtIdUsuario.Size = new System.Drawing.Size(231, 26);
-            this.txtIdUsuario.TabIndex = 63;
+            this.txtIdUsuario.TabIndex = 5;
             // 
             // txtActivo
             // 
@@ -120,7 +120,7 @@
             this.txtActivo.PasswordChar = '\0';
             this.txtActivo.ReadOnly = true;
             this.txtActivo.Size = new System.Drawing.Size(230, 26);
-            this.txtActivo.TabIndex = 62;
+            this.txtActivo.TabIndex = 4;
             // 
             // cmbtipo
             // 
@@ -146,7 +146,7 @@
             this.cmbtipo.Radius = 2;
             this.cmbtipo.Size = new System.Drawing.Size(230, 26);
             this.cmbtipo.StartIndex = 1;
-            this.cmbtipo.TabIndex = 61;
+            this.cmbtipo.TabIndex = 3;
             // 
             // txtlogin
             // 
@@ -515,7 +515,7 @@
             this.btnCancelar.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
             this.btnCancelar.OnPressedColor = System.Drawing.Color.Black;
             this.btnCancelar.Size = new System.Drawing.Size(101, 40);
-            this.btnCancelar.TabIndex = 3;
+            this.btnCancelar.TabIndex = 1;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnCancelar.Click += new System.EventHandler(this.Btncancelar_Click);
@@ -583,7 +583,7 @@
             this.btnGuardar.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
             this.btnGuardar.OnPressedColor = System.Drawing.Color.Black;
             this.btnGuardar.Size = new System.Drawing.Size(101, 40);
-            this.btnGuardar.TabIndex = 2;
+            this.btnGuardar.TabIndex = 0;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnGuardar.Click += new System.EventHandler(this.Btnguardar_Click);

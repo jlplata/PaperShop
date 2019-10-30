@@ -547,6 +547,7 @@ namespace PaperShop
                     //Invocamos el metodo cargar
                     cargar();
                     MessageBox.Show("Se a liberado la salida brother!", "Sistema de inventario");
+                    ImprimirFactura();
                 }
                 catch (SqlException ex)
                 {
@@ -560,6 +561,55 @@ namespace PaperShop
             }
         }
 
+        void ImprimirFactura()
+        {/*
+            //// Variable para guardar la consulta
+            string qry = "";
+            //// Variable para extraer la configuracion del appconfig
+            string cadenaconexion = ConfigurationManager.AppSettings.Get("cadenaconexion");
+            ////Variable para conectarnos a la BD
+            SqlConnection sqlCNX = new SqlConnection(cadenaconexion);
+            ////Variable apra guardar el objeto o comando
+            SqlCommand sqlCMD = new SqlCommand();
+            try
+            {
+                if (rdbactivo.Checked == true)
+                {
+                    //Consulta para extraer los datos de las personas
+                    qry = "Select * From VistaClientes where persona like '%" + txtbuscar.Text + "%' and VistaClientes.activo = 1";
+                }
+                else
+                {
+                    //Consulta para extraer los datos de las personas
+                    qry = "Select * From VistaClientes where persona like '%" + txtbuscar.Text + "%' and VistaClientes.activo = 0";
+                }
+                //Asignamos la consulta al comando
+                sqlCMD.CommandText = qry;
+                //Asignamos la conexion al comando
+                sqlCMD.Connection = sqlCNX;
+                //Abrimos la conexion
+                sqlCNX.Open();
+                //Variable para el adaptador
+                SqlDataAdapter adaptador = new SqlDataAdapter(sqlCMD);
+                //Variable para crear la tabla
+                DataTable datos = new DataTable();
+                //Llenamos la tabla
+                adaptador.Fill(datos);
+                //Cerramos la conexion
+                sqlCNX.Close();
+                //Creamos el objeto del reporte para las personas
+                ReporteClientes reporte = new ReporteClientes();
+                reporte.SetDataSource(datos);
+                //Pasamos la variable como parametro al vizualizador
+                frmVisualizador formulario = new frmVisualizador(reporte);
+                formulario.ShowDialog();
+
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Error al imprimir!", "SI" + ex.Message.ToString());
+            }*/
+        }
         private void Btncancelar_salida_Click(object sender, EventArgs e)
         {
             DialogResult respuesta;

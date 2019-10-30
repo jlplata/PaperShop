@@ -139,7 +139,7 @@ namespace PaperShop
                 //ms.lbltxt.Text = "Error al iniciar sesion"+ex;
                 //ms.ShowDialog();
 
-                MessageBox.Show("No se pudo" + ex, "Error");
+                MessageBox.Show("No se pudo " + ex, "Error");
             }
 
             

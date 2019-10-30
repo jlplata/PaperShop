@@ -145,7 +145,7 @@ namespace PaperShop
             txtActivo.Text = "1";
             //asignamos la fecha y hora a los lbls corresponientes
             DateTime hoy = DateTime.Now;
-            lblfecharegistro.Text = hoy.ToShortDateString();
+            lblfecharegistro.Text = hoy.ToString("yyyyMMdd");
             lblhoraregistro.Text = hoy.ToShortTimeString();
             //En caso de marcar error en la fecha
             //lblfecharegistro.text = hoy.ToString("yyyyMMdd");
@@ -233,7 +233,7 @@ namespace PaperShop
                     //Volvemos a cerrar la conexion
                     sqlCNX.Close();
                     //Insertamos o guardamos el cliente en la BD
-                    qry = "INSERT INTO clientes(id_persona, numero_cliente, fecha_registro, hora_registro, activo, id_usuario)" +
+                    qry = "INSERT INTO clientes(id_persona, numero_cliente, fecha_registro, hora_registro, activo, id_usuario) " +
                     "VALUES('" + lblid_persona.Text + "', '" + txtnumerocliente.Text + "', '" + lblfecharegistro.Text + "', '" + lblhoraregistro.Text + "', '" + txtActivo.Text + "', '" + txtIdUsuario.Text + "')";                   
                     //Asignamos la consulta al comando
                     sqlCMD.CommandText = qry;
@@ -254,7 +254,7 @@ namespace PaperShop
             }
             catch (SqlException ex)
             {
-                MessageBox.Show("Error al insertar el cliente!", "SI" + ex.Message.ToString());
+                MessageBox.Show("Error al insertar el cliente! " + ex.Message.ToString(), "SI");
             }
             //Fin del codigo guardar
         }
@@ -328,7 +328,7 @@ namespace PaperShop
 
         private void CmClientes_Opening(object sender, CancelEventArgs e)
         {
-            if (dgvclientes.Rows.Count > 0 && Activos.Checked == true)
+            /*if (dgvclientes.Rows.Count > 0 && Activos.Checked == true)
             {
                 modificarToolStripMenuItem.Visible = true;
                 activarToolStripMenuItem.Visible = false;
@@ -349,6 +349,30 @@ namespace PaperShop
                 desactivarToolStripMenuItem.Visible = false;
             }
             else if (dgvclientes.Rows.Count <= 0 && Activos.Checked == true)
+            {
+                modificarToolStripMenuItem.Visible = false;
+                activarToolStripMenuItem.Visible = false;
+                desactivarToolStripMenuItem.Visible = false;
+            }*/
+            if (dgvclientes.Rows.Count > 0 && Activos.Checked == true && dgvclientes.CurrentRow.Cells[0].Value.ToString() == txtIdUsuario.Text)
+            {
+                modificarToolStripMenuItem.Visible = true;
+                activarToolStripMenuItem.Visible = false;
+                desactivarToolStripMenuItem.Visible = false;
+            }
+            else if (dgvclientes.Rows.Count > 0 && Activos.Checked == true && dgvclientes.CurrentRow.Cells[0].Value.ToString() != txtIdUsuario.Text)
+            {
+                modificarToolStripMenuItem.Visible = true;
+                activarToolStripMenuItem.Visible = false;
+                desactivarToolStripMenuItem.Visible = true;
+            }
+            else if (dgvclientes.Rows.Count > 0 && Activos.Checked == false)
+            {
+                modificarToolStripMenuItem.Visible = false;
+                activarToolStripMenuItem.Visible = true;
+                desactivarToolStripMenuItem.Visible = false;
+            }
+            else if (dgvclientes.Rows.Count <= 0 && Activos.Checked == false)
             {
                 modificarToolStripMenuItem.Visible = false;
                 activarToolStripMenuItem.Visible = false;
@@ -380,7 +404,7 @@ namespace PaperShop
             try
             {
                 //Insertamos o guardamos la persona en la BD
-                qry = "UPDATE clientes set activo='" + 0 + "' where id_cliente = '" + dgvclientes.CurrentRow.Cells["id_cliente"].Value.ToString() + "'";
+                qry = "UPDATE clientes set activo='0' where id_cliente = '" + dgvclientes.CurrentRow.Cells["id_cliente"].Value.ToString() + "'";
                 //Asignamos la consulta al comando
                 sqlCMD.CommandText = qry;
                 //Asignamos la conexion al comando
@@ -392,10 +416,11 @@ namespace PaperShop
                 //Cerramos la conexion
                 sqlCNX.Close();
 
-                MessageBox.Show("Persona desactivada!", "SI");
+                MessageBox.Show("Cliente desactivado!", "SI");
                 //Invocamos el metodo cancelar
 
-                this.GridClientes(1);
+                this.GridClientes(0);
+                Activos.Checked = false;
             }
             catch (SqlException ex)
             {
@@ -430,7 +455,7 @@ namespace PaperShop
             try
             {
                 //Insertamos o guardamos la persona en la BD
-                qry = "UPDATE clientes set activo='" + 1 + "' where id_persona = '" + dgvclientes.CurrentRow.Cells["id_cliente"].Value.ToString() + "'";
+                qry = "UPDATE clientes set activo='1' where id_cliente = '" + dgvclientes.CurrentRow.Cells["id_cliente"].Value.ToString() + "'";
                 //Asignamos la consulta al comando
                 sqlCMD.CommandText = qry;
                 //Asignamos la conexion al comando
@@ -446,6 +471,7 @@ namespace PaperShop
                 //Invocamos el metodo cancelar
 
                 this.GridClientes(1);
+                Activos.Checked = true;
             }
             catch (SqlException ex)
             {

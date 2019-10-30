@@ -137,7 +137,7 @@ namespace PaperShop
             try
             {
                  //Consulta para extraer los datos de las personas
-                 qry = "Select * From VistaUsuarios WHERE personas like '%" + txtBuscar.Text + "%' AND activo='" + activo + "'";
+                 qry = "Select * From VistaUsuarios WHERE persona like '%" + txtBuscar.Text + "%' AND activo='" + activo + "'";
 
                 //Asignamos la consulta al comando
                 sqlCMD.CommandText = qry;
@@ -161,7 +161,7 @@ namespace PaperShop
             }
             catch (SqlException ex)
             {
-                MessageBox.Show("Error al llenar el dgvusuarios!" + ex.Message.ToString() + "SI");
+                MessageBox.Show("Error al llenar el dgvUsuarios!" + ex.Message.ToString() + "SI");
 
             }
         }

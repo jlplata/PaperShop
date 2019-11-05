@@ -41,12 +41,12 @@
             this.GunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.GunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.GunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.GunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.gunaImageButton1 = new Guna.UI.WinForms.GunaImageButton();
             this.pnLogin.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GunaPictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pp
@@ -97,7 +97,7 @@
             this.cmbTipo.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cmbTipo.OnHoverItemForeColor = System.Drawing.Color.White;
             this.cmbTipo.Size = new System.Drawing.Size(161, 26);
-            this.cmbTipo.TabIndex = 10;
+            this.cmbTipo.TabIndex = 2;
             // 
             // GunaLinkLabel1
             // 
@@ -137,7 +137,7 @@
             this.BtnIniciarS.OnPressedColor = System.Drawing.Color.Black;
             this.BtnIniciarS.Radius = 2;
             this.BtnIniciarS.Size = new System.Drawing.Size(248, 37);
-            this.BtnIniciarS.TabIndex = 7;
+            this.BtnIniciarS.TabIndex = 3;
             this.BtnIniciarS.Text = "Iniciar Sesion";
             this.BtnIniciarS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.BtnIniciarS.Click += new System.EventHandler(this.BtnIniciarS_Click);
@@ -159,7 +159,7 @@
             this.txtPass.PasswordChar = '●';
             this.txtPass.Radius = 2;
             this.txtPass.Size = new System.Drawing.Size(248, 37);
-            this.txtPass.TabIndex = 6;
+            this.txtPass.TabIndex = 1;
             this.txtPass.UseSystemPasswordChar = true;
             this.txtPass.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtPass_KeyDown);
             this.txtPass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtUser_KeyPress);
@@ -203,7 +203,7 @@
             this.txtUser.PasswordChar = '\0';
             this.txtUser.Radius = 2;
             this.txtUser.Size = new System.Drawing.Size(248, 37);
-            this.txtUser.TabIndex = 4;
+            this.txtUser.TabIndex = 0;
             this.txtUser.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtUser_KeyDown);
             this.txtUser.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtUser_KeyPress);
             // 
@@ -240,16 +240,6 @@
             this.GunaLabel1.TabIndex = 1;
             this.GunaLabel1.Text = "¡Hola!";
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.gunaImageButton1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(318, 25);
-            this.panel1.TabIndex = 12;
-            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel1_MouseDown);
-            // 
             // GunaPictureBox1
             // 
             this.GunaPictureBox1.BaseColor = System.Drawing.Color.White;
@@ -260,6 +250,16 @@
             this.GunaPictureBox1.Size = new System.Drawing.Size(318, 106);
             this.GunaPictureBox1.TabIndex = 0;
             this.GunaPictureBox1.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.gunaImageButton1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(318, 25);
+            this.panel1.TabIndex = 12;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel1_MouseDown);
             // 
             // gunaImageButton1
             // 
@@ -287,8 +287,8 @@
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.pnLogin.ResumeLayout(false);
             this.pnLogin.PerformLayout();
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GunaPictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

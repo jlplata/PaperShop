@@ -64,7 +64,8 @@ namespace PaperShop
             }
             catch (SqlException ex)
             {
-                MessageBox.Show("Error al extraer las personas" + ex.Message.ToString());
+                this.Alert("Error al agergar Personas!", FrmNotificaciones.alertTypeEnum.Success);
+
 
             }
         }
@@ -121,7 +122,7 @@ namespace PaperShop
             }
             catch (SqlException ex)
             {
-                MessageBox.Show("Error al llenar el dgvclientes!" + ex.Message.ToString() + "SI");
+                this.Alert("Error al agregar Clientes!", FrmNotificaciones.alertTypeEnum.Success);
 
             }
         }
@@ -193,7 +194,11 @@ namespace PaperShop
         {
             Cancelar();
         }
-
+        public void Alert(string msg, FrmNotificaciones.alertTypeEnum type)
+        {
+            FrmNotificaciones f = new FrmNotificaciones();
+            f.setAlert(msg, type);
+        }
         private void Btnguardar_Click(object sender, EventArgs e)
         {
             // Variable para guardar la consulta
@@ -246,7 +251,8 @@ namespace PaperShop
                     //Cerramos la conexion
                     sqlCNX.Close();
 
-                    MessageBox.Show("Cliente Registrado", "SI");
+                    this.Alert("Cliente Registrado", FrmNotificaciones.alertTypeEnum.Success);
+
                     //Invocamos el metodo cancelar
                     GridClientes(1);
                     this.Cancelar();
@@ -254,7 +260,7 @@ namespace PaperShop
             }
             catch (SqlException ex)
             {
-                MessageBox.Show("Error al insertar el cliente! " + ex.Message.ToString(), "SI");
+                this.Alert("Error al registrar!", FrmNotificaciones.alertTypeEnum.Error);
             }
             //Fin del codigo guardar
         }
@@ -311,8 +317,8 @@ namespace PaperShop
                     sqlCMD.ExecuteReader();
                     //Cerramos la conexion
                     sqlCNX.Close();
+                    this.Alert("Cliente Actualizado!", FrmNotificaciones.alertTypeEnum.Success);
 
-                    MessageBox.Show("Cliente Actualizado", "SI");
                     //Invocamos el metodo cancelar
                     cmbpersonas.Enabled = true;
                     GridClientes(1);
@@ -321,39 +327,13 @@ namespace PaperShop
             }
             catch (SqlException ex)
             {
-                MessageBox.Show("Error al actualizar el cliente!", "SI" + ex.Message.ToString());
+                this.Alert("Error al actualizar cliente!", FrmNotificaciones.alertTypeEnum.Error);
             }
             //Fin del codigo guardar
         }
 
         private void CmClientes_Opening(object sender, CancelEventArgs e)
         {
-            /*if (dgvclientes.Rows.Count > 0 && Activos.Checked == true)
-            {
-                modificarToolStripMenuItem.Visible = true;
-                activarToolStripMenuItem.Visible = false;
-                desactivarToolStripMenuItem.Visible = true;
-                
-            }
-            else if (dgvclientes.Rows.Count > 0 && Activos.Checked == true)
-            {
-                modificarToolStripMenuItem.Visible = true;
-                activarToolStripMenuItem.Visible = false;
-                desactivarToolStripMenuItem.Visible = true;
-                
-            }
-            else if (dgvclientes.Rows.Count > 0 && Activos.Checked == true)
-            {
-                modificarToolStripMenuItem.Visible = false;
-                activarToolStripMenuItem.Visible = true;
-                desactivarToolStripMenuItem.Visible = false;
-            }
-            else if (dgvclientes.Rows.Count <= 0 && Activos.Checked == true)
-            {
-                modificarToolStripMenuItem.Visible = false;
-                activarToolStripMenuItem.Visible = false;
-                desactivarToolStripMenuItem.Visible = false;
-            }*/
             if (dgvclientes.Rows.Count > 0 && Activos.Checked == true && dgvclientes.CurrentRow.Cells[0].Value.ToString() == txtIdUsuario.Text)
             {
                 modificarToolStripMenuItem.Visible = true;
@@ -415,8 +395,7 @@ namespace PaperShop
                 sqlCMD.ExecuteReader();
                 //Cerramos la conexion
                 sqlCNX.Close();
-
-                MessageBox.Show("Cliente desactivado!", "SI");
+                this.Alert("Cliente deesactivado!", FrmNotificaciones.alertTypeEnum.Success);
                 //Invocamos el metodo cancelar
 
                 this.GridClientes(0);
@@ -424,7 +403,7 @@ namespace PaperShop
             }
             catch (SqlException ex)
             {
-                MessageBox.Show("Error al modificar el cliente!", "SI" + ex.Message.ToString());
+                this.Alert("Error al modificar!", FrmNotificaciones.alertTypeEnum.Error);
             }
         }
         int activo = 1;
@@ -466,8 +445,7 @@ namespace PaperShop
                 sqlCMD.ExecuteReader();
                 //Cerramos la conexion
                 sqlCNX.Close();
-
-                MessageBox.Show("Persona activada!", "SI");
+                this.Alert("Persona activada!", FrmNotificaciones.alertTypeEnum.Success);
                 //Invocamos el metodo cancelar
 
                 this.GridClientes(1);
@@ -475,7 +453,7 @@ namespace PaperShop
             }
             catch (SqlException ex)
             {
-                MessageBox.Show("Error al modificar el cliente!", "SI" + ex.Message.ToString());
+                this.Alert("Error al modificacion!", FrmNotificaciones.alertTypeEnum.Error);
             }
         }
 

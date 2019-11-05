@@ -181,7 +181,11 @@ namespace PaperShop
         {
             Nuevo();
         }
-
+        public void Alert(string msg, FrmNotificaciones.alertTypeEnum type)
+        {
+            FrmNotificaciones f = new FrmNotificaciones();
+            f.setAlert(msg, type);
+        }
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
             string qry = "";
@@ -230,7 +234,7 @@ namespace PaperShop
                     //Cerramos la conexión
                     sqlCNX.Close();
 
-                    MessageBox.Show("Caja registrada!", "SI");
+                    this.Alert("Caja Registrada", FrmNotificaciones.alertTypeEnum.Success);
 
                     //Invocamos al método cargar
                     Cargar();
@@ -242,8 +246,7 @@ namespace PaperShop
             }
             catch (SqlException ex)
             {
-
-                MessageBox.Show("Error al agregar la caja. " + ex.Message.ToString(), "SI");
+                this.Alert("Error al agregar la caja", FrmNotificaciones.alertTypeEnum.Error);
             }
         }
 
@@ -296,7 +299,7 @@ namespace PaperShop
                     //Cerramos la conexión
                     sqlCNX.Close();
 
-                    MessageBox.Show("Caja modificada!", "SI");
+                    this.Alert("Caja Modificada", FrmNotificaciones.alertTypeEnum.Success);
 
                     //Invocamos al método cargar
                     Cargar();
@@ -308,12 +311,15 @@ namespace PaperShop
             }
             catch (SqlException ex)
             {
-                MessageBox.Show("Error al modificar la caja! " + ex.Message.ToString(), "SI");
+
+                this.Alert("Error al Modificar la caja", FrmNotificaciones.alertTypeEnum.Error);
             }
         }
 
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
+            this.Alert("Cancelado", FrmNotificaciones.alertTypeEnum.Warning);
+
             Cancelar();
         }
 

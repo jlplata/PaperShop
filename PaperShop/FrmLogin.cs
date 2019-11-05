@@ -35,6 +35,7 @@ namespace PaperShop
         private void FrmLogin_Load(object sender, EventArgs e)
         {
             Guna.UI.Lib.GraphicsHelper.ShadowForm(this);
+            txtUser.Focus();
         }
 
         private void Panel1_MouseDown(object sender, MouseEventArgs e)

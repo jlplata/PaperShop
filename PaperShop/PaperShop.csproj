@@ -151,6 +151,12 @@
     <Compile Include="Almacen\frmCategoriasProductos.designer.cs">
       <DependentUpon>frmCategoriasProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Almacen\frmEntradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almacen\frmEntradas.designer.cs">
+      <DependentUpon>frmEntradas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Almacen\frmProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +175,13 @@
     <Compile Include="Almacen\frmSalidas.designer.cs">
       <DependentUpon>frmSalidas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Almacen\frmSelecProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almacen\frmSelecProducto.designer.cs">
+      <DependentUpon>frmSelecProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connection.cs" />
     <Compile Include="FrmAdministracion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -277,6 +290,9 @@
     <EmbeddedResource Include="Almacen\frmCategoriasProductos.resx">
       <DependentUpon>frmCategoriasProductos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Almacen\frmEntradas.resx">
+      <DependentUpon>frmEntradas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Almacen\frmProductos.resx">
       <DependentUpon>frmProductos.cs</DependentUpon>
     </EmbeddedResource>
@@ -285,6 +301,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Almacen\frmSalidas.resx">
       <DependentUpon>frmSalidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Almacen\frmSelecProducto.resx">
+      <DependentUpon>frmSelecProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAdministracion.resx">
       <DependentUpon>FrmAdministracion.cs</DependentUpon>

@@ -802,5 +802,15 @@ namespace PaperShop
         {
             txtgran_total.Focus();
         }
+        public static bool frmSelecProductosSalidasAbierto = false;
+        private void txtBuscar_Click(object sender, EventArgs e)
+        {
+            if (!frmSelecProductosSalidasAbierto)
+            {
+                frmSelecProductosSalidasAbierto = true;
+                frmSelecProducto frmSelecProducto = new frmSelecProducto("salida");
+                frmSelecProducto.Show();
+            }
+        }
     }
 }

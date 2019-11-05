@@ -836,15 +836,9 @@ namespace PaperShop
         {
             focusCveProd.LineColor = Color.FromArgb(67, 83, 192);
         }
-        private void focusBuscar_Enter(object sender, EventArgs e)
-        {
-            txtBuscar.Focus();
-        }
+       
 
-        private void txtBuscar_Enter(object sender, EventArgs e)
-        {
-            focusBuscar.LineColor = Color.FromArgb(67, 83, 192);
-        }
+        
 
         private void Activos_CheckedChanged(object sender, EventArgs e)
         {
@@ -867,15 +861,23 @@ namespace PaperShop
         {
             txtdescripcion.Focus();
         }
-
+       
         private void txtdescripcion_Leave(object sender, EventArgs e)
         {
             focusDes.LineColor = Color.White;
+        }
+        private void focusBuscar_Enter(object sender, EventArgs e)
+        {
+            txtBuscar.Focus();
         }
 
         private void txtBuscar_Leave(object sender, EventArgs e)
         {
             focusBuscar.LineColor = Color.White;
+        }
+        private void txtBuscar_Enter(object sender, EventArgs e)
+        {
+            focusBuscar.LineColor = Color.FromArgb(67, 83, 192);
         }
 
     }

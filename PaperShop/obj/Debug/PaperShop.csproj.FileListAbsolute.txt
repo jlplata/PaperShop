@@ -436,3 +436,4 @@ C:\Users\JoseL\Desktop\PaperShop\PaperShop\obj\Debug\PaperShop.csproj.GenerateRe
 C:\Users\JoseL\Desktop\PaperShop\PaperShop\obj\Debug\PaperShop.csproj.CopyComplete
 C:\Users\JoseL\Desktop\PaperShop\PaperShop\obj\Debug\PaperShop.exe
 C:\Users\JoseL\Desktop\PaperShop\PaperShop\obj\Debug\PaperShop.pdb
+C:\Users\JoseL\Desktop\PaperShop\PaperShop\obj\Debug\PaperShop.frmSelecProducto.resources

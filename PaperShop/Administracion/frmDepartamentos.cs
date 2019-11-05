@@ -145,7 +145,11 @@ namespace PaperShop
         {
             Nuevo();
         }
-
+        public void Alert(string msg, FrmNotificaciones.alertTypeEnum type)
+        {
+            FrmNotificaciones f = new FrmNotificaciones();
+            f.setAlert(msg, type);
+        }
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
             string qry = "";
@@ -193,8 +197,7 @@ namespace PaperShop
 
                     //Cerramos la conexión
                     sqlCNX.Close();
-
-                    MessageBox.Show("Departamento registrado!", "SI");
+                    this.Alert("Registrado", FrmNotificaciones.alertTypeEnum.Success);
 
                     //Invocamos al método cargar
                     Cargar();
@@ -207,7 +210,7 @@ namespace PaperShop
             catch (SqlException ex)
             {
 
-                MessageBox.Show("Error al agregar el departamento. " + ex.Message.ToString(), "SI");
+                this.Alert("Error al registrar!", FrmNotificaciones.alertTypeEnum.Error);
             }
         }
 
@@ -259,8 +262,8 @@ namespace PaperShop
 
                     //Cerramos la conexión
                     sqlCNX.Close();
+                    this.Alert("Modificado", FrmNotificaciones.alertTypeEnum.Success);
 
-                    MessageBox.Show("Departamento modificado!", "SI");
 
                     //Invocamos al método cargar
                     Cargar();
@@ -272,7 +275,7 @@ namespace PaperShop
             }
             catch (SqlException ex)
             {
-                MessageBox.Show("Error al modificar el departamento! " + ex.Message.ToString(), "SI");
+                this.Alert("Error al Modificar", FrmNotificaciones.alertTypeEnum.Error);
             }
         }
 
@@ -378,6 +381,8 @@ namespace PaperShop
 
                 Activos.Checked = true;
                 GridDepartamentos(activo);
+                this.Alert("Activado", FrmNotificaciones.alertTypeEnum.Success);
+
             }
             catch (SqlException ex)
             {
@@ -419,6 +424,8 @@ namespace PaperShop
                 sqlCNX.Close();
 
                 GridDepartamentos(activo);
+                this.Alert("Desactivado", FrmNotificaciones.alertTypeEnum.Warning);
+
             }
             catch (SqlException ex)
             {

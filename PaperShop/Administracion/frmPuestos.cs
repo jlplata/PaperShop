@@ -128,7 +128,11 @@ namespace PaperShop
         {
             Cancelar();
         }
-
+        public void Alert(string msg, FrmNotificaciones.alertTypeEnum type)
+        {
+            FrmNotificaciones f = new FrmNotificaciones();
+            f.setAlert(msg, type);
+        }
         private void Btnguardar_Click(object sender, EventArgs e)
         {
             // Variable para guardar la consulta
@@ -180,8 +184,7 @@ namespace PaperShop
                     sqlCMD.ExecuteReader();
                     //Cerramos la conexion
                     sqlCNX.Close();
-
-                    MessageBox.Show("Puesto Registrado", "SI");
+                    this.Alert("Registrado!", FrmNotificaciones.alertTypeEnum.Success);
                     //Invocamos el metodo cancelar
                     GridPuestos(1);
                     this.Cancelar();
@@ -189,7 +192,7 @@ namespace PaperShop
             }
             catch (SqlException ex)
             {
-                MessageBox.Show("Error al insertar el puesto!", "SI" + ex.Message.ToString());
+                this.Alert("Error!", FrmNotificaciones.alertTypeEnum.Error);
             }
             //Fin del codigo guardar
         }
@@ -246,8 +249,8 @@ namespace PaperShop
                     sqlCMD.ExecuteReader();
                     //Cerramos la conexion
                     sqlCNX.Close();
+                    this.Alert("Actualizado!", FrmNotificaciones.alertTypeEnum.Success);
 
-                    MessageBox.Show("Puesto Actualizado", "SI");
                     //Invocamos el metodo cancelar
                     
                     GridPuestos(1);
@@ -256,7 +259,7 @@ namespace PaperShop
             }
             catch (SqlException ex)
             {
-                MessageBox.Show("Error al actualizar el puesto!", "SI" + ex.Message.ToString());
+                this.Alert("Error!", FrmNotificaciones.alertTypeEnum.Error);
             }
             //Fin del codigo guardar
         }
@@ -324,15 +327,14 @@ namespace PaperShop
                 sqlCMD.ExecuteReader();
                 //Cerramos la conexion
                 sqlCNX.Close();
-
-                MessageBox.Show("Puesto desactivado!", "SI");
+                this.Alert("Desactivado!", FrmNotificaciones.alertTypeEnum.Warning);
                 //Invocamos el metodo cancelar
 
                 this.GridPuestos(0);
             }
             catch (SqlException ex)
             {
-                MessageBox.Show("Error al modificar el puesto!", "SI" + ex.Message.ToString());
+                this.Alert("ERROR AL DESACTIVAR!", FrmNotificaciones.alertTypeEnum.Error);
             }
         }
         int activo;
@@ -383,15 +385,14 @@ namespace PaperShop
                 sqlCMD.ExecuteReader();
                 //Cerramos la conexion
                 sqlCNX.Close();
-
-                MessageBox.Show("Puesto activado!", "SI");
+                this.Alert("Activado!", FrmNotificaciones.alertTypeEnum.Success);
                 //Invocamos el metodo cancelar
 
                 this.GridPuestos(1);
             }
             catch (SqlException ex)
             {
-                MessageBox.Show("Error al modificar el Puesto!", "SI" + ex.Message.ToString());
+                this.Alert("ERROR AL ACTIVAR!", FrmNotificaciones.alertTypeEnum.Error);
             }
         }
 

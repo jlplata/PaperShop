@@ -186,7 +186,8 @@ namespace PaperShop
             Activos.Checked = true;
             txtActivo.Text = "1";
             txtIdUsuario.Text = FrmPrin.id;
-            string pach = Application.StartupPath.Substring(0, (Application.StartupPath.Length - 10));
+            
+            string pach = ".\\.\\";
             imgUser.Image = Image.FromFile(pach + "\\ima\\user.png");
 
             //asignamos la fecha y hora a los lbls corresponientes
@@ -208,7 +209,8 @@ namespace PaperShop
             Activos.Checked = true;
             txtActivo.Text = "1";
             txtIdUsuario.Text = FrmPrin.id;
-            string pach = Application.StartupPath.Substring(0, (Application.StartupPath.Length - 10));
+            
+            string pach = ".\\.\\";
             imgUser.Image = Image.FromFile(pach + "\\ima\\user.png");
         }
         void Cancelar()
@@ -222,7 +224,8 @@ namespace PaperShop
             cmbtipo.SelectedIndex = 0;
             txtActivo.Text = "";
             txtIdUsuario.Text = "";
-            string pach = Application.StartupPath.Substring(0, (Application.StartupPath.Length - 10));
+            
+            string pach = ".\\.\\";
             imgUser.Image = Image.FromFile(pach + "\\ima\\user.png");
             pp.Clear();
         }
@@ -414,12 +417,14 @@ namespace PaperShop
                                 int idc = r.Next(00000001, 99999999);
                                 dir = "\\ima\\user"+idc+".png";
                                 diro = "\\ima\\user.png";
-                                string pach = Application.StartupPath.Substring(0, (Application.StartupPath.Length - 10));
+                                
+            string pach = ".\\.\\";
                                 System.IO.File.Copy(pach + diro, pach + dir);
                             }
                             else
                             {
-                                string pach = Application.StartupPath.Substring(0, (Application.StartupPath.Length - 10));
+                                
+            string pach = ".\\.\\";
                                 System.IO.File.Copy( diro, pach + dir);
                             }
 
@@ -580,7 +585,8 @@ namespace PaperShop
                 txtActivo.Text = dgvusuarios.CurrentRow.Cells["activo"].Value.ToString();
                 txtIdUsuario.Text = dgvusuarios.CurrentRow.Cells["id_user"].Value.ToString();
                 pp.Text = dgvusuarios.CurrentRow.Cells["imagen"].Value.ToString();
-                string pach = Application.StartupPath.Substring(0, (Application.StartupPath.Length - 10));
+                
+            string pach = ".\\.\\";
                 imgUser.Load(pach + pp.Text);
                 btnagregar.Enabled = false;
                 btnagregar.Text = "Cambiar";
@@ -596,7 +602,8 @@ namespace PaperShop
                 txtActivo.Text = dgvusuarios.CurrentRow.Cells["activo"].Value.ToString();
                 txtIdUsuario.Text = dgvusuarios.CurrentRow.Cells["id_user"].Value.ToString();
                 pp.Text = dgvusuarios.CurrentRow.Cells["imagen"].Value.ToString();
-                string pach = Application.StartupPath.Substring(0, (Application.StartupPath.Length - 10));
+                
+            string pach = ".\\.\\";
                 imgUser.Load(pach + pp.Text);
                 this.Actualizar();
             }
@@ -725,7 +732,8 @@ namespace PaperShop
 
                 foreach (DataRow row in datos.Tables[0].Rows)
                 {
-                    string pach = Application.StartupPath.Substring(0, (Application.StartupPath.Length - 10));
+                    
+            string pach = ".\\.\\";
 
                     var webClient = new WebClient();
                     byte[] imageBytes = webClient.DownloadData(pach + row["imagen"].ToString());
@@ -796,16 +804,16 @@ namespace PaperShop
         {
             focuspass.LineColor = Color.White;
         }
+        private void focuspass_Enter(object sender, EventArgs e)
+        {
+            txtpassword.Focus();
+        }
 
         private void focusBuscar_Enter(object sender, EventArgs e)
         {
             txtBuscar.Focus();
         }
 
-        private void focuspass_Enter(object sender, EventArgs e)
-        {
-            txtpassword.Focus();
-        }
 
         private void txtBuscar_Enter(object sender, EventArgs e)
         {
@@ -833,6 +841,43 @@ namespace PaperShop
                 GridUsuarios(activo);
                 lblActi.Text = "Inactivos";
             }
+        }
+
+        private void cmbtipo_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (this.cmbtipo.Text.Length == 0)
+                {
+                    MensajeOk ok = new MensajeOk();
+                    ok.lbltxt.Text = "Favor de llenar el campo.";
+                    ok.ShowDialog();
+                    this.cmbtipo.Focus();
+                    return;
+                }
+                this.btnGuardar.Focus();
+            }
+        }
+
+        private void cmbpersonas_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (this.cmbpersonas.Text.Length == 0)
+                {
+                    MensajeOk ok = new MensajeOk();
+                    ok.lbltxt.Text = "Favor de llenar el campo.";
+                    ok.ShowDialog();
+                    this.cmbpersonas.Focus();
+                    return;
+                }
+                this.txtlogin.Focus();
+            }
+        }
+
+        private void focuspass_FontChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void Btnsalir_Click(object sender, EventArgs e)

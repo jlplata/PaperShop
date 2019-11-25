@@ -77,7 +77,7 @@ namespace PaperShop
 
         private void valdacionNumsLetras(object sender, KeyPressEventArgs e)
         {
-            validacion.numsLetras(e);
+            validacion.solonumeros(e);
         }
         void GridClientes(int activo)
         {

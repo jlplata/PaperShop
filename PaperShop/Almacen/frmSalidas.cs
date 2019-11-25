@@ -331,7 +331,7 @@ namespace PaperShop
             this.txtgran_total.Clear();
             this.dgvproductos.Rows.Clear();
             this.txtidsalida.Clear();
-            this.btnregistrar_salida.Focus();
+            this.cmbcaja.Focus();
 
         }
         void habilitar()
@@ -546,7 +546,8 @@ namespace PaperShop
                     sqlCNX.Close();
                     //Invocamos el metodo cargar
                     cargar();
-                    MessageBox.Show("Se a liberado la salida brother!", "Sistema de inventario");
+                    MessageBox.Show("Se a liberado la salida!", "Sistema de inventario");
+
                     ImprimirFactura();
                 }
                 catch (SqlException ex)
@@ -810,6 +811,62 @@ namespace PaperShop
                 frmSelecProductosSalidasAbierto = true;
                 frmSelecProducto frmSelecProducto = new frmSelecProducto("salida");
                 frmSelecProducto.Show();
+            }
+        }
+
+        private void cmbcaja_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (this.cmbcaja.Text.Length == 0)
+                {
+                    MessageBox.Show("Porfavor llenar el campo ", "SI");
+                    this.cmbcaja.Focus();
+                    return;
+                }
+                this.cmbtrabajador.Focus();
+            }
+        }
+
+        private void cmbtrabajador_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (this.cmbtrabajador.Text.Length == 0)
+                {
+                    MessageBox.Show("Porfavor llenar el campo ", "SI");
+                    this.cmbtrabajador.Focus();
+                    return;
+                }
+                this.cmbcliente.Focus();
+            }
+        }
+
+        private void cmbcliente_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (this.cmbcliente.Text.Length == 0)
+                {
+                    MessageBox.Show("Porfavor llenar el campo ", "SI");
+                    this.cmbcliente.Focus();
+                    return;
+                }
+                this.cmbfactura.Focus();
+            }
+        }
+
+        private void cmbfactura_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (this.cmbfactura.Text.Length == 0)
+                {
+                    MessageBox.Show("Porfavor llenar el campo ", "SI");
+                    this.cmbfactura.Focus();
+                    return;
+                }
+                this.btnregistrar_salida.Focus();
             }
         }
     }

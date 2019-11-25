@@ -223,9 +223,9 @@ namespace PaperShop.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pro {
+        internal static System.Drawing.Bitmap prod {
             get {
-                object obj = ResourceManager.GetObject("pro", resourceCulture);
+                object obj = ResourceManager.GetObject("prod", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

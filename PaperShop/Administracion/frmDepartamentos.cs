@@ -139,6 +139,7 @@ namespace PaperShop
 
         private void valdacionNum(object sender, KeyPressEventArgs e)
         {
+            validacion.solonumeros(e);
         }
 
         private void BtnNuevo_Click(object sender, EventArgs e)

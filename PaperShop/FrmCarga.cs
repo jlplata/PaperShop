@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
@@ -28,10 +30,42 @@ namespace PaperShop
                 BPInicio.Increment(2);
             if (BPInicio.Value==100)
             {
-                FrmLogin frm = new FrmLogin();
-                frm.Show();
-                this.Hide();
-                timer1.Stop();
+
+                string qry = "";
+                string cadenaconexion = ConfigurationManager.AppSettings.Get("cadenaconexion");
+                SqlConnection sqlCNX = new SqlConnection(cadenaconexion);
+                SqlCommand sqlCMD = new SqlCommand();
+                qry = "SELECT * from VistaUsuarios";
+                sqlCMD.CommandText = qry;
+                sqlCMD.Connection = sqlCNX;
+                SqlDataReader sqlDR = null;
+                try
+                {
+                    sqlCNX.Open();
+                    sqlDR = sqlCMD.ExecuteReader();
+                    if (sqlDR.HasRows == true)
+                    {
+                        FrmLogin lo = new FrmLogin();
+                        lo.Show();
+                        this.Hide();
+                        timer1.Stop();
+                    }
+                    else
+                    {
+                        FrmNuevoUsuAd frm = new FrmNuevoUsuAd();
+                        frm.Show();
+                        this.Hide();
+                        timer1.Stop();
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    //    MessageBox.Show(ex.Message, "");
+                    frmConexion frm = new frmConexion();
+                    frm.Show();
+                    this.Hide();
+                    timer1.Stop();
+                }
 
             }
             

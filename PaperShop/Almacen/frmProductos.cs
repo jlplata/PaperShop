@@ -182,8 +182,7 @@ namespace PaperShop
             lblhoraregistro.Text = hoy.ToShortTimeString();
             //En caso de marcar error en la /*fecha*/
             lblfecharegistro.Text = hoy.ToString("yyyyMMdd");
-            imgpro.Image = Resources.pro;
-
+            imgpro.Image = Resources.prod;
         }
         void Nuevo()
         {
@@ -635,12 +634,14 @@ namespace PaperShop
                         int idc = r.Next(00000001, 99999999);
                         dir = "\\imapro\\prod" + idc + ".png";
                         diro = "\\imapro\\prod.png";
-                        string pach = Application.StartupPath.Substring(0, (Application.StartupPath.Length - 10));
+                        
+            string pach = ".\\.\\";
                         System.IO.File.Copy(pach + diro, pach + dir);
                     }
                     else
                     {
-                        string pach = Application.StartupPath.Substring(0, (Application.StartupPath.Length - 10));
+                        
+            string pach = ".\\.\\";
                         System.IO.File.Copy(diro, pach + dir);
                     }
 
@@ -746,7 +747,8 @@ namespace PaperShop
             cmbproveedor.Text = dgvproductos.CurrentRow.Cells["proveedor"].Value.ToString();
             dgvproductos.Enabled = false;
             txtpathfile.Text = dgvproductos.CurrentRow.Cells["imagen"].Value.ToString();
-            string pach = Application.StartupPath.Substring(0, (Application.StartupPath.Length - 10));
+            
+            string pach = ".\\.\\";
             imgpro.Load(pach + txtpathfile.Text);
             btnagregar.Text = "Cambiar";
             this.Actualizar();

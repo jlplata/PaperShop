@@ -79,5 +79,13 @@ namespace PaperShop
             fp.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             AbrirFormEnPanel(fp);
         }
+
+        private void btntraba_Click(object sender, EventArgs e)
+        {
+            PanelAdios.Visible = false;
+            frmEntradas fp = new frmEntradas();
+            fp.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            AbrirFormEnPanel(fp);
+        }
     }
 }

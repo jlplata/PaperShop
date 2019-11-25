@@ -22,7 +22,7 @@ namespace PaperShop
         {
             InitializeComponent();
             triggerForm = salidaentrada;
-            typeTriggerForm = (triggerForm == "salida") ? typeof(frmSalidas) : typeof(frmSalidas);
+            typeTriggerForm = (triggerForm == "salida") ? typeof(frmSalidas) : typeof(frmEntradas);
 
             foreach (Form frm in Application.OpenForms)
             {

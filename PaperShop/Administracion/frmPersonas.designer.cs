@@ -76,14 +76,14 @@
             this.label13 = new System.Windows.Forms.Label();
             this.focusBuscar = new Guna.UI.WinForms.GunaLineTextBox();
             this.dgvPersonas = new System.Windows.Forms.DataGridView();
+            this.mcPersonas = new Guna.UI.WinForms.GunaContextMenuStrip();
+            this.btnModificarPersona = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnActivarPersona = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnDesactivarPersona = new System.Windows.Forms.ToolStripMenuItem();
             this.btnImprimir = new Guna.UI.WinForms.GunaAdvenceButton();
             this.Activos = new Guna.UI.WinForms.GunaWinSwitch();
             this.lblActi = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.btnModificarPersona = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnActivarPersona = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnDesactivarPersona = new System.Windows.Forms.ToolStripMenuItem();
-            this.mcPersonas = new Guna.UI.WinForms.GunaContextMenuStrip();
             this.grbPersonas.SuspendLayout();
             this.gunaPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonas)).BeginInit();
@@ -102,6 +102,7 @@
             this.txtTelefono.Size = new System.Drawing.Size(160, 22);
             this.txtTelefono.TabIndex = 5;
             this.txtTelefono.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtTelefono_KeyDown);
+            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
             // label12
             // 
@@ -185,7 +186,7 @@
             this.lblFechaRegistro.AutoSize = true;
             this.lblFechaRegistro.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechaRegistro.ForeColor = System.Drawing.Color.White;
-            this.lblFechaRegistro.Location = new System.Drawing.Point(324, 382);
+            this.lblFechaRegistro.Location = new System.Drawing.Point(331, 390);
             this.lblFechaRegistro.Name = "lblFechaRegistro";
             this.lblFechaRegistro.Size = new System.Drawing.Size(106, 21);
             this.lblFechaRegistro.TabIndex = 0;
@@ -401,7 +402,7 @@
             this.txtIdUsuario.Name = "txtIdUsuario";
             this.txtIdUsuario.PasswordChar = '\0';
             this.txtIdUsuario.ReadOnly = true;
-            this.txtIdUsuario.Size = new System.Drawing.Size(160, 26);
+            this.txtIdUsuario.Size = new System.Drawing.Size(160, 30);
             this.txtIdUsuario.TabIndex = 12;
             // 
             // dtpFechaNacimiento
@@ -444,7 +445,7 @@
             this.txtActivo.Name = "txtActivo";
             this.txtActivo.PasswordChar = '\0';
             this.txtActivo.ReadOnly = true;
-            this.txtActivo.Size = new System.Drawing.Size(160, 26);
+            this.txtActivo.Size = new System.Drawing.Size(160, 30);
             this.txtActivo.TabIndex = 11;
             // 
             // txtCorreo
@@ -474,7 +475,7 @@
             this.focusPaterno.Name = "focusPaterno";
             this.focusPaterno.PasswordChar = '\0';
             this.focusPaterno.ReadOnly = true;
-            this.focusPaterno.Size = new System.Drawing.Size(160, 26);
+            this.focusPaterno.Size = new System.Drawing.Size(160, 30);
             this.focusPaterno.TabIndex = 2;
             this.focusPaterno.Enter += new System.EventHandler(this.focusPaterno_Enter);
             // 
@@ -506,7 +507,7 @@
             this.focusMunicipio.Name = "focusMunicipio";
             this.focusMunicipio.PasswordChar = '\0';
             this.focusMunicipio.ReadOnly = true;
-            this.focusMunicipio.Size = new System.Drawing.Size(160, 26);
+            this.focusMunicipio.Size = new System.Drawing.Size(160, 30);
             this.focusMunicipio.TabIndex = 10;
             this.focusMunicipio.Enter += new System.EventHandler(this.focusMunicipio_Enter);
             this.focusMunicipio.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtMunicipio_KeyDown);
@@ -525,7 +526,7 @@
             this.FocusNombre.Name = "FocusNombre";
             this.FocusNombre.PasswordChar = '\0';
             this.FocusNombre.ReadOnly = true;
-            this.FocusNombre.Size = new System.Drawing.Size(160, 26);
+            this.FocusNombre.Size = new System.Drawing.Size(160, 30);
             this.FocusNombre.TabIndex = 1;
             this.FocusNombre.Enter += new System.EventHandler(this.FocusNombre_Enter);
             // 
@@ -557,7 +558,7 @@
             this.focusEstado.Name = "focusEstado";
             this.focusEstado.PasswordChar = '\0';
             this.focusEstado.ReadOnly = true;
-            this.focusEstado.Size = new System.Drawing.Size(160, 26);
+            this.focusEstado.Size = new System.Drawing.Size(160, 30);
             this.focusEstado.TabIndex = 9;
             this.focusEstado.Enter += new System.EventHandler(this.focusEstado_Enter);
             // 
@@ -639,7 +640,7 @@
             this.focusCorreo.Name = "focusCorreo";
             this.focusCorreo.PasswordChar = '\0';
             this.focusCorreo.ReadOnly = true;
-            this.focusCorreo.Size = new System.Drawing.Size(160, 26);
+            this.focusCorreo.Size = new System.Drawing.Size(160, 30);
             this.focusCorreo.TabIndex = 6;
             this.focusCorreo.Enter += new System.EventHandler(this.focusCorreo_Enter);
             // 
@@ -656,7 +657,7 @@
             this.focusDomicilio.Name = "focusDomicilio";
             this.focusDomicilio.PasswordChar = '\0';
             this.focusDomicilio.ReadOnly = true;
-            this.focusDomicilio.Size = new System.Drawing.Size(160, 26);
+            this.focusDomicilio.Size = new System.Drawing.Size(160, 30);
             this.focusDomicilio.TabIndex = 4;
             this.focusDomicilio.Enter += new System.EventHandler(this.focusDomicilio_Enter);
             // 
@@ -673,7 +674,7 @@
             this.focusApeMaterno.Name = "focusApeMaterno";
             this.focusApeMaterno.PasswordChar = '\0';
             this.focusApeMaterno.ReadOnly = true;
-            this.focusApeMaterno.Size = new System.Drawing.Size(160, 26);
+            this.focusApeMaterno.Size = new System.Drawing.Size(160, 30);
             this.focusApeMaterno.TabIndex = 3;
             this.focusApeMaterno.Enter += new System.EventHandler(this.focusApeMaterno_Enter);
             // 
@@ -861,7 +862,7 @@
             this.focusBuscar.Location = new System.Drawing.Point(509, 25);
             this.focusBuscar.Name = "focusBuscar";
             this.focusBuscar.PasswordChar = '\0';
-            this.focusBuscar.Size = new System.Drawing.Size(160, 26);
+            this.focusBuscar.Size = new System.Drawing.Size(160, 30);
             this.focusBuscar.TabIndex = 1;
             this.focusBuscar.Enter += new System.EventHandler(this.focusBuscar_Enter);
             // 
@@ -902,9 +903,51 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvPersonas.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvPersonas.RowHeadersWidth = 51;
             this.dgvPersonas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPersonas.Size = new System.Drawing.Size(633, 367);
             this.dgvPersonas.TabIndex = 33;
+            // 
+            // mcPersonas
+            // 
+            this.mcPersonas.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.mcPersonas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnModificarPersona,
+            this.btnActivarPersona,
+            this.btnDesactivarPersona});
+            this.mcPersonas.Name = "mcPersonas";
+            this.mcPersonas.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.mcPersonas.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.mcPersonas.RenderStyle.ColorTable = null;
+            this.mcPersonas.RenderStyle.RoundedEdges = true;
+            this.mcPersonas.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.mcPersonas.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.mcPersonas.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.mcPersonas.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.mcPersonas.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
+            this.mcPersonas.Size = new System.Drawing.Size(129, 70);
+            this.mcPersonas.Opening += new System.ComponentModel.CancelEventHandler(this.McPersonas_Opening);
+            // 
+            // btnModificarPersona
+            // 
+            this.btnModificarPersona.Name = "btnModificarPersona";
+            this.btnModificarPersona.Size = new System.Drawing.Size(128, 22);
+            this.btnModificarPersona.Text = "Modificar";
+            this.btnModificarPersona.Click += new System.EventHandler(this.ModificarToolStripMenuItem_Click);
+            // 
+            // btnActivarPersona
+            // 
+            this.btnActivarPersona.Name = "btnActivarPersona";
+            this.btnActivarPersona.Size = new System.Drawing.Size(128, 22);
+            this.btnActivarPersona.Text = "Activar";
+            this.btnActivarPersona.Click += new System.EventHandler(this.BtnActivarPersona_Click);
+            // 
+            // btnDesactivarPersona
+            // 
+            this.btnDesactivarPersona.Name = "btnDesactivarPersona";
+            this.btnDesactivarPersona.Size = new System.Drawing.Size(128, 22);
+            this.btnDesactivarPersona.Text = "Desactivar";
+            this.btnDesactivarPersona.Click += new System.EventHandler(this.BtnDesactivarPersona_Click);
             // 
             // btnImprimir
             // 
@@ -977,46 +1020,6 @@
             this.txtBuscar.Enter += new System.EventHandler(this.txtBuscar_Enter);
             this.txtBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.valdacionLetras);
             this.txtBuscar.Leave += new System.EventHandler(this.txtBuscar_Leave);
-            // 
-            // btnModificarPersona
-            // 
-            this.btnModificarPersona.Name = "btnModificarPersona";
-            this.btnModificarPersona.Size = new System.Drawing.Size(180, 22);
-            this.btnModificarPersona.Text = "Modificar";
-            this.btnModificarPersona.Click += new System.EventHandler(this.ModificarToolStripMenuItem_Click);
-            // 
-            // btnActivarPersona
-            // 
-            this.btnActivarPersona.Name = "btnActivarPersona";
-            this.btnActivarPersona.Size = new System.Drawing.Size(180, 22);
-            this.btnActivarPersona.Text = "Activar";
-            this.btnActivarPersona.Click += new System.EventHandler(this.BtnActivarPersona_Click);
-            // 
-            // btnDesactivarPersona
-            // 
-            this.btnDesactivarPersona.Name = "btnDesactivarPersona";
-            this.btnDesactivarPersona.Size = new System.Drawing.Size(180, 22);
-            this.btnDesactivarPersona.Text = "Desactivar";
-            this.btnDesactivarPersona.Click += new System.EventHandler(this.BtnDesactivarPersona_Click);
-            // 
-            // mcPersonas
-            // 
-            this.mcPersonas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnModificarPersona,
-            this.btnActivarPersona,
-            this.btnDesactivarPersona});
-            this.mcPersonas.Name = "mcPersonas";
-            this.mcPersonas.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.mcPersonas.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
-            this.mcPersonas.RenderStyle.ColorTable = null;
-            this.mcPersonas.RenderStyle.RoundedEdges = true;
-            this.mcPersonas.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
-            this.mcPersonas.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.mcPersonas.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.mcPersonas.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
-            this.mcPersonas.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.mcPersonas.Size = new System.Drawing.Size(181, 92);
-            this.mcPersonas.Opening += new System.ComponentModel.CancelEventHandler(this.McPersonas_Opening);
             // 
             // frmPersonas
             // 

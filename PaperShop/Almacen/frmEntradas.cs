@@ -161,7 +161,7 @@ namespace PaperShop
                     //Dibujamos la tabla con los valores
                     dgvproductos.Rows.Add(this.txtid_producto.Text, this.txtnombre.Text, this.txtprecio_venta.Text, this.txtcantidad.Text, this.txttotal.Text);
                     this.btncancelar_producto.Enabled = true;
-                    this.btnliberar_salida.Enabled = true;
+                    this.btnliberar_entrada.Enabled = true;
                 }
                 //}
                 catch (SqlException ex)
@@ -182,9 +182,9 @@ namespace PaperShop
             this.grbSalida.Enabled = true;
             this.grbbuscar_producto.Enabled = false;
             this.btncancelar_salida.Enabled = false;
-            this.btnliberar_salida.Enabled = false;
+            this.btnliberar_entrada.Enabled = false;
             this.btncancelar_producto.Enabled = false;
-            this.btnregistrar_salida.Enabled = true;
+            this.btnregistrar_entrada.Enabled = true;
             this.txtgran_total.ReadOnly = true;
             this.txtcve_producto.Clear();
             this.txtcantidad.Clear();
@@ -193,7 +193,7 @@ namespace PaperShop
             this.txtgran_total.Clear();
             this.dgvproductos.Rows.Clear();
             this.txtidsalida.Clear();
-            this.btnregistrar_salida.Focus();
+            this.cmbcaja.Focus();
 
         }
         void habilitar()
@@ -201,9 +201,9 @@ namespace PaperShop
             this.grbSalida.Enabled = false;
             this.grbbuscar_producto.Enabled = true;
             this.btncancelar_salida.Enabled = true;
-            this.btnliberar_salida.Enabled = false;
+            this.btnliberar_entrada.Enabled = false;
             this.btncancelar_producto.Enabled = false;
-            this.btnregistrar_salida.Enabled = false;
+            this.btnregistrar_entrada.Enabled = false;
             this.txtgran_total.ReadOnly = true;
             this.txtcve_producto.Focus();
         }
@@ -244,7 +244,6 @@ namespace PaperShop
                     coleccion.Add(Convert.ToString(row["Caja"]));
                 }
                 cmbcaja.AutoCompleteCustomSource = coleccion;
-                cmbcaja.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
                 cmbcaja.AutoCompleteSource = AutoCompleteSource.CustomSource;
 
 
@@ -292,7 +291,6 @@ namespace PaperShop
                     coleccion.Add(Convert.ToString(row["persona"]));
                 }
                 cmbtrabajador.AutoCompleteCustomSource = coleccion;
-                cmbtrabajador.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
                 cmbtrabajador.AutoCompleteSource = AutoCompleteSource.CustomSource;
             }
             catch (SqlException ex)
@@ -338,7 +336,6 @@ namespace PaperShop
                     coleccion.Add(Convert.ToString(row["proveedor"]));
                 }
                 cmbproveedor.AutoCompleteCustomSource = coleccion;
-                cmbproveedor.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
                 cmbproveedor.AutoCompleteSource = AutoCompleteSource.CustomSource;
 
 
@@ -768,6 +765,110 @@ namespace PaperShop
                 frmSelecProducto frmSelecProducto = new frmSelecProducto("entrada");
                 frmSelecProducto.Show();
             }
+        }
+
+        private void cmbcaja_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (this.cmbcaja.Text.Length == 0)
+                {
+                    MessageBox.Show("Porfavor llenar el campo ", "SI");
+                    this.cmbcaja.Focus();
+                    return;
+                }
+                this.cmbtrabajador.Focus();
+            }
+        }
+
+        private void cmbtrabajador_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (this.cmbtrabajador.Text.Length == 0)
+                {
+                    MessageBox.Show("Porfavor llenar el campo ", "SI");
+                    this.cmbtrabajador.Focus();
+                    return;
+                }
+                this.cmbproveedor.Focus();
+            }
+        }
+
+        private void cmbproveedor_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (this.cmbproveedor.Text.Length == 0)
+                {
+                    MessageBox.Show("Porfavor llenar el campo ", "SI");
+                    this.cmbproveedor.Focus();
+                    return;
+                }
+                this.cmbfactura.Focus();
+            }
+        }
+
+        private void cmbfactura_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (this.cmbfactura.Text.Length == 0)
+                {
+                    MessageBox.Show("Porfavor llenar el campo ", "SI");
+                    this.cmbfactura.Focus();
+                    return;
+                }
+                this.btnregistrar_entrada.Focus();
+            }
+        }
+
+        private void txtcve_producto_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (this.txtcve_producto.Text.Length == 0)
+                {
+                    MessageBox.Show("Porfavor llenar el campo clave producto:)", "SI");
+                    this.txtcve_producto.Focus();
+                    return;
+                }
+                this.txtcantidad.Focus();
+            }
+        }
+
+        private void txtcve_producto_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)(Keys.Enter))
+            {
+                //Invocamos el metodo de agregar productos
+                this.AgregarProducto();
+            }
+            validacion.solonumeros(e);
+        }
+
+        private void txtcantidad_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (this.txtcantidad.Text.Length == 0)
+                {
+                    MessageBox.Show("Porfavor llenar el campo cantidad:)", "SI");
+                    this.txtcantidad.Focus();
+                    return;
+                }
+
+            }
+        }
+
+        private void txtcantidad_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)(Keys.Enter))
+            {
+                //Invocamos el metodo de agregar productos
+                this.AgregarProducto();
+            }
+            validacion.solonumeros(e);
         }
     }
 }

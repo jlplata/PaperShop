@@ -36,6 +36,7 @@ namespace PaperShop
         {
             Guna.UI.Lib.GraphicsHelper.ShadowForm(this);
             txtUser.Focus();
+            
         }
 
         private void Panel1_MouseDown(object sender, MouseEventArgs e)
@@ -112,10 +113,6 @@ namespace PaperShop
                     //mm.lbltxt.Text = "Bienvenido, " + FrmPrin.Usuario;
                     //mm.ShowDialog();
                     this.Alert("Bienvenido " + FrmPrin.Usuario, FrmNotificaciones.alertTypeEnum.Success);
-
-
-
-
                     //MessageBox.Show("Bienvenido: " + frmPrincipal.bienvenida, "Control de Inventario");
 
                     sqlCNX.Close();
@@ -181,7 +178,7 @@ namespace PaperShop
 
         private void TxtUser_KeyPress(object sender, KeyPressEventArgs e)
         {
-            
+            validacion.numsLetras(e);
         }
 
         private void Pp_Tick(object sender, EventArgs e)
@@ -194,6 +191,23 @@ namespace PaperShop
         private void TxtUser_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void cmbTipo_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (cmbTipo.Text.Length == 0)
+                {
+                    MensajeOk ms = new MensajeOk();
+                    ms.lbltxt.Text = "Campo vacio";
+                    ms.ShowDialog();
+                    txtUser.Focus();
+                    return;
+
+                }
+                BtnIniciarS.Focus();
+            }
         }
     }
 }

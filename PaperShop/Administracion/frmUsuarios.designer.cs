@@ -91,6 +91,7 @@
             this.cmbpersonas.Size = new System.Drawing.Size(231, 29);
             this.cmbpersonas.TabIndex = 0;
             this.cmbpersonas.SelectedIndexChanged += new System.EventHandler(this.Cmbpersonas_SelectedIndexChanged);
+            this.cmbpersonas.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cmbpersonas_KeyDown_1);
             // 
             // txtIdUsuario
             // 
@@ -105,7 +106,7 @@
             this.txtIdUsuario.Name = "txtIdUsuario";
             this.txtIdUsuario.PasswordChar = '\0';
             this.txtIdUsuario.ReadOnly = true;
-            this.txtIdUsuario.Size = new System.Drawing.Size(231, 26);
+            this.txtIdUsuario.Size = new System.Drawing.Size(231, 30);
             this.txtIdUsuario.TabIndex = 5;
             // 
             // txtActivo
@@ -121,7 +122,7 @@
             this.txtActivo.Name = "txtActivo";
             this.txtActivo.PasswordChar = '\0';
             this.txtActivo.ReadOnly = true;
-            this.txtActivo.Size = new System.Drawing.Size(230, 26);
+            this.txtActivo.Size = new System.Drawing.Size(230, 30);
             this.txtActivo.TabIndex = 4;
             // 
             // cmbtipo
@@ -149,6 +150,7 @@
             this.cmbtipo.Size = new System.Drawing.Size(230, 26);
             this.cmbtipo.StartIndex = 1;
             this.cmbtipo.TabIndex = 3;
+            this.cmbtipo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cmbtipo_KeyDown_1);
             // 
             // txtlogin
             // 
@@ -177,7 +179,7 @@
             this.focuslogin.Name = "focuslogin";
             this.focuslogin.PasswordChar = '\0';
             this.focuslogin.ReadOnly = true;
-            this.focuslogin.Size = new System.Drawing.Size(229, 26);
+            this.focuslogin.Size = new System.Drawing.Size(229, 30);
             this.focuslogin.TabIndex = 59;
             this.focuslogin.Enter += new System.EventHandler(this.focuslogin_Enter);
             // 
@@ -327,8 +329,9 @@
             this.focuspass.Name = "focuspass";
             this.focuspass.PasswordChar = '\0';
             this.focuspass.ReadOnly = true;
-            this.focuspass.Size = new System.Drawing.Size(229, 26);
+            this.focuspass.Size = new System.Drawing.Size(229, 30);
             this.focuspass.TabIndex = 60;
+            this.focuspass.FontChanged += new System.EventHandler(this.focuspass_FontChanged);
             this.focuspass.Enter += new System.EventHandler(this.focuspass_Enter);
             // 
             // label13
@@ -344,6 +347,7 @@
             // 
             // mcusuarios
             // 
+            this.mcusuarios.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.mcusuarios.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.modificarToolStripMenuItem,
             this.activarToolStripMenuItem,
@@ -411,7 +415,7 @@
             this.focusBuscar.Location = new System.Drawing.Point(427, 35);
             this.focusBuscar.Name = "focusBuscar";
             this.focusBuscar.PasswordChar = '\0';
-            this.focusBuscar.Size = new System.Drawing.Size(160, 26);
+            this.focusBuscar.Size = new System.Drawing.Size(160, 30);
             this.focusBuscar.TabIndex = 58;
             this.focusBuscar.Enter += new System.EventHandler(this.focusBuscar_Enter);
             // 

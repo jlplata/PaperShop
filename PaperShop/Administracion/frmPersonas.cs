@@ -237,7 +237,7 @@ namespace PaperShop
         {
             if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Tab)
             {
-                if (this.txtTelefono.Text.Length == 0)
+                if (this.txtTelefono.Text.Length == 0 || this.txtTelefono.Text == "(   )   -")
                 {
                     MensajeOk ok = new MensajeOk();
                     ok.lbltxt.Text = "Favor de llenar el campo.";
@@ -793,6 +793,11 @@ namespace PaperShop
         private void lblActi_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validacion.solonumeros(e);
         }
     }
 }

@@ -64,6 +64,7 @@
             this.grbusuarios = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.btnagregar = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.imgpro = new System.Windows.Forms.PictureBox();
             this.txtIdUsuario = new Guna.UI.WinForms.GunaLineTextBox();
             this.txtActivo = new Guna.UI.WinForms.GunaLineTextBox();
             this.gunaLineTextBox1 = new Guna.UI.WinForms.GunaLineTextBox();
@@ -83,12 +84,11 @@
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.focusBuscar = new Guna.UI.WinForms.GunaLineTextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.imgpro = new System.Windows.Forms.PictureBox();
             this.cmproductos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvproductos)).BeginInit();
             this.grbusuarios.SuspendLayout();
-            this.gunaPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgpro)).BeginInit();
+            this.gunaPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmproductos
@@ -508,6 +508,17 @@
             this.btnagregar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnagregar.Click += new System.EventHandler(this.Btnagregar_Click);
             // 
+            // imgpro
+            // 
+            this.imgpro.BackColor = System.Drawing.Color.Transparent;
+            this.imgpro.Image = global::PaperShop.Properties.Resources.prod;
+            this.imgpro.Location = new System.Drawing.Point(122, 33);
+            this.imgpro.Name = "imgpro";
+            this.imgpro.Size = new System.Drawing.Size(70, 81);
+            this.imgpro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgpro.TabIndex = 39;
+            this.imgpro.TabStop = false;
+            // 
             // txtIdUsuario
             // 
             this.txtIdUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(53)))));
@@ -891,17 +902,6 @@
             this.label13.TabIndex = 65;
             this.label13.Text = "Buscar:";
             // 
-            // imgpro
-            // 
-            this.imgpro.BackColor = System.Drawing.Color.Transparent;
-            this.imgpro.Image = global::PaperShop.Properties.Resources.pro;
-            this.imgpro.Location = new System.Drawing.Point(122, 33);
-            this.imgpro.Name = "imgpro";
-            this.imgpro.Size = new System.Drawing.Size(70, 81);
-            this.imgpro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgpro.TabIndex = 39;
-            this.imgpro.TabStop = false;
-            // 
             // frmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -925,8 +925,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvproductos)).EndInit();
             this.grbusuarios.ResumeLayout(false);
             this.grbusuarios.PerformLayout();
-            this.gunaPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imgpro)).EndInit();
+            this.gunaPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -181,6 +181,7 @@
     <Compile Include="Almacen\frmSelecProducto.designer.cs">
       <DependentUpon>frmSelecProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="AppSetting.cs" />
     <Compile Include="Connection.cs" />
     <Compile Include="FrmAdministracion.cs">
       <SubType>Form</SubType>
@@ -206,17 +207,35 @@
     <Compile Include="FrmCarga.designer.cs">
       <DependentUpon>FrmCarga.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConexion.designer.cs">
+      <DependentUpon>frmConexion.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmLogin.designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMantenimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantenimiento.Designer.cs">
+      <DependentUpon>FrmMantenimiento.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmNotificaciones.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmNotificaciones.Designer.cs">
       <DependentUpon>FrmNotificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNuevoUsuAd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNuevoUsuAd.Designer.cs">
+      <DependentUpon>FrmNuevoUsuAd.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPrin.cs">
       <SubType>Form</SubType>
@@ -229,6 +248,18 @@
     </Compile>
     <Compile Include="frmVisualizador.designer.cs">
       <DependentUpon>frmVisualizador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\frmManEntradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\frmManEntradas.designer.cs">
+      <DependentUpon>frmManEntradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\frmManSalidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\frmManSalidas.designer.cs">
+      <DependentUpon>frmManSalidas.cs</DependentUpon>
     </Compile>
     <Compile Include="Mensaje.cs">
       <SubType>Form</SubType>
@@ -258,6 +289,7 @@
       <DependentUpon>ReporteSalida.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="SqlHelper.cs" />
     <Compile Include="validacion.cs" />
     <EmbeddedResource Include="Administracion\frmCajas.resx">
       <DependentUpon>frmCajas.cs</DependentUpon>
@@ -317,17 +349,32 @@
     <EmbeddedResource Include="FrmCarga.resx">
       <DependentUpon>FrmCarga.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmConexion.resx">
+      <DependentUpon>frmConexion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantenimiento.resx">
+      <DependentUpon>FrmMantenimiento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmNotificaciones.resx">
       <DependentUpon>FrmNotificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNuevoUsuAd.resx">
+      <DependentUpon>FrmNuevoUsuAd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrin.resx">
       <DependentUpon>FrmPrin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVisualizador.resx">
       <DependentUpon>frmVisualizador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\frmManEntradas.resx">
+      <DependentUpon>frmManEntradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento\frmManSalidas.resx">
+      <DependentUpon>frmManSalidas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mensaje.resx">
       <DependentUpon>Mensaje.cs</DependentUpon>
@@ -427,6 +474,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reportes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imapro\prod.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

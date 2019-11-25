@@ -20,7 +20,7 @@ namespace PaperShop
             InitializeComponent();
             Guna.UI.Lib.GraphicsHelper.ShadowForm(this);
             //Guna.UI.Lib.GraphicsHelper.DrawLineShadow(panelContenedorForm, Color.Black, 20, 10, Guna.UI.WinForms.VerHorAlign.HoriziontalTop);
-            Guna.UI.Lib.GraphicsHelper.DrawLineShadow(panelContenedorForm, Color.Black, 90, 10, Guna.UI.WinForms.VerHorAlign.HoriziontalTop);
+            Guna.UI.Lib.GraphicsHelper.DrawLineShadow(panelContenedorForm, Color.FromArgb(67, 83, 192), 90, 10, Guna.UI.WinForms.VerHorAlign.HoriziontalTop);
 
 
 
@@ -40,8 +40,8 @@ namespace PaperShop
 
         public void InfoUsuario() 
         {
-            string pach = Application.StartupPath.Substring(0, (Application.StartupPath.Length - 10));
-            if (ima == "0")
+            string pach = ".\\.\\";
+            if (ima == null)
             {
                 ImgUsuario.Image = Resources.user;
             }
@@ -102,8 +102,10 @@ namespace PaperShop
         }
         private void GunaAdvenceButton4_Click(object sender, EventArgs e)
         {
-            this.Alert("Bienvenido No jhjerjkkjrejk", FrmNotificaciones.alertTypeEnum.Info);
-
+            FrmMantenimiento adm = new FrmMantenimiento();
+            adm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            AbrirFormEnPanel(adm);
+            cerrar();
         }
         private bool Colapzar;
 
@@ -192,6 +194,35 @@ namespace PaperShop
             adm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             AbrirFormEnPanel(adm);
             cerrar();
+        }
+
+        private void gunaImageButton2_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void gunaImageButton3_MouseEnter(object sender, EventArgs e)
+        {
+            gunaImageButton3.BackColor = Color.FromArgb(205, 97, 97);
+        }
+
+        private void gunaImageButton3_MouseLeave(object sender, EventArgs e)
+        {
+            gunaImageButton3.BackColor = Color.FromArgb(20, 25, 53);
+
+          
+        }
+
+        private void gunaImageButton2_MouseEnter(object sender, EventArgs e)
+        {
+            gunaImageButton2.BackColor = Color.FromArgb(96, 108, 173);
+            
+        }
+
+        private void gunaImageButton2_MouseLeave(object sender, EventArgs e)
+        {
+            gunaImageButton2.BackColor = Color.FromArgb(20, 25, 53);
+
         }
 
         private void gunaPanel1_Paint(object sender, PaintEventArgs e)

@@ -53,6 +53,7 @@ namespace PaperShop
         {
             MostrarForm();
         }
+
         private void Btnpersonas_Click(object sender, EventArgs e)
         {
             PanelAdios.Visible = false;

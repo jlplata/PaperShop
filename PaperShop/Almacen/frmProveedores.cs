@@ -534,5 +534,78 @@ namespace PaperShop
                 lblActi.Text = "Inactivos";
             }
         }
+
+        private void btNuevo_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txtNombre.Focus();
+            }
+        }
+
+        private void txtNombre_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if ((txtNombre.Text.Length == 0))
+                {
+                    MessageBox.Show("El campo se encuentra vacio", "");
+                    txtCorreo.Focus();
+                    return;
+                }
+                txtDomicilio.Focus();
+            }
+        }
+
+        private void txtDomicilio_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if ((txtDomicilio.Text.Length == 0))
+                {
+                    MessageBox.Show("El campo se encuentra vacio", "");
+                    txtDomicilio.Focus();
+                    return;
+                }
+                txtTelefono.Focus();
+            }
+        }
+
+        private void txtTelefono_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Tab)
+            {
+                if (this.txtTelefono.Text.Length == 0 || this.txtTelefono.Text == "(   )   -")
+                {
+                    MensajeOk ok = new MensajeOk();
+                    ok.lbltxt.Text = "Favor de llenar el campo.";
+                    ok.ShowDialog();
+                    this.txtTelefono.Focus();
+                    return;
+                }
+                this.txtCorreo.Focus();
+            }
+        }
+
+        private void txtTelefono_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            validacion.solonumeros(e);
+        }
+
+        private void txtCorreo_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if ((txtCorreo.Text.Length == 0) || (v.validarcorr(txtCorreo.Text) == false))
+                {
+                    MensajeOk ok = new MensajeOk();
+                    ok.lbltxt.Text = "El campo se encuentra vacio o \n el formato no es correcto.";
+                    ok.ShowDialog();
+                    txtCorreo.Focus();
+                    return;
+                }
+                btnGuardar.Focus();
+            }
+        }
     }
 }

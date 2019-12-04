@@ -64,13 +64,13 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BtnCerrar = new Guna.UI.WinForms.GunaImageButton();
+            this.BtnMinimizar = new Guna.UI.WinForms.GunaImageButton();
             this.BtnIniciarS = new Guna.UI.WinForms.GunaGradientButton();
             this.rdbMasculino = new Guna.UI.WinForms.GunaAdvenceButton();
             this.rdbFemenino = new Guna.UI.WinForms.GunaAdvenceButton();
             this.lblHoraRegistro = new System.Windows.Forms.Label();
             this.lblFechaRegistro = new System.Windows.Forms.Label();
-            this.BtnCerrar = new Guna.UI.WinForms.GunaImageButton();
-            this.BtnMinimizar = new Guna.UI.WinForms.GunaImageButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,7 +93,7 @@
             this.txtApePaterno.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtApePaterno.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtApePaterno.ForeColor = System.Drawing.Color.White;
-            this.txtApePaterno.Location = new System.Drawing.Point(418, 100);
+            this.txtApePaterno.Location = new System.Drawing.Point(418, 103);
             this.txtApePaterno.Name = "txtApePaterno";
             this.txtApePaterno.Size = new System.Drawing.Size(158, 22);
             this.txtApePaterno.TabIndex = 63;
@@ -106,7 +106,7 @@
             this.txtEstado.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEstado.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtEstado.ForeColor = System.Drawing.Color.White;
-            this.txtEstado.Location = new System.Drawing.Point(835, 179);
+            this.txtEstado.Location = new System.Drawing.Point(835, 182);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(158, 22);
             this.txtEstado.TabIndex = 67;
@@ -119,7 +119,7 @@
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombre.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.ForeColor = System.Drawing.Color.White;
-            this.txtNombre.Location = new System.Drawing.Point(128, 96);
+            this.txtNombre.Location = new System.Drawing.Point(129, 98);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(158, 22);
             this.txtNombre.TabIndex = 62;
@@ -184,7 +184,7 @@
             this.txtCorreo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCorreo.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtCorreo.ForeColor = System.Drawing.Color.White;
-            this.txtCorreo.Location = new System.Drawing.Point(590, 174);
+            this.txtCorreo.Location = new System.Drawing.Point(590, 177);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(158, 22);
             this.txtCorreo.TabIndex = 66;
@@ -214,7 +214,7 @@
             this.txtDomicilio.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDomicilio.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtDomicilio.ForeColor = System.Drawing.Color.White;
-            this.txtDomicilio.Location = new System.Drawing.Point(135, 174);
+            this.txtDomicilio.Location = new System.Drawing.Point(135, 177);
             this.txtDomicilio.Name = "txtDomicilio";
             this.txtDomicilio.Size = new System.Drawing.Size(158, 22);
             this.txtDomicilio.TabIndex = 65;
@@ -261,7 +261,7 @@
             this.txtApeMaterno.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtApeMaterno.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtApeMaterno.ForeColor = System.Drawing.Color.White;
-            this.txtApeMaterno.Location = new System.Drawing.Point(732, 103);
+            this.txtApeMaterno.Location = new System.Drawing.Point(732, 106);
             this.txtApeMaterno.Name = "txtApeMaterno";
             this.txtApeMaterno.Size = new System.Drawing.Size(158, 22);
             this.txtApeMaterno.TabIndex = 64;
@@ -464,7 +464,7 @@
             this.txtpassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtpassword.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpassword.ForeColor = System.Drawing.Color.White;
-            this.txtpassword.Location = new System.Drawing.Point(579, 359);
+            this.txtpassword.Location = new System.Drawing.Point(579, 360);
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.Size = new System.Drawing.Size(230, 22);
             this.txtpassword.TabIndex = 70;
@@ -495,7 +495,7 @@
             this.txtlogin.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtlogin.Font = new System.Drawing.Font("Segoe UI Light", 12F);
             this.txtlogin.ForeColor = System.Drawing.Color.White;
-            this.txtlogin.Location = new System.Drawing.Point(245, 357);
+            this.txtlogin.Location = new System.Drawing.Point(245, 360);
             this.txtlogin.Name = "txtlogin";
             this.txtlogin.Size = new System.Drawing.Size(230, 22);
             this.txtlogin.TabIndex = 69;
@@ -563,6 +563,37 @@
             this.panel1.Size = new System.Drawing.Size(1048, 40);
             this.panel1.TabIndex = 76;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // BtnCerrar
+            // 
+            this.BtnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(74)))));
+            this.BtnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("BtnCerrar.Image")));
+            this.BtnCerrar.ImageSize = new System.Drawing.Size(16, 16);
+            this.BtnCerrar.Location = new System.Drawing.Point(1016, 0);
+            this.BtnCerrar.Name = "BtnCerrar";
+            this.BtnCerrar.OnHoverImage = null;
+            this.BtnCerrar.OnHoverImageOffset = new System.Drawing.Point(0, -1);
+            this.BtnCerrar.Size = new System.Drawing.Size(32, 32);
+            this.BtnCerrar.TabIndex = 4;
+            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
+            this.BtnCerrar.MouseEnter += new System.EventHandler(this.gunaImageButton3_MouseEnter);
+            this.BtnCerrar.MouseLeave += new System.EventHandler(this.gunaImageButton3_MouseLeave);
+            // 
+            // BtnMinimizar
+            // 
+            this.BtnMinimizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(74)))));
+            this.BtnMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BtnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("BtnMinimizar.Image")));
+            this.BtnMinimizar.ImageSize = new System.Drawing.Size(16, 16);
+            this.BtnMinimizar.Location = new System.Drawing.Point(983, 0);
+            this.BtnMinimizar.Name = "BtnMinimizar";
+            this.BtnMinimizar.OnHoverImage = null;
+            this.BtnMinimizar.OnHoverImageOffset = new System.Drawing.Point(0, -1);
+            this.BtnMinimizar.Size = new System.Drawing.Size(32, 32);
+            this.BtnMinimizar.TabIndex = 3;
+            this.BtnMinimizar.Click += new System.EventHandler(this.BtnMinimizar_Click);
+            this.BtnMinimizar.MouseEnter += new System.EventHandler(this.gunaImageButton2_MouseEnter);
+            this.BtnMinimizar.MouseLeave += new System.EventHandler(this.gunaImageButton2_MouseLeave);
             // 
             // BtnIniciarS
             // 
@@ -681,37 +712,6 @@
             this.lblFechaRegistro.Text = "Fecha_registro";
             this.lblFechaRegistro.Visible = false;
             // 
-            // BtnCerrar
-            // 
-            this.BtnCerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(74)))));
-            this.BtnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("BtnCerrar.Image")));
-            this.BtnCerrar.ImageSize = new System.Drawing.Size(16, 16);
-            this.BtnCerrar.Location = new System.Drawing.Point(1016, 0);
-            this.BtnCerrar.Name = "BtnCerrar";
-            this.BtnCerrar.OnHoverImage = null;
-            this.BtnCerrar.OnHoverImageOffset = new System.Drawing.Point(0, -1);
-            this.BtnCerrar.Size = new System.Drawing.Size(32, 32);
-            this.BtnCerrar.TabIndex = 4;
-            this.BtnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
-            this.BtnCerrar.MouseEnter += new System.EventHandler(this.gunaImageButton3_MouseEnter);
-            this.BtnCerrar.MouseLeave += new System.EventHandler(this.gunaImageButton3_MouseLeave);
-            // 
-            // BtnMinimizar
-            // 
-            this.BtnMinimizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(24)))), ((int)(((byte)(74)))));
-            this.BtnMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.BtnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("BtnMinimizar.Image")));
-            this.BtnMinimizar.ImageSize = new System.Drawing.Size(16, 16);
-            this.BtnMinimizar.Location = new System.Drawing.Point(983, 0);
-            this.BtnMinimizar.Name = "BtnMinimizar";
-            this.BtnMinimizar.OnHoverImage = null;
-            this.BtnMinimizar.OnHoverImageOffset = new System.Drawing.Point(0, -1);
-            this.BtnMinimizar.Size = new System.Drawing.Size(32, 32);
-            this.BtnMinimizar.TabIndex = 3;
-            this.BtnMinimizar.Click += new System.EventHandler(this.BtnMinimizar_Click);
-            this.BtnMinimizar.MouseEnter += new System.EventHandler(this.gunaImageButton2_MouseEnter);
-            this.BtnMinimizar.MouseLeave += new System.EventHandler(this.gunaImageButton2_MouseLeave);
-            // 
             // FrmNuevoUsuAd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -759,8 +759,9 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.focusApeMaterno);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmNuevoUsuAd";
-            this.Text = "FrmNuevoUsuAd";
+            this.Text = "Nuevo Usuario - PaperShop";
             this.Load += new System.EventHandler(this.FrmNuevoUsuAd_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

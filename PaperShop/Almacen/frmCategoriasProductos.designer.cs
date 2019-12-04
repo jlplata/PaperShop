@@ -547,6 +547,8 @@
             this.Controls.Add(this.gunaPanel4);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmCategoriasProductos";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCategoriasProductos";
             this.Load += new System.EventHandler(this.FrmCategoriasProductos_Load);

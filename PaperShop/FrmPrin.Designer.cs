@@ -37,7 +37,7 @@
             this.BtnMenu = new Guna.UI.WinForms.GunaImageButton();
             this.pnlmenutop = new Guna.UI.WinForms.GunaPanel();
             this.gunaPanel4 = new Guna.UI.WinForms.GunaPanel();
-            this.gunaAdvenceButton5 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnComputo = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnmtenimiento = new Guna.UI.WinForms.GunaAdvenceButton();
             this.Btninicio = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaAdvenceButton3 = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -143,7 +143,7 @@
             // gunaPanel4
             // 
             this.gunaPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.gunaPanel4.Controls.Add(this.gunaAdvenceButton5);
+            this.gunaPanel4.Controls.Add(this.btnComputo);
             this.gunaPanel4.Controls.Add(this.btnmtenimiento);
             this.gunaPanel4.Controls.Add(this.Btninicio);
             this.gunaPanel4.Controls.Add(this.gunaAdvenceButton3);
@@ -154,38 +154,39 @@
             this.gunaPanel4.TabIndex = 2;
             this.gunaPanel4.Click += new System.EventHandler(this.gunaPanel4_Click);
             // 
-            // gunaAdvenceButton5
+            // btnComputo
             // 
-            this.gunaAdvenceButton5.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton5.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton5.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.gunaAdvenceButton5.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton5.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
-            this.gunaAdvenceButton5.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.gunaAdvenceButton5.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton5.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton5.CheckedImage = null;
-            this.gunaAdvenceButton5.CheckedLineColor = System.Drawing.Color.DodgerBlue;
-            this.gunaAdvenceButton5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.gunaAdvenceButton5.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton5.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaAdvenceButton5.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton5.Image = null;
-            this.gunaAdvenceButton5.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaAdvenceButton5.LineBottom = 5;
-            this.gunaAdvenceButton5.LineColor = System.Drawing.Color.Transparent;
-            this.gunaAdvenceButton5.Location = new System.Drawing.Point(404, 0);
-            this.gunaAdvenceButton5.Name = "gunaAdvenceButton5";
-            this.gunaAdvenceButton5.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.gunaAdvenceButton5.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton5.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(157)))), ((int)(((byte)(169)))));
-            this.gunaAdvenceButton5.OnHoverImage = null;
-            this.gunaAdvenceButton5.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
-            this.gunaAdvenceButton5.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton5.Size = new System.Drawing.Size(101, 50);
-            this.gunaAdvenceButton5.TabIndex = 4;
-            this.gunaAdvenceButton5.Text = "Configuración";
-            this.gunaAdvenceButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnComputo.AnimationHoverSpeed = 0.07F;
+            this.btnComputo.AnimationSpeed = 0.03F;
+            this.btnComputo.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnComputo.BorderColor = System.Drawing.Color.Black;
+            this.btnComputo.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
+            this.btnComputo.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnComputo.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnComputo.CheckedForeColor = System.Drawing.Color.White;
+            this.btnComputo.CheckedImage = null;
+            this.btnComputo.CheckedLineColor = System.Drawing.Color.DodgerBlue;
+            this.btnComputo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnComputo.FocusedColor = System.Drawing.Color.Empty;
+            this.btnComputo.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnComputo.ForeColor = System.Drawing.Color.White;
+            this.btnComputo.Image = null;
+            this.btnComputo.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnComputo.LineBottom = 5;
+            this.btnComputo.LineColor = System.Drawing.Color.Transparent;
+            this.btnComputo.Location = new System.Drawing.Point(404, 0);
+            this.btnComputo.Name = "btnComputo";
+            this.btnComputo.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnComputo.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnComputo.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(157)))), ((int)(((byte)(169)))));
+            this.btnComputo.OnHoverImage = null;
+            this.btnComputo.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            this.btnComputo.OnPressedColor = System.Drawing.Color.Black;
+            this.btnComputo.Size = new System.Drawing.Size(101, 50);
+            this.btnComputo.TabIndex = 4;
+            this.btnComputo.Text = "Computo";
+            this.btnComputo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnComputo.Click += new System.EventHandler(this.btnComputo_Click);
             // 
             // btnmtenimiento
             // 
@@ -488,9 +489,10 @@
             this.Controls.Add(this.pnlmenutop);
             this.Controls.Add(this.barra);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPrin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmPrin";
+            this.Text = "Menú Principal - PaperShop";
             this.Load += new System.EventHandler(this.FrmPrin_Load);
             this.barra.ResumeLayout(false);
             this.barra.PerformLayout();
@@ -516,7 +518,7 @@
         private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton3;
         private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton1;
         private Guna.UI.WinForms.GunaAdvenceButton Btninicio;
-        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton5;
+        private Guna.UI.WinForms.GunaAdvenceButton btnComputo;
         private Guna.UI.WinForms.GunaAdvenceButton btnmtenimiento;
         public Guna.UI.WinForms.GunaPanel panelContenedorForm;
         private System.Windows.Forms.Panel pnldentro;

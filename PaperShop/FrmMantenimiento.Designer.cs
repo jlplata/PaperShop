@@ -257,6 +257,8 @@
             this.Controls.Add(this.panelContenedorForm);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmMantenimiento";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "FrmMantenimiento";
             this.panelContenedorForm.ResumeLayout(false);
             this.PanelAdios.ResumeLayout(false);

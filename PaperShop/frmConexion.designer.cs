@@ -47,7 +47,7 @@
             this.cmbbasededatos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbbasededatos.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbbasededatos.FormattingEnabled = true;
-            this.cmbbasededatos.Location = new System.Drawing.Point(93, 170);
+            this.cmbbasededatos.Location = new System.Drawing.Point(93, 176);
             this.cmbbasededatos.Name = "cmbbasededatos";
             this.cmbbasededatos.Size = new System.Drawing.Size(196, 29);
             this.cmbbasededatos.TabIndex = 2;
@@ -59,7 +59,7 @@
             this.cboServer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboServer.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboServer.FormattingEnabled = true;
-            this.cboServer.Location = new System.Drawing.Point(64, 135);
+            this.cboServer.Location = new System.Drawing.Point(64, 141);
             this.cboServer.Name = "cboServer";
             this.cboServer.Size = new System.Drawing.Size(251, 29);
             this.cboServer.TabIndex = 4;
@@ -131,7 +131,7 @@
             this.BtnGuardar.ForeColor = System.Drawing.Color.White;
             this.BtnGuardar.Image = null;
             this.BtnGuardar.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnGuardar.Location = new System.Drawing.Point(64, 249);
+            this.BtnGuardar.Location = new System.Drawing.Point(67, 259);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(145)))), ((int)(((byte)(221)))));
             this.BtnGuardar.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(255)))));
@@ -167,7 +167,7 @@
             this.btnbasedatos.ImageSize = new System.Drawing.Size(20, 20);
             this.btnbasedatos.LineBottom = 5;
             this.btnbasedatos.LineColor = System.Drawing.Color.Transparent;
-            this.btnbasedatos.Location = new System.Drawing.Point(101, 169);
+            this.btnbasedatos.Location = new System.Drawing.Point(101, 175);
             this.btnbasedatos.Name = "btnbasedatos";
             this.btnbasedatos.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
             this.btnbasedatos.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -206,6 +206,7 @@
             this.Controls.Add(this.cmbbasededatos);
             this.Controls.Add(this.GunaPictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmConexion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmConexion";

@@ -122,6 +122,8 @@
             this.Controls.Add(this.lblx);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MensajeOk";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MensajeOk";
             this.Load += new System.EventHandler(this.MensajeOk_Load);

@@ -16,7 +16,7 @@ namespace PaperShop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmCarga());
+            Application.Run(new FrmLogin());
         }
     }
 }

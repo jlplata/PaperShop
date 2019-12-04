@@ -31,6 +31,7 @@ namespace PaperShop
             btnNuevo.Enabled = true;
             btnNuevo.Focus();
             Activos.Checked = true;
+            Nuevo();
 
         }
 
@@ -93,6 +94,7 @@ namespace PaperShop
 
             //Asignamos la fecha y hora a los lbls correspondientes
             DateTime hoy = DateTime.Now;
+
             lblFechaRegistro.Text = hoy.ToString("yyyyMMdd");
             lblHoraRegistro.Text = hoy.ToShortTimeString();
         }
@@ -104,8 +106,6 @@ namespace PaperShop
             txtExtension.Clear();
             txtIdUsuario.Text = "";
             dgvDepartamentos.Enabled = true;
-            lblFechaRegistro.Text = "Fecha_Registro";
-            lblHoraRegistro.Text = "Hora_Registro";
         }
 
         void Actualizar()
@@ -230,7 +230,7 @@ namespace PaperShop
 
             try
             {
-                int idDepartamento = Int16.Parse(dgvDepartamentos.CurrentRow.Cells["id_departamento"].Value.ToString());
+                int idDepartamento = Convert.ToInt16(dgvDepartamentos.CurrentRow.Cells["id_departamento"].Value.ToString());
                 qry = "SELECT * FROM departamentos WHERE nombre_departamento= '" + txtNombre.Text + "' OR extension= '" + txtNombre.Text + "'";
                 sqlCMD.CommandText = qry;
                 sqlCMD.Connection = sqlCNX;
@@ -276,6 +276,8 @@ namespace PaperShop
             }
             catch (SqlException ex)
             {
+                MessageBox.Show(ex.Message, "SI");
+
                 this.Alert("Error al Modificar", FrmNotificaciones.alertTypeEnum.Error);
             }
         }

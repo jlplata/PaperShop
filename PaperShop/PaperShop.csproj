@@ -183,6 +183,18 @@
     </Compile>
     <Compile Include="AppSetting.cs" />
     <Compile Include="Connection.cs" />
+    <Compile Include="Control\agg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control\agg.designer.cs">
+      <DependentUpon>agg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdmin.designer.cs">
+      <DependentUpon>FrmAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAdministracion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -336,6 +348,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Almacen\frmSelecProducto.resx">
       <DependentUpon>frmSelecProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\agg.resx">
+      <DependentUpon>agg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdmin.resx">
+      <DependentUpon>FrmAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAdministracion.resx">
       <DependentUpon>FrmAdministracion.cs</DependentUpon>

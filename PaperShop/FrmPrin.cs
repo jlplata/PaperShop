@@ -225,6 +225,14 @@ namespace PaperShop
 
         }
 
+        private void btnComputo_Click(object sender, EventArgs e)
+        {
+            FrmAdmin adm = new FrmAdmin();
+            adm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            AbrirFormEnPanel(adm);
+            cerrar();
+        }
+
         private void gunaPanel1_Paint(object sender, PaintEventArgs e)
         {
             cerrar();

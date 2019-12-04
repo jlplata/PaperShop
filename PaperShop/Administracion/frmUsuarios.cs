@@ -480,9 +480,9 @@ namespace PaperShop
             }
             else
             { imgUser.Refresh();
-            string patch = Application.StartupPath.Substring(0, (Application.StartupPath.Length - 10));
-            System.IO.File.Delete(patch + pp.Text);
-                System.IO.File.Copy(diro, patch + dir);
+                string pach = ".\\.\\";
+                System.IO.File.Delete(pach + pp.Text);
+                System.IO.File.Copy(diro, pach + dir);
 
 
             }

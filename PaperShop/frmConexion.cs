@@ -79,7 +79,7 @@ namespace PaperShop
                 SqlHelper helper = new SqlHelper(connectionString);
                 if (helper.IsConnection) 
                 {
-                    btnbasedatos. Location = new Point(101, 209);
+                    btnbasedatos. Location = new Point(101, 215);
                     BtnGuardar.Visible = true;
 
                     if (cmbbasededatos.Visible == false)

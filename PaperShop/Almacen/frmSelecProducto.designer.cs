@@ -99,6 +99,8 @@
             this.Controls.Add(this.dgvProductos);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmSelecProducto";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "Selección de producto";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmSelecProducto_FormClosing);
             this.Load += new System.EventHandler(this.frmSelecProducto_Load);

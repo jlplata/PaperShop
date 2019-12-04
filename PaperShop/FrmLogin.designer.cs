@@ -51,10 +51,9 @@
             // 
             // pp
             // 
-            this.pp.Location = new System.Drawing.Point(83, 112);
-            this.pp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pp.Location = new System.Drawing.Point(62, 91);
             this.pp.Name = "pp";
-            this.pp.Size = new System.Drawing.Size(132, 22);
+            this.pp.Size = new System.Drawing.Size(100, 20);
             this.pp.TabIndex = 9;
             this.pp.Visible = false;
             // 
@@ -75,9 +74,8 @@
             this.pnLogin.Controls.Add(this.panel1);
             this.pnLogin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnLogin.Location = new System.Drawing.Point(0, 0);
-            this.pnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnLogin.Name = "pnLogin";
-            this.pnLogin.Size = new System.Drawing.Size(424, 569);
+            this.pnLogin.Size = new System.Drawing.Size(318, 462);
             this.pnLogin.TabIndex = 11;
             // 
             // cmbTipo
@@ -94,12 +92,11 @@
             this.cmbTipo.Items.AddRange(new object[] {
             "Administrador",
             "Cajero"});
-            this.cmbTipo.Location = new System.Drawing.Point(37, 315);
-            this.cmbTipo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbTipo.Location = new System.Drawing.Point(28, 256);
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cmbTipo.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cmbTipo.Size = new System.Drawing.Size(213, 31);
+            this.cmbTipo.Size = new System.Drawing.Size(161, 26);
             this.cmbTipo.TabIndex = 2;
             this.cmbTipo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cmbTipo_KeyDown);
             // 
@@ -111,10 +108,9 @@
             this.GunaLinkLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.GunaLinkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.GunaLinkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(101)))), ((int)(((byte)(134)))));
-            this.GunaLinkLabel1.Location = new System.Drawing.Point(117, 436);
-            this.GunaLinkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.GunaLinkLabel1.Location = new System.Drawing.Point(88, 354);
             this.GunaLinkLabel1.Name = "GunaLinkLabel1";
-            this.GunaLinkLabel1.Size = new System.Drawing.Size(178, 20);
+            this.GunaLinkLabel1.Size = new System.Drawing.Size(141, 15);
             this.GunaLinkLabel1.TabIndex = 8;
             this.GunaLinkLabel1.TabStop = true;
             this.GunaLinkLabel1.Text = "¿Olvidaste tu contraseña?";
@@ -132,8 +128,7 @@
             this.BtnIniciarS.ForeColor = System.Drawing.Color.White;
             this.BtnIniciarS.Image = null;
             this.BtnIniciarS.ImageSize = new System.Drawing.Size(20, 20);
-            this.BtnIniciarS.Location = new System.Drawing.Point(37, 374);
-            this.BtnIniciarS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnIniciarS.Location = new System.Drawing.Point(28, 304);
             this.BtnIniciarS.Name = "BtnIniciarS";
             this.BtnIniciarS.OnHoverBaseColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(145)))), ((int)(((byte)(221)))));
             this.BtnIniciarS.OnHoverBaseColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(85)))), ((int)(((byte)(255)))));
@@ -142,7 +137,7 @@
             this.BtnIniciarS.OnHoverImage = null;
             this.BtnIniciarS.OnPressedColor = System.Drawing.Color.Black;
             this.BtnIniciarS.Radius = 2;
-            this.BtnIniciarS.Size = new System.Drawing.Size(331, 46);
+            this.BtnIniciarS.Size = new System.Drawing.Size(248, 37);
             this.BtnIniciarS.TabIndex = 3;
             this.BtnIniciarS.Text = "Iniciar Sesion";
             this.BtnIniciarS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -160,12 +155,11 @@
             this.txtPass.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtPass.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtPass.ForeColor = System.Drawing.Color.White;
-            this.txtPass.Location = new System.Drawing.Point(37, 224);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPass.Location = new System.Drawing.Point(28, 182);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '●';
             this.txtPass.Radius = 2;
-            this.txtPass.Size = new System.Drawing.Size(331, 46);
+            this.txtPass.Size = new System.Drawing.Size(248, 37);
             this.txtPass.TabIndex = 1;
             this.txtPass.UseSystemPasswordChar = true;
             this.txtPass.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtPass_KeyDown);
@@ -176,10 +170,9 @@
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.gunaLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
-            this.gunaLabel5.Location = new System.Drawing.Point(32, 288);
-            this.gunaLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.gunaLabel5.Location = new System.Drawing.Point(24, 234);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(43, 23);
+            this.gunaLabel5.Size = new System.Drawing.Size(35, 19);
             this.gunaLabel5.TabIndex = 5;
             this.gunaLabel5.Text = "Tipo";
             // 
@@ -188,10 +181,9 @@
             this.GunaLabel4.AutoSize = true;
             this.GunaLabel4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.GunaLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
-            this.GunaLabel4.Location = new System.Drawing.Point(32, 197);
-            this.GunaLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.GunaLabel4.Location = new System.Drawing.Point(24, 160);
             this.GunaLabel4.Name = "GunaLabel4";
-            this.GunaLabel4.Size = new System.Drawing.Size(97, 23);
+            this.GunaLabel4.Size = new System.Drawing.Size(79, 19);
             this.GunaLabel4.TabIndex = 5;
             this.GunaLabel4.Text = "Contraseña";
             // 
@@ -207,12 +199,11 @@
             this.txtUser.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtUser.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtUser.ForeColor = System.Drawing.Color.White;
-            this.txtUser.Location = new System.Drawing.Point(37, 132);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUser.Location = new System.Drawing.Point(28, 107);
             this.txtUser.Name = "txtUser";
             this.txtUser.PasswordChar = '\0';
             this.txtUser.Radius = 2;
-            this.txtUser.Size = new System.Drawing.Size(331, 46);
+            this.txtUser.Size = new System.Drawing.Size(248, 37);
             this.txtUser.TabIndex = 0;
             this.txtUser.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtUser_KeyDown);
             this.txtUser.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtUser_KeyPress);
@@ -222,10 +213,9 @@
             this.GunaLabel3.AutoSize = true;
             this.GunaLabel3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.GunaLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
-            this.GunaLabel3.Location = new System.Drawing.Point(32, 105);
-            this.GunaLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.GunaLabel3.Location = new System.Drawing.Point(24, 85);
             this.GunaLabel3.Name = "GunaLabel3";
-            this.GunaLabel3.Size = new System.Drawing.Size(68, 23);
+            this.GunaLabel3.Size = new System.Drawing.Size(56, 19);
             this.GunaLabel3.TabIndex = 3;
             this.GunaLabel3.Text = "Usuario";
             // 
@@ -234,10 +224,9 @@
             this.GunaLabel2.AutoSize = true;
             this.GunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.GunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(176)))), ((int)(((byte)(242)))));
-            this.GunaLabel2.Location = new System.Drawing.Point(33, 69);
-            this.GunaLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.GunaLabel2.Location = new System.Drawing.Point(25, 56);
             this.GunaLabel2.Name = "GunaLabel2";
-            this.GunaLabel2.Size = new System.Drawing.Size(83, 20);
+            this.GunaLabel2.Size = new System.Drawing.Size(66, 15);
             this.GunaLabel2.TabIndex = 2;
             this.GunaLabel2.Text = "Bienvenido";
             // 
@@ -246,10 +235,9 @@
             this.GunaLabel1.AutoSize = true;
             this.GunaLabel1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.GunaLabel1.ForeColor = System.Drawing.Color.White;
-            this.GunaLabel1.Location = new System.Drawing.Point(31, 32);
-            this.GunaLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.GunaLabel1.Location = new System.Drawing.Point(23, 26);
             this.GunaLabel1.Name = "GunaLabel1";
-            this.GunaLabel1.Size = new System.Drawing.Size(85, 35);
+            this.GunaLabel1.Size = new System.Drawing.Size(70, 28);
             this.GunaLabel1.TabIndex = 1;
             this.GunaLabel1.Text = "¡Hola!";
             // 
@@ -258,10 +246,9 @@
             this.GunaPictureBox1.BaseColor = System.Drawing.Color.White;
             this.GunaPictureBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.GunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("GunaPictureBox1.Image")));
-            this.GunaPictureBox1.Location = new System.Drawing.Point(0, 439);
-            this.GunaPictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GunaPictureBox1.Location = new System.Drawing.Point(0, 356);
             this.GunaPictureBox1.Name = "GunaPictureBox1";
-            this.GunaPictureBox1.Size = new System.Drawing.Size(424, 130);
+            this.GunaPictureBox1.Size = new System.Drawing.Size(318, 106);
             this.GunaPictureBox1.TabIndex = 0;
             this.GunaPictureBox1.TabStop = false;
             // 
@@ -270,9 +257,8 @@
             this.panel1.Controls.Add(this.gunaImageButton1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(424, 31);
+            this.panel1.Size = new System.Drawing.Size(318, 25);
             this.panel1.TabIndex = 12;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel1_MouseDown);
             // 
@@ -280,27 +266,26 @@
             // 
             this.gunaImageButton1.Image = global::PaperShop.Properties.Resources.Close;
             this.gunaImageButton1.ImageSize = new System.Drawing.Size(16, 16);
-            this.gunaImageButton1.Location = new System.Drawing.Point(391, 0);
-            this.gunaImageButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaImageButton1.Location = new System.Drawing.Point(293, 0);
             this.gunaImageButton1.Name = "gunaImageButton1";
             this.gunaImageButton1.OnHoverImage = null;
             this.gunaImageButton1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.gunaImageButton1.Size = new System.Drawing.Size(33, 34);
+            this.gunaImageButton1.Size = new System.Drawing.Size(25, 28);
             this.gunaImageButton1.TabIndex = 11;
             this.gunaImageButton1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
             // FrmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(424, 569);
+            this.ClientSize = new System.Drawing.Size(318, 462);
             this.Controls.Add(this.pnLogin);
             this.Controls.Add(this.pp);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmLogin";
+            this.Text = "Iniciar Sesión - PaperShop";
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.pnLogin.ResumeLayout(false);
             this.pnLogin.PerformLayout();

@@ -14,7 +14,9 @@ namespace PaperShop
     {
         public FrmMantenimiento()
         {
+     
             InitializeComponent();
+            Guna.UI.Lib.GraphicsHelper.DrawLineShadow(panelContenedorForm, Color.Black, 90, 10, Guna.UI.WinForms.VerHorAlign.HoriziontalTop);
         }
         public void AbrirFormEnPanel(object formHijo)
         {

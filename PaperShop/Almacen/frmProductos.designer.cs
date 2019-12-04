@@ -918,6 +918,8 @@
             this.Controls.Add(this.grbusuarios);
             this.Controls.Add(this.label13);
             this.Name = "frmProductos";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmProductos";
             this.Load += new System.EventHandler(this.FrmProductos_Load);

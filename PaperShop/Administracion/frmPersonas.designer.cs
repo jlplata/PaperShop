@@ -31,6 +31,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtTelefono = new System.Windows.Forms.MaskedTextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -47,6 +49,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.grbPersonas = new System.Windows.Forms.Panel();
+            this.rdbMasculino = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.rdbFemenino = new Guna.UI.WinForms.GunaAdvenceButton();
             this.txtMunicipio = new System.Windows.Forms.TextBox();
             this.txtApePaterno = new System.Windows.Forms.TextBox();
             this.txtEstado = new System.Windows.Forms.TextBox();
@@ -62,8 +66,6 @@
             this.FocusNombre = new Guna.UI.WinForms.GunaLineTextBox();
             this.txtApeMaterno = new System.Windows.Forms.TextBox();
             this.focusEstado = new Guna.UI.WinForms.GunaLineTextBox();
-            this.rdbMasculino = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.rdbFemenino = new Guna.UI.WinForms.GunaAdvenceButton();
             this.focusCorreo = new Guna.UI.WinForms.GunaLineTextBox();
             this.focusDomicilio = new Guna.UI.WinForms.GunaLineTextBox();
             this.focusApeMaterno = new Guna.UI.WinForms.GunaLineTextBox();
@@ -75,7 +77,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.focusBuscar = new Guna.UI.WinForms.GunaLineTextBox();
-            this.dgvPersonas = new System.Windows.Forms.DataGridView();
             this.mcPersonas = new Guna.UI.WinForms.GunaContextMenuStrip();
             this.btnModificarPersona = new System.Windows.Forms.ToolStripMenuItem();
             this.btnActivarPersona = new System.Windows.Forms.ToolStripMenuItem();
@@ -84,10 +85,11 @@
             this.Activos = new Guna.UI.WinForms.GunaWinSwitch();
             this.lblActi = new System.Windows.Forms.Label();
             this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.dgvPersonas = new System.Windows.Forms.DataGridView();
             this.grbPersonas.SuspendLayout();
             this.gunaPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPersonas)).BeginInit();
             this.mcPersonas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPersonas)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTelefono
@@ -114,6 +116,7 @@
             this.label12.Size = new System.Drawing.Size(89, 21);
             this.label12.TabIndex = 0;
             this.label12.Text = "ID Usuario.-";
+            this.label12.Visible = false;
             // 
             // label11
             // 
@@ -125,6 +128,7 @@
             this.label11.Size = new System.Drawing.Size(61, 21);
             this.label11.TabIndex = 0;
             this.label11.Text = "Activo.-";
+            this.label11.Visible = false;
             // 
             // label10
             // 
@@ -180,6 +184,7 @@
             this.lblHoraRegistro.Size = new System.Drawing.Size(100, 21);
             this.lblHoraRegistro.TabIndex = 0;
             this.lblHoraRegistro.Text = "Hora_registro";
+            this.lblHoraRegistro.Visible = false;
             // 
             // lblFechaRegistro
             // 
@@ -191,6 +196,7 @@
             this.lblFechaRegistro.Size = new System.Drawing.Size(106, 21);
             this.lblFechaRegistro.TabIndex = 0;
             this.lblFechaRegistro.Text = "Fecha_registro";
+            this.lblFechaRegistro.Visible = false;
             // 
             // label6
             // 
@@ -260,6 +266,8 @@
             // 
             // grbPersonas
             // 
+            this.grbPersonas.Controls.Add(this.rdbMasculino);
+            this.grbPersonas.Controls.Add(this.rdbFemenino);
             this.grbPersonas.Controls.Add(this.txtMunicipio);
             this.grbPersonas.Controls.Add(this.txtApePaterno);
             this.grbPersonas.Controls.Add(this.txtEstado);
@@ -275,8 +283,6 @@
             this.grbPersonas.Controls.Add(this.FocusNombre);
             this.grbPersonas.Controls.Add(this.txtApeMaterno);
             this.grbPersonas.Controls.Add(this.focusEstado);
-            this.grbPersonas.Controls.Add(this.rdbMasculino);
-            this.grbPersonas.Controls.Add(this.rdbFemenino);
             this.grbPersonas.Controls.Add(this.lblHoraRegistro);
             this.grbPersonas.Controls.Add(this.label12);
             this.grbPersonas.Controls.Add(this.lblFechaRegistro);
@@ -301,6 +307,71 @@
             this.grbPersonas.Name = "grbPersonas";
             this.grbPersonas.Size = new System.Drawing.Size(437, 448);
             this.grbPersonas.TabIndex = 6;
+            // 
+            // rdbMasculino
+            // 
+            this.rdbMasculino.AnimationHoverSpeed = 0.07F;
+            this.rdbMasculino.AnimationSpeed = 0.03F;
+            this.rdbMasculino.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.rdbMasculino.BorderColor = System.Drawing.Color.Black;
+            this.rdbMasculino.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
+            this.rdbMasculino.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.rdbMasculino.CheckedBorderColor = System.Drawing.Color.Black;
+            this.rdbMasculino.CheckedForeColor = System.Drawing.Color.White;
+            this.rdbMasculino.CheckedImage = null;
+            this.rdbMasculino.CheckedLineColor = System.Drawing.Color.DodgerBlue;
+            this.rdbMasculino.FocusedColor = System.Drawing.Color.Empty;
+            this.rdbMasculino.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbMasculino.ForeColor = System.Drawing.Color.White;
+            this.rdbMasculino.Image = null;
+            this.rdbMasculino.ImageSize = new System.Drawing.Size(20, 20);
+            this.rdbMasculino.LineBottom = 5;
+            this.rdbMasculino.LineColor = System.Drawing.Color.Transparent;
+            this.rdbMasculino.Location = new System.Drawing.Point(72, 337);
+            this.rdbMasculino.Name = "rdbMasculino";
+            this.rdbMasculino.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.rdbMasculino.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.rdbMasculino.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(157)))), ((int)(((byte)(169)))));
+            this.rdbMasculino.OnHoverImage = null;
+            this.rdbMasculino.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            this.rdbMasculino.OnPressedColor = System.Drawing.Color.Black;
+            this.rdbMasculino.Size = new System.Drawing.Size(100, 30);
+            this.rdbMasculino.TabIndex = 8;
+            this.rdbMasculino.Text = "Masculino";
+            this.rdbMasculino.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // rdbFemenino
+            // 
+            this.rdbFemenino.AnimationHoverSpeed = 0.07F;
+            this.rdbFemenino.AnimationSpeed = 0.03F;
+            this.rdbFemenino.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.rdbFemenino.BorderColor = System.Drawing.Color.Black;
+            this.rdbFemenino.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
+            this.rdbFemenino.Checked = true;
+            this.rdbFemenino.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.rdbFemenino.CheckedBorderColor = System.Drawing.Color.Black;
+            this.rdbFemenino.CheckedForeColor = System.Drawing.Color.White;
+            this.rdbFemenino.CheckedImage = null;
+            this.rdbFemenino.CheckedLineColor = System.Drawing.Color.DodgerBlue;
+            this.rdbFemenino.FocusedColor = System.Drawing.Color.Empty;
+            this.rdbFemenino.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbFemenino.ForeColor = System.Drawing.Color.White;
+            this.rdbFemenino.Image = null;
+            this.rdbFemenino.ImageSize = new System.Drawing.Size(20, 20);
+            this.rdbFemenino.LineBottom = 5;
+            this.rdbFemenino.LineColor = System.Drawing.Color.Transparent;
+            this.rdbFemenino.Location = new System.Drawing.Point(188, 337);
+            this.rdbFemenino.Name = "rdbFemenino";
+            this.rdbFemenino.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.rdbFemenino.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.rdbFemenino.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(157)))), ((int)(((byte)(169)))));
+            this.rdbFemenino.OnHoverImage = null;
+            this.rdbFemenino.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            this.rdbFemenino.OnPressedColor = System.Drawing.Color.Black;
+            this.rdbFemenino.Size = new System.Drawing.Size(100, 30);
+            this.rdbFemenino.TabIndex = 7;
+            this.rdbFemenino.Text = "Femenino";
+            this.rdbFemenino.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtMunicipio
             // 
@@ -404,6 +475,7 @@
             this.txtIdUsuario.ReadOnly = true;
             this.txtIdUsuario.Size = new System.Drawing.Size(160, 30);
             this.txtIdUsuario.TabIndex = 12;
+            this.txtIdUsuario.Visible = false;
             // 
             // dtpFechaNacimiento
             // 
@@ -447,6 +519,7 @@
             this.txtActivo.ReadOnly = true;
             this.txtActivo.Size = new System.Drawing.Size(160, 30);
             this.txtActivo.TabIndex = 11;
+            this.txtActivo.Visible = false;
             // 
             // txtCorreo
             // 
@@ -562,71 +635,6 @@
             this.focusEstado.TabIndex = 9;
             this.focusEstado.Enter += new System.EventHandler(this.focusEstado_Enter);
             // 
-            // rdbMasculino
-            // 
-            this.rdbMasculino.AnimationHoverSpeed = 0.07F;
-            this.rdbMasculino.AnimationSpeed = 0.03F;
-            this.rdbMasculino.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.rdbMasculino.BorderColor = System.Drawing.Color.Black;
-            this.rdbMasculino.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
-            this.rdbMasculino.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.rdbMasculino.CheckedBorderColor = System.Drawing.Color.Black;
-            this.rdbMasculino.CheckedForeColor = System.Drawing.Color.White;
-            this.rdbMasculino.CheckedImage = null;
-            this.rdbMasculino.CheckedLineColor = System.Drawing.Color.DodgerBlue;
-            this.rdbMasculino.FocusedColor = System.Drawing.Color.Empty;
-            this.rdbMasculino.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbMasculino.ForeColor = System.Drawing.Color.White;
-            this.rdbMasculino.Image = null;
-            this.rdbMasculino.ImageSize = new System.Drawing.Size(20, 20);
-            this.rdbMasculino.LineBottom = 5;
-            this.rdbMasculino.LineColor = System.Drawing.Color.Transparent;
-            this.rdbMasculino.Location = new System.Drawing.Point(70, 402);
-            this.rdbMasculino.Name = "rdbMasculino";
-            this.rdbMasculino.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.rdbMasculino.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.rdbMasculino.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(157)))), ((int)(((byte)(169)))));
-            this.rdbMasculino.OnHoverImage = null;
-            this.rdbMasculino.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
-            this.rdbMasculino.OnPressedColor = System.Drawing.Color.Black;
-            this.rdbMasculino.Size = new System.Drawing.Size(100, 30);
-            this.rdbMasculino.TabIndex = 8;
-            this.rdbMasculino.Text = "Masculino";
-            this.rdbMasculino.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // rdbFemenino
-            // 
-            this.rdbFemenino.AnimationHoverSpeed = 0.07F;
-            this.rdbFemenino.AnimationSpeed = 0.03F;
-            this.rdbFemenino.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.rdbFemenino.BorderColor = System.Drawing.Color.Black;
-            this.rdbFemenino.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
-            this.rdbFemenino.Checked = true;
-            this.rdbFemenino.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.rdbFemenino.CheckedBorderColor = System.Drawing.Color.Black;
-            this.rdbFemenino.CheckedForeColor = System.Drawing.Color.White;
-            this.rdbFemenino.CheckedImage = null;
-            this.rdbFemenino.CheckedLineColor = System.Drawing.Color.DodgerBlue;
-            this.rdbFemenino.FocusedColor = System.Drawing.Color.Empty;
-            this.rdbFemenino.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdbFemenino.ForeColor = System.Drawing.Color.White;
-            this.rdbFemenino.Image = null;
-            this.rdbFemenino.ImageSize = new System.Drawing.Size(20, 20);
-            this.rdbFemenino.LineBottom = 5;
-            this.rdbFemenino.LineColor = System.Drawing.Color.Transparent;
-            this.rdbFemenino.Location = new System.Drawing.Point(186, 402);
-            this.rdbFemenino.Name = "rdbFemenino";
-            this.rdbFemenino.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.rdbFemenino.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.rdbFemenino.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(157)))), ((int)(((byte)(169)))));
-            this.rdbFemenino.OnHoverImage = null;
-            this.rdbFemenino.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
-            this.rdbFemenino.OnPressedColor = System.Drawing.Color.Black;
-            this.rdbFemenino.Size = new System.Drawing.Size(100, 30);
-            this.rdbFemenino.TabIndex = 7;
-            this.rdbFemenino.Text = "Femenino";
-            this.rdbFemenino.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // focusCorreo
             // 
             this.focusCorreo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(53)))));
@@ -686,7 +694,7 @@
             this.gunaPanel4.Controls.Add(this.btnModificar);
             this.gunaPanel4.Controls.Add(this.btnGuardar);
             this.gunaPanel4.Controls.Add(this.btnNuevo);
-            this.gunaPanel4.Location = new System.Drawing.Point(32, 539);
+            this.gunaPanel4.Location = new System.Drawing.Point(32, 508);
             this.gunaPanel4.Name = "gunaPanel4";
             this.gunaPanel4.Size = new System.Drawing.Size(406, 50);
             this.gunaPanel4.TabIndex = 7;
@@ -866,48 +874,6 @@
             this.focusBuscar.TabIndex = 1;
             this.focusBuscar.Enter += new System.EventHandler(this.focusBuscar_Enter);
             // 
-            // dgvPersonas
-            // 
-            this.dgvPersonas.AllowUserToAddRows = false;
-            this.dgvPersonas.AllowUserToDeleteRows = false;
-            this.dgvPersonas.AllowUserToResizeRows = false;
-            this.dgvPersonas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPersonas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvPersonas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPersonas.ContextMenuStrip = this.mcPersonas;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPersonas.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvPersonas.Location = new System.Drawing.Point(334, 61);
-            this.dgvPersonas.Name = "dgvPersonas";
-            this.dgvPersonas.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPersonas.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvPersonas.RowHeadersWidth = 51;
-            this.dgvPersonas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPersonas.Size = new System.Drawing.Size(633, 367);
-            this.dgvPersonas.TabIndex = 33;
-            // 
             // mcPersonas
             // 
             this.mcPersonas.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -1021,17 +987,81 @@
             this.txtBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.valdacionLetras);
             this.txtBuscar.Leave += new System.EventHandler(this.txtBuscar_Leave);
             // 
+            // dgvPersonas
+            // 
+            this.dgvPersonas.AllowUserToAddRows = false;
+            this.dgvPersonas.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvPersonas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvPersonas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvPersonas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.dgvPersonas.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvPersonas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPersonas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvPersonas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPersonas.ContextMenuStrip = this.mcPersonas;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPersonas.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvPersonas.EnableHeadersVisualStyles = false;
+            this.dgvPersonas.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.dgvPersonas.Location = new System.Drawing.Point(335, 61);
+            this.dgvPersonas.Name = "dgvPersonas";
+            this.dgvPersonas.ReadOnly = true;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPersonas.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvPersonas.RowHeadersWidth = 51;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvPersonas.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvPersonas.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(53)))));
+            this.dgvPersonas.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvPersonas.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvPersonas.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            this.dgvPersonas.RowTemplate.ReadOnly = true;
+            this.dgvPersonas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvPersonas.Size = new System.Drawing.Size(633, 367);
+            this.dgvPersonas.TabIndex = 66;
+            // 
             // frmPersonas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(53)))));
             this.ClientSize = new System.Drawing.Size(980, 600);
+            this.Controls.Add(this.dgvPersonas);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.lblActi);
             this.Controls.Add(this.Activos);
             this.Controls.Add(this.btnImprimir);
-            this.Controls.Add(this.dgvPersonas);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.gunaPanel4);
             this.Controls.Add(this.grbPersonas);
@@ -1042,14 +1072,16 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPersonas";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Personas | SCI";
             this.Load += new System.EventHandler(this.FrmPersonas_Load);
             this.grbPersonas.ResumeLayout(false);
             this.grbPersonas.PerformLayout();
             this.gunaPanel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPersonas)).EndInit();
             this.mcPersonas.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPersonas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1092,7 +1124,6 @@
         private Guna.UI.WinForms.GunaLineTextBox focusEstado;
         private System.Windows.Forms.Label label13;
         private Guna.UI.WinForms.GunaLineTextBox focusBuscar;
-        private System.Windows.Forms.DataGridView dgvPersonas;
         private Guna.UI.WinForms.GunaAdvenceButton btnImprimir;
         private Guna.UI.WinForms.GunaWinSwitch Activos;
         private System.Windows.Forms.Label lblActi;
@@ -1109,5 +1140,6 @@
         private System.Windows.Forms.ToolStripMenuItem btnModificarPersona;
         private System.Windows.Forms.ToolStripMenuItem btnActivarPersona;
         private System.Windows.Forms.ToolStripMenuItem btnDesactivarPersona;
+        private System.Windows.Forms.DataGridView dgvPersonas;
     }
 }

@@ -34,10 +34,14 @@
             this.lblHoraRegistro = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblFechaRegistro = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabSalida = new System.Windows.Forms.TabPage();
+            this.lblActi = new System.Windows.Forms.Label();
+            this.Activo = new Guna.UI.WinForms.GunaWinSwitch();
+            this.btnTicket = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnEliminarSalida = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnCancelarSalida = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnImprimirSalida = new Guna.UI.WinForms.GunaAdvenceButton();
             this.label6 = new System.Windows.Forms.Label();
             this.txtfolio = new System.Windows.Forms.TextBox();
             this.dgvSalidas = new System.Windows.Forms.DataGridView();
@@ -46,6 +50,12 @@
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tabSalidaDetalle = new System.Windows.Forms.TabPage();
+            this.lblActiDs = new System.Windows.Forms.Label();
+            this.ActivoDs = new Guna.UI.WinForms.GunaWinSwitch();
+            this.btnfoliods = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnEliminarDS = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnCancelarDS = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnImprimirDS = new Guna.UI.WinForms.GunaAdvenceButton();
             this.label7 = new System.Windows.Forms.Label();
             this.txtfoliods = new System.Windows.Forms.TextBox();
             this.dgvProductosDS = new System.Windows.Forms.DataGridView();
@@ -53,20 +63,6 @@
             this.txtDescripcionDS = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.dtpFechaInicial = new Guna.UI.WinForms.GunaDateTimePicker();
-            this.dtpFechaFinal = new Guna.UI.WinForms.GunaDateTimePicker();
-            this.btnImprimirSalida = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnImprimirDS = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnCancelarDS = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnCancelarSalida = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnEliminarSalida = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnTicket = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.Activo = new Guna.UI.WinForms.GunaWinSwitch();
-            this.lblActi = new System.Windows.Forms.Label();
-            this.btnEliminarDS = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnfoliods = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.ActivoDs = new Guna.UI.WinForms.GunaWinSwitch();
-            this.lblActiDs = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabSalida.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSalidas)).BeginInit();
@@ -127,30 +123,6 @@
             this.lblFechaRegistro.Text = "Fecha_Registro";
             this.lblFechaRegistro.Visible = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(522, 60);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 21);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Fecha Final:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(169, 60);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 21);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Fecha Inicial:";
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabSalida);
@@ -188,6 +160,160 @@
             this.tabSalida.TabIndex = 0;
             this.tabSalida.Text = "Mtto. Salidas Global";
             this.tabSalida.Click += new System.EventHandler(this.TabSalida_Click);
+            // 
+            // lblActi
+            // 
+            this.lblActi.AutoSize = true;
+            this.lblActi.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblActi.ForeColor = System.Drawing.Color.White;
+            this.lblActi.Location = new System.Drawing.Point(306, 11);
+            this.lblActi.Name = "lblActi";
+            this.lblActi.Size = new System.Drawing.Size(57, 21);
+            this.lblActi.TabIndex = 97;
+            this.lblActi.Text = "Activos";
+            // 
+            // Activo
+            // 
+            this.Activo.BaseColor = System.Drawing.SystemColors.Control;
+            this.Activo.CheckedOffColor = System.Drawing.Color.DarkGray;
+            this.Activo.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Activo.FillColor = System.Drawing.Color.White;
+            this.Activo.Location = new System.Drawing.Point(260, 10);
+            this.Activo.Name = "Activo";
+            this.Activo.Size = new System.Drawing.Size(40, 22);
+            this.Activo.TabIndex = 96;
+            this.Activo.CheckedChanged += new System.EventHandler(this.gunaWinSwitch1_CheckedChanged);
+            // 
+            // btnTicket
+            // 
+            this.btnTicket.AnimationHoverSpeed = 0.07F;
+            this.btnTicket.AnimationSpeed = 0.03F;
+            this.btnTicket.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnTicket.BorderColor = System.Drawing.Color.Black;
+            this.btnTicket.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
+            this.btnTicket.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnTicket.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnTicket.CheckedForeColor = System.Drawing.Color.White;
+            this.btnTicket.CheckedImage = null;
+            this.btnTicket.CheckedLineColor = System.Drawing.Color.DodgerBlue;
+            this.btnTicket.FocusedColor = System.Drawing.Color.Empty;
+            this.btnTicket.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTicket.ForeColor = System.Drawing.Color.White;
+            this.btnTicket.Image = null;
+            this.btnTicket.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnTicket.LineBottom = 5;
+            this.btnTicket.LineColor = System.Drawing.Color.Transparent;
+            this.btnTicket.Location = new System.Drawing.Point(164, 7);
+            this.btnTicket.Name = "btnTicket";
+            this.btnTicket.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnTicket.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnTicket.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(157)))), ((int)(((byte)(169)))));
+            this.btnTicket.OnHoverImage = null;
+            this.btnTicket.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            this.btnTicket.OnPressedColor = System.Drawing.Color.Black;
+            this.btnTicket.Size = new System.Drawing.Size(80, 30);
+            this.btnTicket.TabIndex = 40;
+            this.btnTicket.Text = "Ticket";
+            this.btnTicket.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnTicket.Click += new System.EventHandler(this.BtnTicket_Click);
+            // 
+            // btnEliminarSalida
+            // 
+            this.btnEliminarSalida.AnimationHoverSpeed = 0.07F;
+            this.btnEliminarSalida.AnimationSpeed = 0.03F;
+            this.btnEliminarSalida.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnEliminarSalida.BorderColor = System.Drawing.Color.Black;
+            this.btnEliminarSalida.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
+            this.btnEliminarSalida.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnEliminarSalida.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnEliminarSalida.CheckedForeColor = System.Drawing.Color.White;
+            this.btnEliminarSalida.CheckedImage = null;
+            this.btnEliminarSalida.CheckedLineColor = System.Drawing.Color.DodgerBlue;
+            this.btnEliminarSalida.FocusedColor = System.Drawing.Color.Empty;
+            this.btnEliminarSalida.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarSalida.ForeColor = System.Drawing.Color.White;
+            this.btnEliminarSalida.Image = null;
+            this.btnEliminarSalida.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnEliminarSalida.LineBottom = 5;
+            this.btnEliminarSalida.LineColor = System.Drawing.Color.Transparent;
+            this.btnEliminarSalida.Location = new System.Drawing.Point(395, 74);
+            this.btnEliminarSalida.Name = "btnEliminarSalida";
+            this.btnEliminarSalida.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnEliminarSalida.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnEliminarSalida.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(157)))), ((int)(((byte)(169)))));
+            this.btnEliminarSalida.OnHoverImage = null;
+            this.btnEliminarSalida.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            this.btnEliminarSalida.OnPressedColor = System.Drawing.Color.Black;
+            this.btnEliminarSalida.Size = new System.Drawing.Size(80, 30);
+            this.btnEliminarSalida.TabIndex = 39;
+            this.btnEliminarSalida.Text = "Eliminar";
+            this.btnEliminarSalida.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnEliminarSalida.Click += new System.EventHandler(this.BtnEliminarSalida_Click);
+            // 
+            // btnCancelarSalida
+            // 
+            this.btnCancelarSalida.AnimationHoverSpeed = 0.07F;
+            this.btnCancelarSalida.AnimationSpeed = 0.03F;
+            this.btnCancelarSalida.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnCancelarSalida.BorderColor = System.Drawing.Color.Black;
+            this.btnCancelarSalida.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
+            this.btnCancelarSalida.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnCancelarSalida.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnCancelarSalida.CheckedForeColor = System.Drawing.Color.White;
+            this.btnCancelarSalida.CheckedImage = null;
+            this.btnCancelarSalida.CheckedLineColor = System.Drawing.Color.DodgerBlue;
+            this.btnCancelarSalida.FocusedColor = System.Drawing.Color.Empty;
+            this.btnCancelarSalida.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarSalida.ForeColor = System.Drawing.Color.White;
+            this.btnCancelarSalida.Image = null;
+            this.btnCancelarSalida.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnCancelarSalida.LineBottom = 5;
+            this.btnCancelarSalida.LineColor = System.Drawing.Color.Transparent;
+            this.btnCancelarSalida.Location = new System.Drawing.Point(481, 74);
+            this.btnCancelarSalida.Name = "btnCancelarSalida";
+            this.btnCancelarSalida.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnCancelarSalida.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnCancelarSalida.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(157)))), ((int)(((byte)(169)))));
+            this.btnCancelarSalida.OnHoverImage = null;
+            this.btnCancelarSalida.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            this.btnCancelarSalida.OnPressedColor = System.Drawing.Color.Black;
+            this.btnCancelarSalida.Size = new System.Drawing.Size(80, 30);
+            this.btnCancelarSalida.TabIndex = 38;
+            this.btnCancelarSalida.Text = "Cancelar";
+            this.btnCancelarSalida.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnCancelarSalida.Click += new System.EventHandler(this.BtnCancelarSalida_Click);
+            // 
+            // btnImprimirSalida
+            // 
+            this.btnImprimirSalida.AnimationHoverSpeed = 0.07F;
+            this.btnImprimirSalida.AnimationSpeed = 0.03F;
+            this.btnImprimirSalida.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnImprimirSalida.BorderColor = System.Drawing.Color.Black;
+            this.btnImprimirSalida.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
+            this.btnImprimirSalida.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnImprimirSalida.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnImprimirSalida.CheckedForeColor = System.Drawing.Color.White;
+            this.btnImprimirSalida.CheckedImage = null;
+            this.btnImprimirSalida.CheckedLineColor = System.Drawing.Color.DodgerBlue;
+            this.btnImprimirSalida.FocusedColor = System.Drawing.Color.Empty;
+            this.btnImprimirSalida.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImprimirSalida.ForeColor = System.Drawing.Color.White;
+            this.btnImprimirSalida.Image = null;
+            this.btnImprimirSalida.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnImprimirSalida.LineBottom = 5;
+            this.btnImprimirSalida.LineColor = System.Drawing.Color.Transparent;
+            this.btnImprimirSalida.Location = new System.Drawing.Point(567, 74);
+            this.btnImprimirSalida.Name = "btnImprimirSalida";
+            this.btnImprimirSalida.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnImprimirSalida.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnImprimirSalida.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(157)))), ((int)(((byte)(169)))));
+            this.btnImprimirSalida.OnHoverImage = null;
+            this.btnImprimirSalida.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            this.btnImprimirSalida.OnPressedColor = System.Drawing.Color.Black;
+            this.btnImprimirSalida.Size = new System.Drawing.Size(80, 30);
+            this.btnImprimirSalida.TabIndex = 35;
+            this.btnImprimirSalida.Text = "Imprimir";
+            this.btnImprimirSalida.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
             // 
@@ -282,6 +408,160 @@
             this.tabSalidaDetalle.TabIndex = 1;
             this.tabSalidaDetalle.Text = "Mtto. Salida por Detalle";
             // 
+            // lblActiDs
+            // 
+            this.lblActiDs.AutoSize = true;
+            this.lblActiDs.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblActiDs.ForeColor = System.Drawing.Color.White;
+            this.lblActiDs.Location = new System.Drawing.Point(306, 13);
+            this.lblActiDs.Name = "lblActiDs";
+            this.lblActiDs.Size = new System.Drawing.Size(57, 21);
+            this.lblActiDs.TabIndex = 98;
+            this.lblActiDs.Text = "Activos";
+            // 
+            // ActivoDs
+            // 
+            this.ActivoDs.BaseColor = System.Drawing.SystemColors.Control;
+            this.ActivoDs.CheckedOffColor = System.Drawing.Color.DarkGray;
+            this.ActivoDs.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.ActivoDs.FillColor = System.Drawing.Color.White;
+            this.ActivoDs.Location = new System.Drawing.Point(259, 13);
+            this.ActivoDs.Name = "ActivoDs";
+            this.ActivoDs.Size = new System.Drawing.Size(40, 22);
+            this.ActivoDs.TabIndex = 97;
+            this.ActivoDs.CheckedChanged += new System.EventHandler(this.gunaWinSwitch1_CheckedChanged_1);
+            // 
+            // btnfoliods
+            // 
+            this.btnfoliods.AnimationHoverSpeed = 0.07F;
+            this.btnfoliods.AnimationSpeed = 0.03F;
+            this.btnfoliods.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnfoliods.BorderColor = System.Drawing.Color.Black;
+            this.btnfoliods.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
+            this.btnfoliods.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnfoliods.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnfoliods.CheckedForeColor = System.Drawing.Color.White;
+            this.btnfoliods.CheckedImage = null;
+            this.btnfoliods.CheckedLineColor = System.Drawing.Color.DodgerBlue;
+            this.btnfoliods.FocusedColor = System.Drawing.Color.Empty;
+            this.btnfoliods.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnfoliods.ForeColor = System.Drawing.Color.White;
+            this.btnfoliods.Image = null;
+            this.btnfoliods.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnfoliods.LineBottom = 5;
+            this.btnfoliods.LineColor = System.Drawing.Color.Transparent;
+            this.btnfoliods.Location = new System.Drawing.Point(163, 5);
+            this.btnfoliods.Name = "btnfoliods";
+            this.btnfoliods.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnfoliods.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnfoliods.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(157)))), ((int)(((byte)(169)))));
+            this.btnfoliods.OnHoverImage = null;
+            this.btnfoliods.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            this.btnfoliods.OnPressedColor = System.Drawing.Color.Black;
+            this.btnfoliods.Size = new System.Drawing.Size(80, 30);
+            this.btnfoliods.TabIndex = 39;
+            this.btnfoliods.Text = "Tickets";
+            this.btnfoliods.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnfoliods.Click += new System.EventHandler(this.Btnfoliods_Click);
+            // 
+            // btnEliminarDS
+            // 
+            this.btnEliminarDS.AnimationHoverSpeed = 0.07F;
+            this.btnEliminarDS.AnimationSpeed = 0.03F;
+            this.btnEliminarDS.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnEliminarDS.BorderColor = System.Drawing.Color.Black;
+            this.btnEliminarDS.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
+            this.btnEliminarDS.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnEliminarDS.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnEliminarDS.CheckedForeColor = System.Drawing.Color.White;
+            this.btnEliminarDS.CheckedImage = null;
+            this.btnEliminarDS.CheckedLineColor = System.Drawing.Color.DodgerBlue;
+            this.btnEliminarDS.FocusedColor = System.Drawing.Color.Empty;
+            this.btnEliminarDS.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarDS.ForeColor = System.Drawing.Color.White;
+            this.btnEliminarDS.Image = null;
+            this.btnEliminarDS.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnEliminarDS.LineBottom = 5;
+            this.btnEliminarDS.LineColor = System.Drawing.Color.Transparent;
+            this.btnEliminarDS.Location = new System.Drawing.Point(387, 73);
+            this.btnEliminarDS.Name = "btnEliminarDS";
+            this.btnEliminarDS.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnEliminarDS.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnEliminarDS.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(157)))), ((int)(((byte)(169)))));
+            this.btnEliminarDS.OnHoverImage = null;
+            this.btnEliminarDS.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            this.btnEliminarDS.OnPressedColor = System.Drawing.Color.Black;
+            this.btnEliminarDS.Size = new System.Drawing.Size(80, 30);
+            this.btnEliminarDS.TabIndex = 38;
+            this.btnEliminarDS.Text = "Eliminar";
+            this.btnEliminarDS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnEliminarDS.Click += new System.EventHandler(this.BtnEliminarDS_Click);
+            // 
+            // btnCancelarDS
+            // 
+            this.btnCancelarDS.AnimationHoverSpeed = 0.07F;
+            this.btnCancelarDS.AnimationSpeed = 0.03F;
+            this.btnCancelarDS.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnCancelarDS.BorderColor = System.Drawing.Color.Black;
+            this.btnCancelarDS.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
+            this.btnCancelarDS.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnCancelarDS.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnCancelarDS.CheckedForeColor = System.Drawing.Color.White;
+            this.btnCancelarDS.CheckedImage = null;
+            this.btnCancelarDS.CheckedLineColor = System.Drawing.Color.DodgerBlue;
+            this.btnCancelarDS.FocusedColor = System.Drawing.Color.Empty;
+            this.btnCancelarDS.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarDS.ForeColor = System.Drawing.Color.White;
+            this.btnCancelarDS.Image = null;
+            this.btnCancelarDS.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnCancelarDS.LineBottom = 5;
+            this.btnCancelarDS.LineColor = System.Drawing.Color.Transparent;
+            this.btnCancelarDS.Location = new System.Drawing.Point(473, 73);
+            this.btnCancelarDS.Name = "btnCancelarDS";
+            this.btnCancelarDS.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnCancelarDS.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnCancelarDS.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(157)))), ((int)(((byte)(169)))));
+            this.btnCancelarDS.OnHoverImage = null;
+            this.btnCancelarDS.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            this.btnCancelarDS.OnPressedColor = System.Drawing.Color.Black;
+            this.btnCancelarDS.Size = new System.Drawing.Size(80, 30);
+            this.btnCancelarDS.TabIndex = 37;
+            this.btnCancelarDS.Text = "Cancelar";
+            this.btnCancelarDS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnCancelarDS.Click += new System.EventHandler(this.BtnCancelarDS_Click);
+            // 
+            // btnImprimirDS
+            // 
+            this.btnImprimirDS.AnimationHoverSpeed = 0.07F;
+            this.btnImprimirDS.AnimationSpeed = 0.03F;
+            this.btnImprimirDS.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnImprimirDS.BorderColor = System.Drawing.Color.Black;
+            this.btnImprimirDS.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
+            this.btnImprimirDS.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnImprimirDS.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnImprimirDS.CheckedForeColor = System.Drawing.Color.White;
+            this.btnImprimirDS.CheckedImage = null;
+            this.btnImprimirDS.CheckedLineColor = System.Drawing.Color.DodgerBlue;
+            this.btnImprimirDS.FocusedColor = System.Drawing.Color.Empty;
+            this.btnImprimirDS.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImprimirDS.ForeColor = System.Drawing.Color.White;
+            this.btnImprimirDS.Image = null;
+            this.btnImprimirDS.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnImprimirDS.LineBottom = 5;
+            this.btnImprimirDS.LineColor = System.Drawing.Color.Transparent;
+            this.btnImprimirDS.Location = new System.Drawing.Point(559, 73);
+            this.btnImprimirDS.Name = "btnImprimirDS";
+            this.btnImprimirDS.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.btnImprimirDS.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnImprimirDS.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(157)))), ((int)(((byte)(169)))));
+            this.btnImprimirDS.OnHoverImage = null;
+            this.btnImprimirDS.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            this.btnImprimirDS.OnPressedColor = System.Drawing.Color.Black;
+            this.btnImprimirDS.Size = new System.Drawing.Size(80, 30);
+            this.btnImprimirDS.TabIndex = 36;
+            this.btnImprimirDS.Text = "Imprimir";
+            this.btnImprimirDS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -357,377 +637,23 @@
             this.label8.TabIndex = 92;
             this.label8.Text = "Categoria Productos";
             // 
-            // dtpFechaInicial
-            // 
-            this.dtpFechaInicial.BaseColor = System.Drawing.Color.White;
-            this.dtpFechaInicial.BorderColor = System.Drawing.Color.Silver;
-            this.dtpFechaInicial.CustomFormat = null;
-            this.dtpFechaInicial.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dtpFechaInicial.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dtpFechaInicial.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtpFechaInicial.ForeColor = System.Drawing.Color.Black;
-            this.dtpFechaInicial.Location = new System.Drawing.Point(210, 92);
-            this.dtpFechaInicial.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpFechaInicial.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpFechaInicial.Name = "dtpFechaInicial";
-            this.dtpFechaInicial.OnHoverBaseColor = System.Drawing.Color.White;
-            this.dtpFechaInicial.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dtpFechaInicial.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dtpFechaInicial.OnPressedColor = System.Drawing.Color.Black;
-            this.dtpFechaInicial.Size = new System.Drawing.Size(253, 30);
-            this.dtpFechaInicial.TabIndex = 93;
-            this.dtpFechaInicial.Text = "domingo, 24 de noviembre de 2019";
-            this.dtpFechaInicial.Value = new System.DateTime(2019, 11, 24, 22, 49, 5, 94);
-            // 
-            // dtpFechaFinal
-            // 
-            this.dtpFechaFinal.BaseColor = System.Drawing.Color.White;
-            this.dtpFechaFinal.BorderColor = System.Drawing.Color.Silver;
-            this.dtpFechaFinal.CustomFormat = null;
-            this.dtpFechaFinal.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dtpFechaFinal.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dtpFechaFinal.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtpFechaFinal.ForeColor = System.Drawing.Color.Black;
-            this.dtpFechaFinal.Location = new System.Drawing.Point(571, 92);
-            this.dtpFechaFinal.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpFechaFinal.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpFechaFinal.Name = "dtpFechaFinal";
-            this.dtpFechaFinal.OnHoverBaseColor = System.Drawing.Color.White;
-            this.dtpFechaFinal.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dtpFechaFinal.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dtpFechaFinal.OnPressedColor = System.Drawing.Color.Black;
-            this.dtpFechaFinal.Size = new System.Drawing.Size(253, 30);
-            this.dtpFechaFinal.TabIndex = 94;
-            this.dtpFechaFinal.Text = "domingo, 24 de noviembre de 2019";
-            this.dtpFechaFinal.Value = new System.DateTime(2019, 11, 24, 22, 49, 5, 94);
-            // 
-            // btnImprimirSalida
-            // 
-            this.btnImprimirSalida.AnimationHoverSpeed = 0.07F;
-            this.btnImprimirSalida.AnimationSpeed = 0.03F;
-            this.btnImprimirSalida.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.btnImprimirSalida.BorderColor = System.Drawing.Color.Black;
-            this.btnImprimirSalida.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
-            this.btnImprimirSalida.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.btnImprimirSalida.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnImprimirSalida.CheckedForeColor = System.Drawing.Color.White;
-            this.btnImprimirSalida.CheckedImage = null;
-            this.btnImprimirSalida.CheckedLineColor = System.Drawing.Color.DodgerBlue;
-            this.btnImprimirSalida.FocusedColor = System.Drawing.Color.Empty;
-            this.btnImprimirSalida.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImprimirSalida.ForeColor = System.Drawing.Color.White;
-            this.btnImprimirSalida.Image = null;
-            this.btnImprimirSalida.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnImprimirSalida.LineBottom = 5;
-            this.btnImprimirSalida.LineColor = System.Drawing.Color.Transparent;
-            this.btnImprimirSalida.Location = new System.Drawing.Point(567, 74);
-            this.btnImprimirSalida.Name = "btnImprimirSalida";
-            this.btnImprimirSalida.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.btnImprimirSalida.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnImprimirSalida.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(157)))), ((int)(((byte)(169)))));
-            this.btnImprimirSalida.OnHoverImage = null;
-            this.btnImprimirSalida.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
-            this.btnImprimirSalida.OnPressedColor = System.Drawing.Color.Black;
-            this.btnImprimirSalida.Size = new System.Drawing.Size(80, 30);
-            this.btnImprimirSalida.TabIndex = 35;
-            this.btnImprimirSalida.Text = "Imprimir";
-            this.btnImprimirSalida.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btnImprimirDS
-            // 
-            this.btnImprimirDS.AnimationHoverSpeed = 0.07F;
-            this.btnImprimirDS.AnimationSpeed = 0.03F;
-            this.btnImprimirDS.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.btnImprimirDS.BorderColor = System.Drawing.Color.Black;
-            this.btnImprimirDS.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
-            this.btnImprimirDS.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.btnImprimirDS.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnImprimirDS.CheckedForeColor = System.Drawing.Color.White;
-            this.btnImprimirDS.CheckedImage = null;
-            this.btnImprimirDS.CheckedLineColor = System.Drawing.Color.DodgerBlue;
-            this.btnImprimirDS.FocusedColor = System.Drawing.Color.Empty;
-            this.btnImprimirDS.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImprimirDS.ForeColor = System.Drawing.Color.White;
-            this.btnImprimirDS.Image = null;
-            this.btnImprimirDS.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnImprimirDS.LineBottom = 5;
-            this.btnImprimirDS.LineColor = System.Drawing.Color.Transparent;
-            this.btnImprimirDS.Location = new System.Drawing.Point(559, 73);
-            this.btnImprimirDS.Name = "btnImprimirDS";
-            this.btnImprimirDS.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.btnImprimirDS.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnImprimirDS.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(157)))), ((int)(((byte)(169)))));
-            this.btnImprimirDS.OnHoverImage = null;
-            this.btnImprimirDS.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
-            this.btnImprimirDS.OnPressedColor = System.Drawing.Color.Black;
-            this.btnImprimirDS.Size = new System.Drawing.Size(80, 30);
-            this.btnImprimirDS.TabIndex = 36;
-            this.btnImprimirDS.Text = "Imprimir";
-            this.btnImprimirDS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btnCancelarDS
-            // 
-            this.btnCancelarDS.AnimationHoverSpeed = 0.07F;
-            this.btnCancelarDS.AnimationSpeed = 0.03F;
-            this.btnCancelarDS.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.btnCancelarDS.BorderColor = System.Drawing.Color.Black;
-            this.btnCancelarDS.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
-            this.btnCancelarDS.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.btnCancelarDS.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnCancelarDS.CheckedForeColor = System.Drawing.Color.White;
-            this.btnCancelarDS.CheckedImage = null;
-            this.btnCancelarDS.CheckedLineColor = System.Drawing.Color.DodgerBlue;
-            this.btnCancelarDS.FocusedColor = System.Drawing.Color.Empty;
-            this.btnCancelarDS.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarDS.ForeColor = System.Drawing.Color.White;
-            this.btnCancelarDS.Image = null;
-            this.btnCancelarDS.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnCancelarDS.LineBottom = 5;
-            this.btnCancelarDS.LineColor = System.Drawing.Color.Transparent;
-            this.btnCancelarDS.Location = new System.Drawing.Point(473, 73);
-            this.btnCancelarDS.Name = "btnCancelarDS";
-            this.btnCancelarDS.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.btnCancelarDS.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnCancelarDS.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(157)))), ((int)(((byte)(169)))));
-            this.btnCancelarDS.OnHoverImage = null;
-            this.btnCancelarDS.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
-            this.btnCancelarDS.OnPressedColor = System.Drawing.Color.Black;
-            this.btnCancelarDS.Size = new System.Drawing.Size(80, 30);
-            this.btnCancelarDS.TabIndex = 37;
-            this.btnCancelarDS.Text = "Cancelar";
-            this.btnCancelarDS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnCancelarDS.Click += new System.EventHandler(this.BtnCancelarDS_Click);
-            // 
-            // btnCancelarSalida
-            // 
-            this.btnCancelarSalida.AnimationHoverSpeed = 0.07F;
-            this.btnCancelarSalida.AnimationSpeed = 0.03F;
-            this.btnCancelarSalida.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.btnCancelarSalida.BorderColor = System.Drawing.Color.Black;
-            this.btnCancelarSalida.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
-            this.btnCancelarSalida.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.btnCancelarSalida.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnCancelarSalida.CheckedForeColor = System.Drawing.Color.White;
-            this.btnCancelarSalida.CheckedImage = null;
-            this.btnCancelarSalida.CheckedLineColor = System.Drawing.Color.DodgerBlue;
-            this.btnCancelarSalida.FocusedColor = System.Drawing.Color.Empty;
-            this.btnCancelarSalida.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarSalida.ForeColor = System.Drawing.Color.White;
-            this.btnCancelarSalida.Image = null;
-            this.btnCancelarSalida.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnCancelarSalida.LineBottom = 5;
-            this.btnCancelarSalida.LineColor = System.Drawing.Color.Transparent;
-            this.btnCancelarSalida.Location = new System.Drawing.Point(481, 74);
-            this.btnCancelarSalida.Name = "btnCancelarSalida";
-            this.btnCancelarSalida.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.btnCancelarSalida.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnCancelarSalida.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(157)))), ((int)(((byte)(169)))));
-            this.btnCancelarSalida.OnHoverImage = null;
-            this.btnCancelarSalida.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
-            this.btnCancelarSalida.OnPressedColor = System.Drawing.Color.Black;
-            this.btnCancelarSalida.Size = new System.Drawing.Size(80, 30);
-            this.btnCancelarSalida.TabIndex = 38;
-            this.btnCancelarSalida.Text = "Cancelar";
-            this.btnCancelarSalida.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnCancelarSalida.Click += new System.EventHandler(this.BtnCancelarSalida_Click);
-            // 
-            // btnEliminarSalida
-            // 
-            this.btnEliminarSalida.AnimationHoverSpeed = 0.07F;
-            this.btnEliminarSalida.AnimationSpeed = 0.03F;
-            this.btnEliminarSalida.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.btnEliminarSalida.BorderColor = System.Drawing.Color.Black;
-            this.btnEliminarSalida.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
-            this.btnEliminarSalida.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.btnEliminarSalida.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnEliminarSalida.CheckedForeColor = System.Drawing.Color.White;
-            this.btnEliminarSalida.CheckedImage = null;
-            this.btnEliminarSalida.CheckedLineColor = System.Drawing.Color.DodgerBlue;
-            this.btnEliminarSalida.FocusedColor = System.Drawing.Color.Empty;
-            this.btnEliminarSalida.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarSalida.ForeColor = System.Drawing.Color.White;
-            this.btnEliminarSalida.Image = null;
-            this.btnEliminarSalida.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEliminarSalida.LineBottom = 5;
-            this.btnEliminarSalida.LineColor = System.Drawing.Color.Transparent;
-            this.btnEliminarSalida.Location = new System.Drawing.Point(395, 74);
-            this.btnEliminarSalida.Name = "btnEliminarSalida";
-            this.btnEliminarSalida.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.btnEliminarSalida.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnEliminarSalida.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(157)))), ((int)(((byte)(169)))));
-            this.btnEliminarSalida.OnHoverImage = null;
-            this.btnEliminarSalida.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
-            this.btnEliminarSalida.OnPressedColor = System.Drawing.Color.Black;
-            this.btnEliminarSalida.Size = new System.Drawing.Size(80, 30);
-            this.btnEliminarSalida.TabIndex = 39;
-            this.btnEliminarSalida.Text = "Eliminar";
-            this.btnEliminarSalida.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnEliminarSalida.Click += new System.EventHandler(this.BtnEliminarSalida_Click);
-            // 
-            // btnTicket
-            // 
-            this.btnTicket.AnimationHoverSpeed = 0.07F;
-            this.btnTicket.AnimationSpeed = 0.03F;
-            this.btnTicket.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.btnTicket.BorderColor = System.Drawing.Color.Black;
-            this.btnTicket.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
-            this.btnTicket.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.btnTicket.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnTicket.CheckedForeColor = System.Drawing.Color.White;
-            this.btnTicket.CheckedImage = null;
-            this.btnTicket.CheckedLineColor = System.Drawing.Color.DodgerBlue;
-            this.btnTicket.FocusedColor = System.Drawing.Color.Empty;
-            this.btnTicket.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTicket.ForeColor = System.Drawing.Color.White;
-            this.btnTicket.Image = null;
-            this.btnTicket.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnTicket.LineBottom = 5;
-            this.btnTicket.LineColor = System.Drawing.Color.Transparent;
-            this.btnTicket.Location = new System.Drawing.Point(164, 7);
-            this.btnTicket.Name = "btnTicket";
-            this.btnTicket.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.btnTicket.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnTicket.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(157)))), ((int)(((byte)(169)))));
-            this.btnTicket.OnHoverImage = null;
-            this.btnTicket.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
-            this.btnTicket.OnPressedColor = System.Drawing.Color.Black;
-            this.btnTicket.Size = new System.Drawing.Size(80, 30);
-            this.btnTicket.TabIndex = 40;
-            this.btnTicket.Text = "Ticket";
-            this.btnTicket.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnTicket.Click += new System.EventHandler(this.BtnTicket_Click);
-            // 
-            // Activo
-            // 
-            this.Activo.BaseColor = System.Drawing.SystemColors.Control;
-            this.Activo.CheckedOffColor = System.Drawing.Color.DarkGray;
-            this.Activo.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.Activo.FillColor = System.Drawing.Color.White;
-            this.Activo.Location = new System.Drawing.Point(260, 10);
-            this.Activo.Name = "Activo";
-            this.Activo.Size = new System.Drawing.Size(40, 22);
-            this.Activo.TabIndex = 96;
-            this.Activo.CheckedChanged += new System.EventHandler(this.gunaWinSwitch1_CheckedChanged);
-            // 
-            // lblActi
-            // 
-            this.lblActi.AutoSize = true;
-            this.lblActi.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblActi.ForeColor = System.Drawing.Color.White;
-            this.lblActi.Location = new System.Drawing.Point(306, 11);
-            this.lblActi.Name = "lblActi";
-            this.lblActi.Size = new System.Drawing.Size(57, 21);
-            this.lblActi.TabIndex = 97;
-            this.lblActi.Text = "Activos";
-            // 
-            // btnEliminarDS
-            // 
-            this.btnEliminarDS.AnimationHoverSpeed = 0.07F;
-            this.btnEliminarDS.AnimationSpeed = 0.03F;
-            this.btnEliminarDS.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.btnEliminarDS.BorderColor = System.Drawing.Color.Black;
-            this.btnEliminarDS.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
-            this.btnEliminarDS.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.btnEliminarDS.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnEliminarDS.CheckedForeColor = System.Drawing.Color.White;
-            this.btnEliminarDS.CheckedImage = null;
-            this.btnEliminarDS.CheckedLineColor = System.Drawing.Color.DodgerBlue;
-            this.btnEliminarDS.FocusedColor = System.Drawing.Color.Empty;
-            this.btnEliminarDS.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarDS.ForeColor = System.Drawing.Color.White;
-            this.btnEliminarDS.Image = null;
-            this.btnEliminarDS.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEliminarDS.LineBottom = 5;
-            this.btnEliminarDS.LineColor = System.Drawing.Color.Transparent;
-            this.btnEliminarDS.Location = new System.Drawing.Point(387, 73);
-            this.btnEliminarDS.Name = "btnEliminarDS";
-            this.btnEliminarDS.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.btnEliminarDS.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnEliminarDS.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(157)))), ((int)(((byte)(169)))));
-            this.btnEliminarDS.OnHoverImage = null;
-            this.btnEliminarDS.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
-            this.btnEliminarDS.OnPressedColor = System.Drawing.Color.Black;
-            this.btnEliminarDS.Size = new System.Drawing.Size(80, 30);
-            this.btnEliminarDS.TabIndex = 38;
-            this.btnEliminarDS.Text = "Eliminar";
-            this.btnEliminarDS.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnEliminarDS.Click += new System.EventHandler(this.BtnEliminarDS_Click);
-            // 
-            // btnfoliods
-            // 
-            this.btnfoliods.AnimationHoverSpeed = 0.07F;
-            this.btnfoliods.AnimationSpeed = 0.03F;
-            this.btnfoliods.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.btnfoliods.BorderColor = System.Drawing.Color.Black;
-            this.btnfoliods.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
-            this.btnfoliods.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.btnfoliods.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnfoliods.CheckedForeColor = System.Drawing.Color.White;
-            this.btnfoliods.CheckedImage = null;
-            this.btnfoliods.CheckedLineColor = System.Drawing.Color.DodgerBlue;
-            this.btnfoliods.FocusedColor = System.Drawing.Color.Empty;
-            this.btnfoliods.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnfoliods.ForeColor = System.Drawing.Color.White;
-            this.btnfoliods.Image = null;
-            this.btnfoliods.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnfoliods.LineBottom = 5;
-            this.btnfoliods.LineColor = System.Drawing.Color.Transparent;
-            this.btnfoliods.Location = new System.Drawing.Point(163, 5);
-            this.btnfoliods.Name = "btnfoliods";
-            this.btnfoliods.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
-            this.btnfoliods.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnfoliods.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(157)))), ((int)(((byte)(169)))));
-            this.btnfoliods.OnHoverImage = null;
-            this.btnfoliods.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
-            this.btnfoliods.OnPressedColor = System.Drawing.Color.Black;
-            this.btnfoliods.Size = new System.Drawing.Size(80, 30);
-            this.btnfoliods.TabIndex = 39;
-            this.btnfoliods.Text = "Tickets";
-            this.btnfoliods.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnfoliods.Click += new System.EventHandler(this.Btnfoliods_Click);
-            // 
-            // ActivoDs
-            // 
-            this.ActivoDs.BaseColor = System.Drawing.SystemColors.Control;
-            this.ActivoDs.CheckedOffColor = System.Drawing.Color.DarkGray;
-            this.ActivoDs.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.ActivoDs.FillColor = System.Drawing.Color.White;
-            this.ActivoDs.Location = new System.Drawing.Point(259, 13);
-            this.ActivoDs.Name = "ActivoDs";
-            this.ActivoDs.Size = new System.Drawing.Size(40, 22);
-            this.ActivoDs.TabIndex = 97;
-            this.ActivoDs.CheckedChanged += new System.EventHandler(this.gunaWinSwitch1_CheckedChanged_1);
-            // 
-            // lblActiDs
-            // 
-            this.lblActiDs.AutoSize = true;
-            this.lblActiDs.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblActiDs.ForeColor = System.Drawing.Color.White;
-            this.lblActiDs.Location = new System.Drawing.Point(306, 13);
-            this.lblActiDs.Name = "lblActiDs";
-            this.lblActiDs.Size = new System.Drawing.Size(57, 21);
-            this.lblActiDs.TabIndex = 98;
-            this.lblActiDs.Text = "Activos";
-            // 
             // frmManSalidas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(53)))));
             this.ClientSize = new System.Drawing.Size(964, 511);
-            this.Controls.Add(this.dtpFechaFinal);
-            this.Controls.Add(this.dtpFechaInicial);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.txtIdU);
             this.Controls.Add(this.lblHoraRegistro);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblFechaRegistro);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmManSalidas";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmManSalidas";
             this.Load += new System.EventHandler(this.FrmManSalidas_Load);
@@ -752,8 +678,6 @@
         private System.Windows.Forms.Label lblHoraRegistro;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblFechaRegistro;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabSalida;
         private System.Windows.Forms.DataGridView dgvSalidas;
         private System.Windows.Forms.TextBox txtDescripcion;
@@ -771,8 +695,6 @@
         private System.Windows.Forms.TextBox txtfoliods;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TabControl tabControl1;
-        private Guna.UI.WinForms.GunaDateTimePicker dtpFechaInicial;
-        private Guna.UI.WinForms.GunaDateTimePicker dtpFechaFinal;
         private Guna.UI.WinForms.GunaAdvenceButton btnImprimirSalida;
         private Guna.UI.WinForms.GunaAdvenceButton btnTicket;
         private Guna.UI.WinForms.GunaAdvenceButton btnEliminarSalida;

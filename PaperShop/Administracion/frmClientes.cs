@@ -91,16 +91,9 @@ namespace PaperShop
             SqlCommand sqlCMD = new SqlCommand();
             try
             {
-                if (Activos.Checked == true)
-                {
                     //Consulta para extraer los datos de las personas
-                    qry = "Select * From VistaClientes where Nombre like '%" + txtBuscar.Text + "%' and VistaClientes.activo = '"+activo+"'";
-                }
-                else
-                {
-                    //Consulta para extraer los datos de las personas
-                    qry = "Select * From VistaClientes where Nombre like '%" + txtBuscar.Text + "%' and VistaClientes.activo =  '" + activo + "'";
-                }
+                    qry = "Select * From VistaClientes where persona like '%" + txtBuscar.Text + "%' and VistaClientes.activo =  '" + activo + "'";
+              
                 //Asignamos la consulta al comando
                 sqlCMD.CommandText = qry;
                 //Asignamos la conexion al comando
@@ -122,6 +115,8 @@ namespace PaperShop
             }
             catch (SqlException ex)
             {
+                MessageBox.Show(ex.Message, "SI");
+
                 this.Alert("Error al agregar Clientes!", FrmNotificaciones.alertTypeEnum.Success);
 
             }
@@ -213,7 +208,7 @@ namespace PaperShop
             try
             {
                 //Validamos por el correo que no se repita la persona
-                qry = "SELECT id_persona, numero_cliente from clientes where numero_cliente = '" + txtnumerocliente.Text + "' or id_persona ='"+lblid_persona.Text+"'";
+                qry = "SELECT id_persona, numero_cliente from clientes where numero_cliente = '" + txtnumerocliente.Text + "' and id_persona ='"+lblid_persona.Text+"'";
                 //Asignamos la consulta al comando
                 sqlCMD.CommandText = qry;
                 //Asignamos la conexion al comando
@@ -251,6 +246,7 @@ namespace PaperShop
                     //Cerramos la conexion
                     sqlCNX.Close();
 
+
                     this.Alert("Cliente Registrado", FrmNotificaciones.alertTypeEnum.Success);
 
                     //Invocamos el metodo cancelar
@@ -260,6 +256,8 @@ namespace PaperShop
             }
             catch (SqlException ex)
             {
+                MessageBox.Show(ex.Message, "SI");
+
                 this.Alert("Error al registrar!", FrmNotificaciones.alertTypeEnum.Error);
             }
             //Fin del codigo guardar
@@ -362,7 +360,7 @@ namespace PaperShop
 
         private void ModificarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            cmbpersonas.Text = dgvclientes.CurrentRow.Cells["Nombre"].Value.ToString();
+            cmbpersonas.Text = dgvclientes.CurrentRow.Cells["persona"].Value.ToString();
             txtnumerocliente.Text = dgvclientes.CurrentRow.Cells["numero_cliente"].Value.ToString();
             txtActivo.Text = dgvclientes.CurrentRow.Cells["activo"].Value.ToString();
             cmbpersonas.Enabled = false;

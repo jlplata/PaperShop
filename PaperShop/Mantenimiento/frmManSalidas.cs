@@ -27,7 +27,7 @@ namespace PaperShop
             string cadenaconexion = ConfigurationManager.AppSettings.Get("cadenaconexion");
             SqlConnection sqlCNX = new SqlConnection(cadenaconexion);
             SqlCommand sqlCMD = new SqlCommand();
-            qry = "WITH C AS (SELECT id_salida, COUNT(*) AS Cantidad FROM detalle_salida GROUP BY id_salida, activo HAVING activo = 1) SELECT sa.id_salida, ISNULL(C.Cantidad, 0) AS CantidadReal FROM salidas sa LEFT OUTER JOIN C ON sa.id_salida = C.id_salida and sa.fecha_registro between '" + dtpFechaInicial.Value.ToString("yyyyMMdd") + "' and '" + dtpFechaFinal.Value.ToString("yyyyMMdd") + "'";
+            qry = "WITH C AS (SELECT id_salida, COUNT(*) AS Cantidad FROM detalle_salida GROUP BY id_salida, activo HAVING activo = 1) SELECT sa.id_salida, ISNULL(C.Cantidad, 0) AS CantidadReal FROM salidas sa LEFT OUTER JOIN C ON sa.id_salida = C.id_salida ";
             sqlCMD.CommandText = qry;
             sqlCMD.Connection = sqlCNX;
             sqlCNX.Open();
@@ -48,7 +48,7 @@ namespace PaperShop
                 if (Activo.Checked == true)
                 {
                     //Consulta para extraer los datos de las personas
-                    qry = "select * from VistaSalidasGlobal where activo5 = 1 and activo05 = 1 and VistaSalidasGlobal.ID = '"+txtfolio.Text+"' and fecha_registro BETWEEN @FechaInicio and @FechaFinal";
+                    qry = "select * from VistaSalidasGlobal where activo5 = 1 and activo05 = 1 and VistaSalidasGlobal.ID = '"+txtfolio.Text+"'";
                     
                 }
                 else
@@ -56,8 +56,6 @@ namespace PaperShop
                     //Consulta para extraer los datos de las personas
                     qry = "select * from VistaSalidasGlobal where activo5 = 0 or activo05 = 0";
                 }
-                sqlCMD.Parameters.Add("@FechaInicio", SqlDbType.Date).Value = dtpFechaInicial.Value;
-                sqlCMD.Parameters.Add("@FechaFinal", SqlDbType.Date).Value = dtpFechaFinal.Value;
                 sqlCMD.CommandText = qry;
                 sqlCMD.Connection = sqlCNX;
                 sqlCNX.Open();
@@ -118,9 +116,7 @@ namespace PaperShop
                 if (ActivoDs.Checked == true)
                 {
                     //Consulta para extraer los datos de las personas
-                    qry = "select * from vistaDS where activosS = 1 and activoDS = 1 and VistaDS.ID = '" + txtfoliods.Text + "' and fecha_registro BETWEEN @FechaInicio and @FechaFinal order by ID";
-                    sqlCMD.Parameters.Add("@FechaInicio", SqlDbType.Date).Value = dtpFechaInicial.Value;
-                    sqlCMD.Parameters.Add("@FechaFinal", SqlDbType.Date).Value = dtpFechaFinal.Value;
+                    qry = "select * from vistaDS where activosS = 1 and activoDS = 1 and VistaDS.ID = '" + txtfoliods.Text + "'";
                 }
                 else
                 {
@@ -283,7 +279,7 @@ namespace PaperShop
                 sqlCNX.Open();
                 sqlCMD.ExecuteReader();
                 sqlCNX.Close();
-                qry = "WITH C AS (SELECT id_salida, COUNT(*) AS Cantidad FROM detalle_salida GROUP BY id_salida, activo HAVING activo = 1) SELECT sa.id_salida, ISNULL(C.Cantidad, 0) AS CantidadReal FROM salidas sa LEFT OUTER JOIN C ON sa.id_salida = C.id_salida and sa.fecha_registro between '"+dtpFechaInicial.Value.ToString("yyyyMMdd")+"' and '"+dtpFechaFinal.Value.ToString("yyyyMMdd")+"'";
+                qry = "WITH C AS (SELECT id_salida, COUNT(*) AS Cantidad FROM detalle_salida GROUP BY id_salida, activo HAVING activo = 1) SELECT sa.id_salida, ISNULL(C.Cantidad, 0) AS CantidadReal FROM salidas sa LEFT OUTER JOIN C ON sa.id_salida = C.id_salida";
                 sqlCMD.CommandText = qry;
                 sqlCMD.Connection = sqlCNX;
                 sqlCNX.Open();

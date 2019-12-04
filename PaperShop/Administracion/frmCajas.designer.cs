@@ -29,9 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCajas));
             this.mcCajas = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btnModificarCaja = new System.Windows.Forms.ToolStripMenuItem();
             this.btnDesactivarCaja = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,8 +50,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.grbCajas = new Guna.UI.WinForms.GunaShadowPanel();
+            this.focusnum = new Guna.UI.WinForms.GunaLineTextBox();
+            this.txtIdUsuario = new Guna.UI.WinForms.GunaLineTextBox();
+            this.txtActivo = new Guna.UI.WinForms.GunaLineTextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.dgvCajas = new System.Windows.Forms.DataGridView();
             this.gunaPanel4 = new Guna.UI.WinForms.GunaPanel();
             this.btnCancelar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnModificar = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -60,13 +65,11 @@
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.focusBuscar = new Guna.UI.WinForms.GunaLineTextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.txtIdUsuario = new Guna.UI.WinForms.GunaLineTextBox();
-            this.txtActivo = new Guna.UI.WinForms.GunaLineTextBox();
-            this.focusnum = new Guna.UI.WinForms.GunaLineTextBox();
+            this.dgvCajas = new System.Windows.Forms.DataGridView();
             this.mcCajas.SuspendLayout();
             this.grbCajas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCajas)).BeginInit();
             this.gunaPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCajas)).BeginInit();
             this.SuspendLayout();
             // 
             // mcCajas
@@ -132,7 +135,7 @@
             this.cmbSucursales.Margin = new System.Windows.Forms.Padding(2);
             this.cmbSucursales.Name = "cmbSucursales";
             this.cmbSucursales.Size = new System.Drawing.Size(105, 29);
-            this.cmbSucursales.TabIndex = 7;
+            this.cmbSucursales.TabIndex = 1;
             this.cmbSucursales.SelectedIndexChanged += new System.EventHandler(this.CmbSucursales_SelectedIndexChanged);
             this.cmbSucursales.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CmbSucursales_KeyDown);
             // 
@@ -153,7 +156,7 @@
             this.lblNum.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNum.Name = "lblNum";
             this.lblNum.Size = new System.Drawing.Size(116, 21);
-            this.lblNum.TabIndex = 3;
+            this.lblNum.TabIndex = 9;
             this.lblNum.Text = "Número de caja";
             // 
             // lblHoraRegistro
@@ -166,6 +169,7 @@
             this.lblHoraRegistro.Size = new System.Drawing.Size(83, 17);
             this.lblHoraRegistro.TabIndex = 3;
             this.lblHoraRegistro.Text = "Hora_Registro";
+            this.lblHoraRegistro.Visible = false;
             // 
             // lblFechaRegistro
             // 
@@ -177,6 +181,7 @@
             this.lblFechaRegistro.Size = new System.Drawing.Size(89, 17);
             this.lblFechaRegistro.TabIndex = 3;
             this.lblFechaRegistro.Text = "Fecha_Registro";
+            this.lblFechaRegistro.Visible = false;
             // 
             // label6
             // 
@@ -187,6 +192,7 @@
             this.label6.Size = new System.Drawing.Size(84, 21);
             this.label6.TabIndex = 3;
             this.label6.Text = "Id_Usuario:";
+            this.label6.Visible = false;
             // 
             // label1
             // 
@@ -197,6 +203,7 @@
             this.label1.Size = new System.Drawing.Size(55, 21);
             this.label1.TabIndex = 3;
             this.label1.Text = "Activo:";
+            this.label1.Visible = false;
             // 
             // txtNumero
             // 
@@ -207,7 +214,7 @@
             this.txtNumero.Margin = new System.Windows.Forms.Padding(2);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(105, 22);
-            this.txtNumero.TabIndex = 2;
+            this.txtNumero.TabIndex = 0;
             this.txtNumero.Enter += new System.EventHandler(this.txtNumero_Enter);
             this.txtNumero.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtNombre_KeyDown);
             this.txtNumero.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.valdacionSoloNums);
@@ -237,7 +244,58 @@
             this.grbCajas.ShadowColor = System.Drawing.Color.Black;
             this.grbCajas.ShadowShift = 15;
             this.grbCajas.Size = new System.Drawing.Size(329, 231);
-            this.grbCajas.TabIndex = 52;
+            this.grbCajas.TabIndex = 1;
+            // 
+            // focusnum
+            // 
+            this.focusnum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(53)))));
+            this.focusnum.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.focusnum.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            this.focusnum.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.focusnum.ForeColor = System.Drawing.Color.White;
+            this.focusnum.LineColor = System.Drawing.Color.Gainsboro;
+            this.focusnum.LineSize = 2;
+            this.focusnum.Location = new System.Drawing.Point(147, 33);
+            this.focusnum.Name = "focusnum";
+            this.focusnum.PasswordChar = '\0';
+            this.focusnum.ReadOnly = true;
+            this.focusnum.Size = new System.Drawing.Size(105, 26);
+            this.focusnum.TabIndex = 1;
+            this.focusnum.Enter += new System.EventHandler(this.focusnum_Enter);
+            // 
+            // txtIdUsuario
+            // 
+            this.txtIdUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(53)))));
+            this.txtIdUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtIdUsuario.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            this.txtIdUsuario.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtIdUsuario.ForeColor = System.Drawing.Color.White;
+            this.txtIdUsuario.LineColor = System.Drawing.Color.Gainsboro;
+            this.txtIdUsuario.LineSize = 2;
+            this.txtIdUsuario.Location = new System.Drawing.Point(148, 134);
+            this.txtIdUsuario.Name = "txtIdUsuario";
+            this.txtIdUsuario.PasswordChar = '\0';
+            this.txtIdUsuario.ReadOnly = true;
+            this.txtIdUsuario.Size = new System.Drawing.Size(105, 26);
+            this.txtIdUsuario.TabIndex = 3;
+            this.txtIdUsuario.Visible = false;
+            // 
+            // txtActivo
+            // 
+            this.txtActivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(53)))));
+            this.txtActivo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtActivo.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            this.txtActivo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtActivo.ForeColor = System.Drawing.Color.White;
+            this.txtActivo.LineColor = System.Drawing.Color.Gainsboro;
+            this.txtActivo.LineSize = 2;
+            this.txtActivo.Location = new System.Drawing.Point(148, 101);
+            this.txtActivo.Name = "txtActivo";
+            this.txtActivo.PasswordChar = '\0';
+            this.txtActivo.ReadOnly = true;
+            this.txtActivo.Size = new System.Drawing.Size(105, 26);
+            this.txtActivo.TabIndex = 2;
+            this.txtActivo.Visible = false;
             // 
             // label8
             // 
@@ -247,49 +305,8 @@
             this.label8.Location = new System.Drawing.Point(12, 24);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(68, 32);
-            this.label8.TabIndex = 59;
+            this.label8.TabIndex = 0;
             this.label8.Text = "Cajas";
-            // 
-            // dgvCajas
-            // 
-            this.dgvCajas.AllowUserToAddRows = false;
-            this.dgvCajas.AllowUserToDeleteRows = false;
-            this.dgvCajas.AllowUserToResizeRows = false;
-            this.dgvCajas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCajas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvCajas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCajas.ContextMenuStrip = this.mcCajas;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCajas.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvCajas.Location = new System.Drawing.Point(394, 67);
-            this.dgvCajas.Name = "dgvCajas";
-            this.dgvCajas.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCajas.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvCajas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCajas.Size = new System.Drawing.Size(403, 293);
-            this.dgvCajas.TabIndex = 71;
             // 
             // gunaPanel4
             // 
@@ -301,7 +318,7 @@
             this.gunaPanel4.Location = new System.Drawing.Point(12, 304);
             this.gunaPanel4.Name = "gunaPanel4";
             this.gunaPanel4.Size = new System.Drawing.Size(366, 40);
-            this.gunaPanel4.TabIndex = 72;
+            this.gunaPanel4.TabIndex = 2;
             // 
             // btnCancelar
             // 
@@ -366,7 +383,7 @@
             this.btnModificar.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
             this.btnModificar.OnPressedColor = System.Drawing.Color.Black;
             this.btnModificar.Size = new System.Drawing.Size(90, 40);
-            this.btnModificar.TabIndex = 0;
+            this.btnModificar.TabIndex = 2;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
@@ -492,7 +509,7 @@
             this.btnImprimir.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
             this.btnImprimir.OnPressedColor = System.Drawing.Color.Black;
             this.btnImprimir.Size = new System.Drawing.Size(100, 30);
-            this.btnImprimir.TabIndex = 73;
+            this.btnImprimir.TabIndex = 8;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -538,54 +555,69 @@
             this.label13.TabIndex = 74;
             this.label13.Text = "Buscar:";
             // 
-            // txtIdUsuario
+            // dgvCajas
             // 
-            this.txtIdUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(53)))));
-            this.txtIdUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtIdUsuario.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
-            this.txtIdUsuario.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtIdUsuario.ForeColor = System.Drawing.Color.White;
-            this.txtIdUsuario.LineColor = System.Drawing.Color.Gainsboro;
-            this.txtIdUsuario.LineSize = 2;
-            this.txtIdUsuario.Location = new System.Drawing.Point(148, 134);
-            this.txtIdUsuario.Name = "txtIdUsuario";
-            this.txtIdUsuario.PasswordChar = '\0';
-            this.txtIdUsuario.ReadOnly = true;
-            this.txtIdUsuario.Size = new System.Drawing.Size(105, 26);
-            this.txtIdUsuario.TabIndex = 67;
-            // 
-            // txtActivo
-            // 
-            this.txtActivo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(53)))));
-            this.txtActivo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtActivo.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
-            this.txtActivo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtActivo.ForeColor = System.Drawing.Color.White;
-            this.txtActivo.LineColor = System.Drawing.Color.Gainsboro;
-            this.txtActivo.LineSize = 2;
-            this.txtActivo.Location = new System.Drawing.Point(148, 101);
-            this.txtActivo.Name = "txtActivo";
-            this.txtActivo.PasswordChar = '\0';
-            this.txtActivo.ReadOnly = true;
-            this.txtActivo.Size = new System.Drawing.Size(105, 26);
-            this.txtActivo.TabIndex = 66;
-            // 
-            // focusnum
-            // 
-            this.focusnum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(53)))));
-            this.focusnum.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.focusnum.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
-            this.focusnum.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.focusnum.ForeColor = System.Drawing.Color.White;
-            this.focusnum.LineColor = System.Drawing.Color.Gainsboro;
-            this.focusnum.LineSize = 2;
-            this.focusnum.Location = new System.Drawing.Point(147, 33);
-            this.focusnum.Name = "focusnum";
-            this.focusnum.PasswordChar = '\0';
-            this.focusnum.ReadOnly = true;
-            this.focusnum.Size = new System.Drawing.Size(105, 26);
-            this.focusnum.TabIndex = 68;
-            this.focusnum.Enter += new System.EventHandler(this.focusnum_Enter);
+            this.dgvCajas.AllowUserToAddRows = false;
+            this.dgvCajas.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvCajas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvCajas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvCajas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.dgvCajas.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvCajas.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCajas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.dgvCajas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCajas.ContextMenuStrip = this.mcCajas;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCajas.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dgvCajas.EnableHeadersVisualStyles = false;
+            this.dgvCajas.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.dgvCajas.Location = new System.Drawing.Point(397, 77);
+            this.dgvCajas.Name = "dgvCajas";
+            this.dgvCajas.ReadOnly = true;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCajas.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.dgvCajas.RowHeadersWidth = 51;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvCajas.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            this.dgvCajas.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(53)))));
+            this.dgvCajas.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvCajas.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvCajas.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            this.dgvCajas.RowTemplate.ReadOnly = true;
+            this.dgvCajas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvCajas.Size = new System.Drawing.Size(403, 293);
+            this.dgvCajas.TabIndex = 7;
             // 
             // frmCajas
             // 
@@ -593,6 +625,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(53)))));
             this.ClientSize = new System.Drawing.Size(830, 393);
+            this.Controls.Add(this.dgvCajas);
             this.Controls.Add(this.lblActi);
             this.Controls.Add(this.Activos);
             this.Controls.Add(this.btnImprimir);
@@ -600,21 +633,23 @@
             this.Controls.Add(this.focusBuscar);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.gunaPanel4);
-            this.Controls.Add(this.dgvCajas);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.grbCajas);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmCajas";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmCajas";
+            this.Text = "0";
             this.Load += new System.EventHandler(this.FrmCajas_Load);
             this.mcCajas.ResumeLayout(false);
             this.grbCajas.ResumeLayout(false);
             this.grbCajas.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCajas)).EndInit();
             this.gunaPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCajas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -637,7 +672,6 @@
         private System.Windows.Forms.Label idusuario;
         private Guna.UI.WinForms.GunaShadowPanel grbCajas;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridView dgvCajas;
         private Guna.UI.WinForms.GunaPanel gunaPanel4;
         private Guna.UI.WinForms.GunaAdvenceButton btnCancelar;
         private Guna.UI.WinForms.GunaAdvenceButton btnModificar;
@@ -652,5 +686,6 @@
         private Guna.UI.WinForms.GunaLineTextBox txtIdUsuario;
         private Guna.UI.WinForms.GunaLineTextBox txtActivo;
         private Guna.UI.WinForms.GunaLineTextBox focusnum;
+        private System.Windows.Forms.DataGridView dgvCajas;
     }
 }

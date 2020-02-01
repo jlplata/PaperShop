@@ -145,6 +145,14 @@
       <DependentUpon>ReporUsuario.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Almacen\DataProductos.cs">
+      <DependentUpon>DataProductos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen\DataProductos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataProductos.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Almacen\frmCategoriasProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +188,12 @@
     </Compile>
     <Compile Include="Almacen\frmSelecProducto.designer.cs">
       <DependentUpon>frmSelecProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen\ReportePro.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportePro.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="AppSetting.cs" />
     <Compile Include="Connection.cs" />
@@ -285,8 +299,25 @@
     <Compile Include="MensajeOk.designer.cs">
       <DependentUpon>MensajeOk.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modificaciones\FrmConfiguracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificaciones\FrmConfiguracion.Designer.cs">
+      <DependentUpon>FrmConfiguracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modificaciones\FrmPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificaciones\FrmPerfil.Designer.cs">
+      <DependentUpon>FrmPerfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Panelinicio.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="papeleriaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>papeleriaDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -295,10 +326,58 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="ReporteCatProductos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteCatProductos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReporteDepartamentos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteDepartamentos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportePersonas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportePersonas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportePuestos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportePuestos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ReporteSalida.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ReporteSalida.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReporteSucursales.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteSucursales.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteCajas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteCajas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteClientes.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteClientes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReporteTrabajadores.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteTrabajadores.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="SqlHelper.cs" />
@@ -348,6 +427,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Almacen\frmSelecProducto.resx">
       <DependentUpon>frmSelecProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Almacen\ReportePro.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportePro.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Control\agg.resx">
       <DependentUpon>agg.cs</DependentUpon>
@@ -400,14 +483,52 @@
     <EmbeddedResource Include="MensajeOk.resx">
       <DependentUpon>MensajeOk.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modificaciones\FrmConfiguracion.resx">
+      <DependentUpon>FrmConfiguracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificaciones\FrmPerfil.resx">
+      <DependentUpon>FrmPerfil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReporteCatProductos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteCatProductos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteDepartamentos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteDepartamentos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportePersonas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportePersonas.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportePuestos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportePuestos.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReporteSalida.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReporteSalida.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteSucursales.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteSucursales.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteCajas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteCajas.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteClientes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteClientes.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteTrabajadores.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteTrabajadores.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Administracion\ReporUsua.xsc">
       <DependentUpon>ReporUsua.xsd</DependentUpon>
@@ -419,6 +540,28 @@
     </None>
     <None Include="Administracion\ReporUsua.xss">
       <DependentUpon>ReporUsua.xsd</DependentUpon>
+    </None>
+    <None Include="Almacen\DataProductos.xsc">
+      <DependentUpon>DataProductos.xsd</DependentUpon>
+    </None>
+    <None Include="Almacen\DataProductos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataProductos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Almacen\DataProductos.xss">
+      <DependentUpon>DataProductos.xsd</DependentUpon>
+    </None>
+    <None Include="papeleriaDataSet.xsc">
+      <DependentUpon>papeleriaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="papeleriaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>papeleriaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="papeleriaDataSet.xss">
+      <DependentUpon>papeleriaDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -494,10 +637,13 @@
     <None Include="Resources\user.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Reportes\" />
+    <None Include="Resources\ver.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\imapro\prod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ocultar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

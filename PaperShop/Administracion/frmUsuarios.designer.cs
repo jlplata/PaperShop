@@ -108,6 +108,7 @@
             this.txtIdUsuario.ReadOnly = true;
             this.txtIdUsuario.Size = new System.Drawing.Size(231, 30);
             this.txtIdUsuario.TabIndex = 5;
+            this.txtIdUsuario.Visible = false;
             // 
             // txtActivo
             // 
@@ -124,6 +125,7 @@
             this.txtActivo.ReadOnly = true;
             this.txtActivo.Size = new System.Drawing.Size(230, 30);
             this.txtActivo.TabIndex = 4;
+            this.txtActivo.Visible = false;
             // 
             // cmbtipo
             // 
@@ -247,6 +249,7 @@
             this.label12.Size = new System.Drawing.Size(81, 21);
             this.label12.TabIndex = 30;
             this.label12.Text = "Id Usuario:";
+            this.label12.Visible = false;
             // 
             // label11
             // 
@@ -258,6 +261,7 @@
             this.label11.Size = new System.Drawing.Size(55, 21);
             this.label11.TabIndex = 29;
             this.label11.Text = "Activo:";
+            this.label11.Visible = false;
             // 
             // lblhoraregistro
             // 

@@ -12,6 +12,8 @@ using System.Collections.Specialized;
 using System.Data.SqlClient;
 using System.IO;
 using PaperShop.Properties;
+using PaperShop.Almacen;
+using System.Net;
 
 namespace PaperShop
 {
@@ -348,6 +350,7 @@ namespace PaperShop
 
         private void Btnimprimir_Click(object sender, EventArgs e)
         {
+
             // Variable para guardar la consulta
             string qry = "";
             // Variable para extraer la configuracion del appconfig
@@ -358,9 +361,8 @@ namespace PaperShop
             SqlCommand sqlCMD = new SqlCommand();
             try
             {
-                    //Consulta para extraer los datos de las personas
-                    qry = "Select * From VistaProductos where nombre like '%" + txtBuscar.Text + "%' and activo = '"+activo+"'";
-              
+                //Consulta para extraer los datos de las personas
+                qry = "Select * From VistaProductos";
                 //Asignamos la consulta al comando
                 sqlCMD.CommandText = qry;
                 //Asignamos la conexion al comando
@@ -370,17 +372,33 @@ namespace PaperShop
                 //Variable para el adaptador
                 SqlDataAdapter adaptador = new SqlDataAdapter(sqlCMD);
                 //Variable para crear la tabla
-                DataTable datos = new DataTable();
+
+                DataProductos datos = new DataProductos();
                 //Llenamos la tabla
-                adaptador.Fill(datos);
+                adaptador.Fill(datos, "VistaProductos");
+
+                foreach (DataRow row in datos.Tables[0].Rows)
+                {
+
+                    string pach = ".\\.\\";
+
+                    var webClient = new WebClient();
+                    byte[] imageBytes = webClient.DownloadData(pach + row["imagen"].ToString());
+
+                    row["imapro"] = imageBytes;
+
+                }
+
+
+
                 //Cerramos la conexion
-                //sqlCNX.Close();
-                ////Creamos el objeto del reporte para las personas
-                //ReporteClientes reporte = new ReporteClientes();
-                //reporte.SetDataSource(datos);
+                sqlCNX.Close();
+                //Creamos el objeto del reporte para las personas
+                ReportePro reporte = new ReportePro();
+                reporte.SetDataSource(datos.Tables["VistaUsuarios"]);
                 //Pasamos la variable como parametro al vizualizador
-                //frmVisualizador formulario = new frmVisualizador(reporte);
-                //formulario.ShowDialog();
+                frmVisualizador formulario = new frmVisualizador(reporte);
+                formulario.ShowDialog();
 
             }
             catch (SqlException ex)

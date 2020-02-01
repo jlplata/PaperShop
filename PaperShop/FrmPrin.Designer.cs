@@ -44,6 +44,7 @@
             this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.panelContenedorForm = new Guna.UI.WinForms.GunaPanel();
             this.pnldentro = new System.Windows.Forms.Panel();
+            this.gunaAdvenceButton4 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaAdvenceButton6 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaAdvenceButton2 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.TipoUsuario = new System.Windows.Forms.Label();
@@ -340,6 +341,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnldentro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(53)))));
+            this.pnldentro.Controls.Add(this.gunaAdvenceButton4);
             this.pnldentro.Controls.Add(this.gunaAdvenceButton6);
             this.pnldentro.Controls.Add(this.gunaAdvenceButton2);
             this.pnldentro.Controls.Add(this.TipoUsuario);
@@ -347,10 +349,43 @@
             this.pnldentro.Controls.Add(this.ImgUsuario);
             this.pnldentro.Controls.Add(this.label4);
             this.pnldentro.Location = new System.Drawing.Point(7, 7);
-            this.pnldentro.MaximumSize = new System.Drawing.Size(180, 160);
+            this.pnldentro.MaximumSize = new System.Drawing.Size(180, 200);
             this.pnldentro.Name = "pnldentro";
-            this.pnldentro.Size = new System.Drawing.Size(180, 2);
+            this.pnldentro.Size = new System.Drawing.Size(180, 200);
             this.pnldentro.TabIndex = 0;
+            // 
+            // gunaAdvenceButton4
+            // 
+            this.gunaAdvenceButton4.AnimationHoverSpeed = 0.07F;
+            this.gunaAdvenceButton4.AnimationSpeed = 0.03F;
+            this.gunaAdvenceButton4.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.gunaAdvenceButton4.BorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton4.ButtonType = Guna.UI.WinForms.AdvenceButtonType.RadioButton;
+            this.gunaAdvenceButton4.CheckedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.gunaAdvenceButton4.CheckedBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton4.CheckedForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton4.CheckedImage = null;
+            this.gunaAdvenceButton4.CheckedLineColor = System.Drawing.Color.DodgerBlue;
+            this.gunaAdvenceButton4.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaAdvenceButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaAdvenceButton4.ForeColor = System.Drawing.Color.White;
+            this.gunaAdvenceButton4.Image = null;
+            this.gunaAdvenceButton4.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaAdvenceButton4.LineColor = System.Drawing.Color.Transparent;
+            this.gunaAdvenceButton4.LineLeft = 2;
+            this.gunaAdvenceButton4.Location = new System.Drawing.Point(10, 121);
+            this.gunaAdvenceButton4.Name = "gunaAdvenceButton4";
+            this.gunaAdvenceButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.gunaAdvenceButton4.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton4.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(157)))), ((int)(((byte)(169)))));
+            this.gunaAdvenceButton4.OnHoverImage = null;
+            this.gunaAdvenceButton4.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            this.gunaAdvenceButton4.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaAdvenceButton4.Size = new System.Drawing.Size(159, 32);
+            this.gunaAdvenceButton4.TabIndex = 3;
+            this.gunaAdvenceButton4.Text = "Configuración";
+            this.gunaAdvenceButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaAdvenceButton4.Click += new System.EventHandler(this.gunaAdvenceButton4_Click_1);
             // 
             // gunaAdvenceButton6
             // 
@@ -371,7 +406,7 @@
             this.gunaAdvenceButton6.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaAdvenceButton6.LineColor = System.Drawing.Color.Transparent;
             this.gunaAdvenceButton6.LineLeft = 2;
-            this.gunaAdvenceButton6.Location = new System.Drawing.Point(14, 119);
+            this.gunaAdvenceButton6.Location = new System.Drawing.Point(10, 159);
             this.gunaAdvenceButton6.Name = "gunaAdvenceButton6";
             this.gunaAdvenceButton6.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
             this.gunaAdvenceButton6.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -404,7 +439,7 @@
             this.gunaAdvenceButton2.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaAdvenceButton2.LineColor = System.Drawing.Color.Transparent;
             this.gunaAdvenceButton2.LineLeft = 2;
-            this.gunaAdvenceButton2.Location = new System.Drawing.Point(14, 81);
+            this.gunaAdvenceButton2.Location = new System.Drawing.Point(10, 83);
             this.gunaAdvenceButton2.Name = "gunaAdvenceButton2";
             this.gunaAdvenceButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
             this.gunaAdvenceButton2.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -442,7 +477,7 @@
             // 
             this.ImgUsuario.BaseColor = System.Drawing.Color.White;
             this.ImgUsuario.Image = global::PaperShop.Properties.Resources.user;
-            this.ImgUsuario.Location = new System.Drawing.Point(10, 8);
+            this.ImgUsuario.Location = new System.Drawing.Point(7, 8);
             this.ImgUsuario.Name = "ImgUsuario";
             this.ImgUsuario.Size = new System.Drawing.Size(64, 64);
             this.ImgUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -455,7 +490,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(77, 35);
+            this.label4.Location = new System.Drawing.Point(75, 34);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 17);
             this.label4.TabIndex = 1;
@@ -471,10 +506,10 @@
             this.pnlmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
             this.pnlmenu.Controls.Add(this.pnldentro);
             this.pnlmenu.Location = new System.Drawing.Point(10, 41);
-            this.pnlmenu.MaximumSize = new System.Drawing.Size(195, 176);
+            this.pnlmenu.MaximumSize = new System.Drawing.Size(195, 216);
             this.pnlmenu.MinimumSize = new System.Drawing.Size(195, 0);
             this.pnlmenu.Name = "pnlmenu";
-            this.pnlmenu.Size = new System.Drawing.Size(195, 18);
+            this.pnlmenu.Size = new System.Drawing.Size(195, 216);
             this.pnlmenu.TabIndex = 3;
             this.pnlmenu.Visible = false;
             // 
@@ -530,5 +565,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Timer Menu;
         private System.Windows.Forms.Panel pnlmenu;
+        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton4;
     }
 }

@@ -91,7 +91,9 @@
             this.cmbTipo.FormattingEnabled = true;
             this.cmbTipo.Items.AddRange(new object[] {
             "Administrador",
-            "Cajero"});
+            "Trabajador",
+            "Cajero",
+            "Almacenista"});
             this.cmbTipo.Location = new System.Drawing.Point(28, 256);
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));

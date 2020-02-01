@@ -32,6 +32,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.mcTrabajadores = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btnModificarTrabajador = new System.Windows.Forms.ToolStripMenuItem();
             this.btnDesactivarTrabajador = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,16 +66,16 @@
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.focusBuscar = new Guna.UI.WinForms.GunaLineTextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.dgvTrabajadores = new System.Windows.Forms.DataGridView();
             this.gunaPanel4 = new Guna.UI.WinForms.GunaPanel();
             this.btnCancelar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnModificar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnGuardar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnNuevo = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.dgvTrabajadores = new System.Windows.Forms.DataGridView();
             this.mcTrabajadores.SuspendLayout();
             this.grbTrabajadores.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTrabajadores)).BeginInit();
             this.gunaPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTrabajadores)).BeginInit();
             this.SuspendLayout();
             // 
             // mcTrabajadores
@@ -168,6 +170,7 @@
             this.lblHoraRegistro.Size = new System.Drawing.Size(79, 15);
             this.lblHoraRegistro.TabIndex = 3;
             this.lblHoraRegistro.Text = "Hora_Registro";
+            this.lblHoraRegistro.Visible = false;
             // 
             // lblIdDepartamento
             // 
@@ -212,6 +215,7 @@
             this.lblFechaRegistro.Size = new System.Drawing.Size(83, 15);
             this.lblFechaRegistro.TabIndex = 3;
             this.lblFechaRegistro.Text = "Fecha_Registro";
+            this.lblFechaRegistro.Visible = false;
             // 
             // label6
             // 
@@ -222,6 +226,7 @@
             this.label6.Size = new System.Drawing.Size(84, 21);
             this.label6.TabIndex = 3;
             this.label6.Text = "Id_Usuario:";
+            this.label6.Visible = false;
             // 
             // label1
             // 
@@ -232,6 +237,7 @@
             this.label1.Size = new System.Drawing.Size(55, 21);
             this.label1.TabIndex = 3;
             this.label1.Text = "Activo:";
+            this.label1.Visible = false;
             // 
             // cmbTurnos
             // 
@@ -357,6 +363,7 @@
             this.txtIdUsuario.ReadOnly = true;
             this.txtIdUsuario.Size = new System.Drawing.Size(149, 26);
             this.txtIdUsuario.TabIndex = 65;
+            this.txtIdUsuario.Visible = false;
             // 
             // txtActivo
             // 
@@ -373,6 +380,7 @@
             this.txtActivo.ReadOnly = true;
             this.txtActivo.Size = new System.Drawing.Size(149, 26);
             this.txtActivo.TabIndex = 64;
+            this.txtActivo.Visible = false;
             // 
             // focusnum
             // 
@@ -470,7 +478,6 @@
             this.txtBuscar.TabIndex = 67;
             this.txtBuscar.TextChanged += new System.EventHandler(this.TxtBuscar_TextChanged);
             this.txtBuscar.Enter += new System.EventHandler(this.txtBuscar_Enter);
-            this.txtBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.valdacionSoloNums);
             this.txtBuscar.Leave += new System.EventHandler(this.txtBuscar_Leave);
             // 
             // focusBuscar
@@ -499,47 +506,6 @@
             this.label13.Size = new System.Drawing.Size(59, 21);
             this.label13.TabIndex = 65;
             this.label13.Text = "Buscar:";
-            // 
-            // dgvTrabajadores
-            // 
-            this.dgvTrabajadores.AllowUserToAddRows = false;
-            this.dgvTrabajadores.AllowUserToDeleteRows = false;
-            this.dgvTrabajadores.AllowUserToResizeRows = false;
-            this.dgvTrabajadores.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTrabajadores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvTrabajadores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTrabajadores.ContextMenuStrip = this.mcTrabajadores;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvTrabajadores.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvTrabajadores.Location = new System.Drawing.Point(388, 71);
-            this.dgvTrabajadores.Name = "dgvTrabajadores";
-            this.dgvTrabajadores.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTrabajadores.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvTrabajadores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvTrabajadores.Size = new System.Drawing.Size(463, 323);
-            this.dgvTrabajadores.TabIndex = 70;
             // 
             // gunaPanel4
             // 
@@ -690,6 +656,70 @@
             this.btnNuevo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnNuevo.Click += new System.EventHandler(this.BtnNuevo_Click);
             // 
+            // dgvTrabajadores
+            // 
+            this.dgvTrabajadores.AllowUserToAddRows = false;
+            this.dgvTrabajadores.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvTrabajadores.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvTrabajadores.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvTrabajadores.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.dgvTrabajadores.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvTrabajadores.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTrabajadores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvTrabajadores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTrabajadores.ContextMenuStrip = this.mcTrabajadores;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvTrabajadores.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvTrabajadores.EnableHeadersVisualStyles = false;
+            this.dgvTrabajadores.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(35)))), ((int)(((byte)(64)))));
+            this.dgvTrabajadores.Location = new System.Drawing.Point(388, 72);
+            this.dgvTrabajadores.Name = "dgvTrabajadores";
+            this.dgvTrabajadores.ReadOnly = true;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTrabajadores.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvTrabajadores.RowHeadersWidth = 51;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvTrabajadores.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvTrabajadores.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(53)))));
+            this.dgvTrabajadores.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvTrabajadores.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvTrabajadores.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(83)))), ((int)(((byte)(192)))));
+            this.dgvTrabajadores.RowTemplate.ReadOnly = true;
+            this.dgvTrabajadores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvTrabajadores.Size = new System.Drawing.Size(472, 322);
+            this.dgvTrabajadores.TabIndex = 72;
+            // 
             // frmTrabajadores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -697,7 +727,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(25)))), ((int)(((byte)(53)))));
             this.ClientSize = new System.Drawing.Size(893, 447);
             this.Controls.Add(this.gunaPanel4);
-            this.Controls.Add(this.dgvTrabajadores);
             this.Controls.Add(this.lblActi);
             this.Controls.Add(this.Activos);
             this.Controls.Add(this.btnImprimir);
@@ -706,6 +735,7 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.grbTrabajadores);
+            this.Controls.Add(this.dgvTrabajadores);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -718,8 +748,8 @@
             this.mcTrabajadores.ResumeLayout(false);
             this.grbTrabajadores.ResumeLayout(false);
             this.grbTrabajadores.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTrabajadores)).EndInit();
             this.gunaPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTrabajadores)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -758,11 +788,11 @@
         private System.Windows.Forms.TextBox txtBuscar;
         private Guna.UI.WinForms.GunaLineTextBox focusBuscar;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DataGridView dgvTrabajadores;
         private Guna.UI.WinForms.GunaPanel gunaPanel4;
         private Guna.UI.WinForms.GunaAdvenceButton btnCancelar;
         private Guna.UI.WinForms.GunaAdvenceButton btnModificar;
         private Guna.UI.WinForms.GunaAdvenceButton btnGuardar;
         private Guna.UI.WinForms.GunaAdvenceButton btnNuevo;
+        private System.Windows.Forms.DataGridView dgvTrabajadores;
     }
 }

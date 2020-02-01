@@ -495,3 +495,10 @@ C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop\PaperShop\obj\Debug\SP19.f
 C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop\PaperShop\obj\Debug\PaperShop.frmManSalidas.resources
 C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop\PaperShop\obj\Debug\PaperShop.FrmAdmin.resources
 C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop\PaperShop\obj\Debug\PaperShop.agg.resources
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop\PaperShop\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop\PaperShop\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop\PaperShop\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop\PaperShop\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop\PaperShop\bin\Debug\FlashControlV71.dll
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop\PaperShop\obj\Debug\PaperShop.Modificaciones.FrmConfiguracion.resources
+C:\Users\JoseL\Documents\Visual Studio 2019\PaperShop\PaperShop\obj\Debug\PaperShop.Modificaciones.FrmPerfil.resources

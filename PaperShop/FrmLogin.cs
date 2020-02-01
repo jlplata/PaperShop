@@ -102,6 +102,11 @@ namespace PaperShop
                         FrmPrin formulario = new FrmPrin();
                         formulario.Show();
                     }
+                    if (cmbTipo.Text == "Trabajador")
+                    {
+                        FrmPrin formulario = new FrmPrin();
+                        formulario.Show();
+                    }
                     if (cmbTipo.Text == "Cajero")
                     {
                         FrmPrin formulario = new FrmPrin();

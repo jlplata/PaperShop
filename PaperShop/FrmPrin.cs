@@ -1,4 +1,5 @@
-﻿using PaperShop.Properties;
+﻿using PaperShop.Modificaciones;
+using PaperShop.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -185,7 +186,10 @@ namespace PaperShop
 
         private void gunaAdvenceButton2_Click(object sender, EventArgs e)
         {
-
+            FrmPerfil adm = new FrmPerfil();
+            adm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            AbrirFormEnPanel(adm);
+            cerrar();
         }
 
         private void gunaAdvenceButton3_Click(object sender, EventArgs e)
@@ -228,6 +232,14 @@ namespace PaperShop
         private void btnComputo_Click(object sender, EventArgs e)
         {
             FrmAdmin adm = new FrmAdmin();
+            adm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
+            AbrirFormEnPanel(adm);
+            cerrar();
+        }
+
+        private void gunaAdvenceButton4_Click_1(object sender, EventArgs e)
+        {
+            FrmConfiguracion adm = new FrmConfiguracion();
             adm.FormClosed += new FormClosedEventHandler(MostrarFormLogoAlCerrarForms);
             AbrirFormEnPanel(adm);
             cerrar();

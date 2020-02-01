@@ -92,11 +92,13 @@ namespace PaperShop
             txtActivo.Text = "1";
             txtNombre.Focus();
 
-            //Asignamos la fecha y hora a los lbls correspondientes
-            DateTime hoy = DateTime.Now;
 
+            //asignamos la fecha y hora a los lbls corresponientes
+            DateTime hoy = DateTime.Now;
             lblFechaRegistro.Text = hoy.ToString("yyyyMMdd");
             lblHoraRegistro.Text = hoy.ToShortTimeString();
+            //En caso de marcar error en la fecha
+            //lblfecharegistro.text = hoy.ToString("yyyyMMdd");
         }
 
         void Cancelar()

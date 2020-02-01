@@ -178,7 +178,7 @@ namespace PaperShop
             try
             {
                 //Consulta parar extraer los datos de las personas
-                qry = "SELECT * FROM VistaTrabajadores WHERE (Nombre like '%" + txtBuscar.Text + "%' OR puesto like '%" + txtBuscar.Text + "%' OR departamento like '%" + txtBuscar.Text + "%') AND activo='" + activo + "'";
+                qry = "SELECT * FROM VistaTrabajadores WHERE (persona like '%" + txtBuscar.Text + "%' OR puesto like '%" + txtBuscar.Text + "%' OR departamento like '%" + txtBuscar.Text + "%') AND activo='" + activo + "'";
 
                 //Asignamos la consulta al comando
                 sqlCMD.CommandText = qry;

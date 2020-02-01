@@ -946,6 +946,7 @@
             this.btnImprimir.TabIndex = 34;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // Activos
             // 
